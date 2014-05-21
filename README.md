@@ -11,3 +11,9 @@ Se pueden seleccionar en el menu izquierdo los distintos tipos de avión)
  
 [Modelo de página ideal de aerolínea](http://www.f-i.com/fi/airlines/)
 (Mirar check-in y buscador de vuelos)
+
+[Hipmunk](http://www.hipmunk.com/)
+(Mirar selector de destinos)
+
+[kayak](http://www.kayak.es/flights)
+(Otro ejemplo)
