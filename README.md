@@ -15,5 +15,5 @@ Se pueden seleccionar en el menu izquierdo los distintos tipos de avión)
 [Hipmunk](http://www.hipmunk.com/)
 (Mirar selector de destinos)
 
-[kayak](http://www.kayak.es/flights)
+[Kayak](http://www.kayak.es/flights)
 (Otro ejemplo)
