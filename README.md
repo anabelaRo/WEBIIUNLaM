@@ -17,3 +17,5 @@ Se pueden seleccionar en el menu izquierdo los distintos tipos de avión)
 
 [Kayak](http://www.kayak.es/flights)
 (Otro ejemplo)
+
+[Tutorial de WEB](http://www.1stwebdesigner.com/css/responsive-cv-website/)
