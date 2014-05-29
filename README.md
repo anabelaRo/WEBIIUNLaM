@@ -19,3 +19,5 @@ Se pueden seleccionar en el menu izquierdo los distintos tipos de avión)
 (Otro ejemplo)
 
 [Tutorial de WEB](http://www.1stwebdesigner.com/css/responsive-cv-website/)
+
+[Ver disposición de asientos de avión] (http://www.united.com/web/en-US/content/travel/inflight/aircraft/default.aspx)
