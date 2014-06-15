@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<title> EMB-120 </title>
+		<!--link rel="stylesheet" type="text/css" href="css/estilos.css" /-->
+		<script type="text/javascript" src="jquery/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="jquery/jquery.imagemapster.js"></script>
+	</head>
+	<body>
+		<div id="avion_EMB-120">
+			<img src="img\EMB-120.png" width="559" height="232" usemap="#EMB-120"/>
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function ()
+			{
+				var image = $('img');
+
+				image.mapster(
+				{
+					fillOpacity: 0.6,
+					fillColor: "088A08", //Relleno
+					strokeColor: "088A08", //Recuadro
+					//strokeOpacity: 0.8,
+					strokeWidth: 4,
+					//stroke: true,
+					isSelectable: true,
+					singleSelect: true,
+					mapKey: 'name',
+					listKey: 'name',
+				});
+			  });
+		</script>
+	
+		<script type="text/javascript">	
+			function clickedMe() 
+			{ 			
+				//alert("entro");
+				
+				//alert($(this).attr('id');
+				
+//				$("map area").click( function () { alert($(this).attr('id'))});
+				
+			}
+		
+			 /*$(this).each(function () {
+                
+				$("map area").click( function () { alert($(this).attr('id'))});
+            });*/
+			
+		</script>
+	
+		<map id="EMB-120" name="EMB-120">
+			<area shape="rect" id="C-01" name="C-01" title="C-01" coords="193,102,209,118" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="C-02" name="C-02" title="C-02" coords="218,102,234,118" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="C-03" name="C-03" title="C-03" coords="243,102,259,118" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="C-04" name="C-04" title="C-04" coords="268,102,284,118" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="C-05" name="C-05" title="C-05" coords="293,102,309,118" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="C-06" name="C-06" title="C-06" coords="325,102,341,118" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="C-07" name="C-07" title="C-07" coords="350,102,366,118" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="C-08" name="C-08" title="C-08" coords="375,102,391,118" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="C-09" name="C-09" title="C-09" coords="407,102,423,118" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="C-10" name="C-10" title="C-10" coords="432,102,448,118" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="B-01" name="B-01" title="B-01" coords="193,122,209,138" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="B-02" name="B-02" title="B-02" coords="218,122,234,138" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="B-03" name="B-03" title="B-03" coords="243,122,259,138" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="B-04" name="B-04" title="B-04" coords="268,122,284,138" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="B-05" name="B-05" title="B-05" coords="293,122,309,138" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="B-06" name="B-06" title="B-06" coords="325,122,341,138" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="B-07" name="B-07" title="B-07" coords="350,122,366,138" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="B-08" name="B-08" title="B-08" coords="375,122,391,138" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="B-09" name="B-09" title="B-09" coords="407,122,423,138" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="B-10" name="B-10" title="B-10" coords="432,122,448,138" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="A-01" name="A-01" title="A-01" coords="193,162,209,178" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="A-02" name="A-02" title="A-02" coords="218,162,234,178" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="A-03" name="A-03" title="A-03" coords="243,162,259,178" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="A-04" name="A-04" title="A-04" coords="268,162,284,178" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="A-05" name="A-05" title="A-05" coords="293,162,309,178" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="A-06" name="A-06" title="A-06" coords="325,162,341,178" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="A-07" name="A-07" title="A-07" coords="350,162,366,178" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="A-08" name="A-08" title="A-08" coords="375,162,391,178" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="A-09" name="A-09" title="A-09" coords="407,162,423,178" href="" OnClick="clickedMe()" target="" />
+			<area shape="rect" id="A-10" name="A-10" title="A-10" coords="432,162,448,178" href="" OnClick="clickedMe()" target="" />
+		</map>
+	</body>
+</html>
