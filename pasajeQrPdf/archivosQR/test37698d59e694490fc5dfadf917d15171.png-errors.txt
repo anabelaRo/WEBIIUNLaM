@@ -1,0 +1,782 @@
+2014-06-07 17:16:17: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-07 17:16:26: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-07 17:20:43: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-07 17:20:50: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-07 21:49:36: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-07 21:55:16: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-07 21:57:16: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-07 22:05:19: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-07 22:25:38: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-07 22:26:17: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-07 22:26:32: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-07 22:27:11: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-08 23:02:25: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\phpqrcode\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-22 15:15:13: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-22 15:36:21: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\frame_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_0\mask_21_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_1\mask_21_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_2\mask_21_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_3\mask_21_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_4\mask_21_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_5\mask_21_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_6\mask_21_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_7\mask_21_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-22 17:51:08: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-22 17:52:57: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-22 17:54:27: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-22 17:54:52: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-22 17:54:59: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-22 17:55:08: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-22 18:01:40: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+2014-06-22 18:02:44: <br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\frame_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrspec.php</b> on line <b>568</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_0\mask_25_0.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_1\mask_25_1.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_2\mask_25_2.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_3\mask_25_3.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_4\mask_25_4.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_5\mask_25_5.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_6\mask_25_6.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
+<br />
+<b>Warning</b>:  mkdir(): No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>154</b><br />
+<br />
+<b>Warning</b>:  file_put_contents(C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\cache\mask_7\mask_25_7.dat): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\tpaerolineas\pasajeQrPdf\archivosQR\qrmask.php</b> on line <b>155</b><br />
