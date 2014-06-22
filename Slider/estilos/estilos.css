@@ -232,26 +232,22 @@ p{
 	padding: 0 0 5px 0;
 }
 
-div#slide1 {
-	background: url('../img/1.jpg') no-repeat center center fixed;
-}
-div#slide1  > div.tableCell {
-	vertical-align: top;
-}
-div#slide1  > div.tableCell > h1 {
-	margin-top: 0.5em;
-	margin-left: 7em;
+div#slide1> div.tableCell > h1 {
+	margin-top: -1em;
 }
 div#slide2 > div.tableCell > h1 {
 	margin-top: 2em;
 }
 div#slide3 > div.tableCell > h1 {
+	margin-top: -1em;
+}
+div#slide4 > div.tableCell > h1 {
 	margin-top: -2em;
 }
-div#slide5 > div.tableCell > h1 {
-	margin-top: -3em;
-}
 
+div#slide1 {
+	background: url('../img/1.jpg') no-repeat center center fixed; 
+}
 div#slide2 {
 	background: url('../img/2.jpg') no-repeat center center fixed; 
 }
@@ -260,9 +256,6 @@ div#slide3 {
 }
 div#slide4 {
 	background: url('../img/4.jpg') no-repeat center center fixed; 
-}
-div#slide5 {
-	background: url('../img/5.jpg') no-repeat center center fixed; 
 }
 
 /* Demos Menu
@@ -275,10 +268,10 @@ div#slide5 {
  }
 
 @font-face {
-	font-family:"Harabara";
+	font-family: "Harabara";
 	src:url("../fuentes/Harabara.eot?") format("eot"),url("../fuentes/Harabara.woff") format("woff"),url("../fuentes/Harabara.ttf") format("truetype"),url("../fuentes/Harabara.svg#Harabara") format("svg");
-	font-weight:normal;
-	font-style:normal;
+	font-weight: normal;
+	font-style: normal;
 }
 
 html { 
