@@ -62,19 +62,44 @@
 					afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
 					onSlideLeave: function(anchorLink, index, slideIndex, direction){}
 				});
-				
-				$('#tabs div').hide();
-				$('#tabs div:first').show();
-				$('#tabs ul li:first').addClass('active');
 
-				$('#tabs ul li a').click(function(){
-					$('#tabs ul li').removeClass('active');
-					$(this).parent().addClass('active');
-					var currentTab = $(this).attr('href');
-					$('#tabs div').hide();
-					$(currentTab).show();
-					return false;
-				});
+				$(".menu-tabs > li").click(function(e){
+			    switch(e.target.id){
+			      case "tab1":
+			        //cambiamos el estao de la pestaÃ±a
+			        $("#tab1").addClass("active");
+			        $("#tab3").removeClass("active");
+			        $("#tab2").removeClass("active");
+			        //y aqui el display para ocultar y mostrar
+			        $("div.tab1").css("display", "block");
+			        $("div.tab3").css("display", "none");
+			        $("div.tab2").css("display", "none");
+
+			      break;
+			      case "tab2":
+			        //cambiamos el estao de la pestaÃ±a
+			        $("#tab1").removeClass("active");
+			        $("#tab3").removeClass("active");
+			        $("#tab2").addClass("active");
+			        //y aqui el display para ocultar y mostrar
+			        $("div.tab1").css("display", "none");
+			        $("div.tab3").css("display", "none");
+			        $("div.tab2").css("display", "block");
+			      break;
+			      case "tab3":
+			        //cambiamos el estao de la pestaÃ±a
+			        $("#tab1").removeClass("active");
+			        $("#tab2").removeClass("active");
+			        $("#tab3").addClass("active");
+			        //y aqui el display para ocultar y mostrar
+			        $("div.tab1").css("display", "none");
+			        $("div.tab2").css("display", "none");
+			        $("div.tab3").css("display", "block");
+			      break;                   
+			 
+			    }   
+			    return false;
+			});
 			});
 			$(function() {
 				$( "#txtFromDate" ).datepicker({
@@ -130,40 +155,36 @@
 			<div class="section" id="section1">
 				<div id="tabs">
 					<nav>
-						<ul>
-							<li class="active">
-								<a href="#buscador">
-									<img class="icon" src="img/buscador.png"/>Buscador
-								</a>
-							</li>
-							<li>
-								<a href="#reserva">
-									<img class="icon" src="img/reserva.png"/>Reserva
-								</a>
-							</li>
-							<li>
-								<a href="#checkin">
-									<img class="icon" src="img/checkin.png"/>Check-In
-								</a>
-							</li>
-						</ul>
+						 <ul class="menu-tabs">
+        					<li id="tab1" class="active">
+        						<img class="icon" src="img/buscador.png">Buscador
+        					</li>
+          				    <li id="tab2">
+			            		<img class="icon" src="img/reserva.png">Reserva
+			           		</li>
+			            	<li id="tab3">
+			            		<img class="icon" src="img/checkin.png">Check-IN
+			           		 </li>
+			       		 </ul>
 
-						<div id="buscador">
-							<form>
-								<legend>
-									<h2>Buscá tu vuelo</h2>
+						<div class="content tab1">
+   						                     
+                			<form>
+								<legend><div>
+									<h2>Buscá tu vuelo</h2></div>
 								</legend>
 								<label for="origen">Origen:</label>
 									<input type="text" name="origen" id="origen"/>
 								<label for="destino">Destino:</label>
 									<input type="text" name="destino" id="destino"/>
-								</label>
-								<br>
+								</label><br>
+								
 								<label for="fsalida">Fecha Salida:</label>
 									<input type="text" name="fsalida" placeholder="Fecha de salida" id="txtFromDate" class="datepicker"/>
 								<label for="fregreso"> Fecha Regreso:</label>
 									<input type="text" name="fregreso" placeholder="Fecha de regreso" id="txtToDate" class="datepicker"/>
-								<br><br>
+									<br>
+									<br>
 								<label for="clase"> Clase:
 									<select>
 										<option value=""> Seleccione clase </option> 
@@ -175,15 +196,17 @@
 								<input type="submit" value="Buscar"/>
 
 							</form>  
-						</div>
+              			  
+              			</div>
+                
+   						<div class="content tab2"  style="display:none;">
+				     		<h2>Acá va la reserva</h2>
+				    	</div>
 
-						<div id="reserva">
-							<h1>Acá realizarán la reserva</h1>
-						</div>
 
-						<div id="checkin">
-							<h1>Acá realizarán el check-in</h1>
-						</div>
+				        <div class="content tab3"  style="display:none;">
+				          <div><h2>Acá va el check-in</h2></div>
+				        </div>
 					</nav>
 				</div>
 			</div>

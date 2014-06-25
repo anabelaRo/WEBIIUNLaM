@@ -277,8 +277,8 @@ nav ul li {
 	transition: all 0.2s;
 }
 
-nav > ul > li > a > .caret,
-nav > ul > li > div ul > li > a > .caret {
+nav > ul > li > ,
+nav > ul > li > div ul > li >  {
 	border-top: 4px solid #aaa;
 	border-right: 4px solid transparent;
 	border-left: 4px solid transparent;
@@ -293,7 +293,7 @@ nav > ul > li > div ul > li > a > .caret {
 	transition: color 0.1s linear;
 }
 
-nav > ul > li > div ul > li > a > .caret {
+nav > ul > li > div ul > li >  {
 	border-bottom: 4px solid transparent;
 	border-top: 4px solid transparent;
 	border-right: 4px solid transparent;
@@ -301,9 +301,8 @@ nav > ul > li > div ul > li > a > .caret {
 	margin: 0 0 0 8px;
 }
 
-nav > ul > li > a {
+nav > ul > li {
 	color: #aaa;
-	display: block;
 	line-height: 56px;
 	padding: 0 24px;
 	text-decoration: none;
@@ -313,15 +312,15 @@ nav > ul > li:hover {
 	background-color: #76B6FA; /*[=====================]*/;
 }
 
-nav > ul > li:hover > a {
+nav > ul > li:hover {
 	color: rgb(255,255,255);
 }
 
-nav > ul > li:hover > a > .caret {
+nav > ul > li:hover  {
 	border-top-color: rgb(255,255,255);
 }
 
-nav > ul > li > div ul > li:hover > a > .caret {
+nav > ul > li > div ul > li:hover {
 	border-left-color: rgb(255,255,255);
 }
 
@@ -391,17 +390,6 @@ div#tabs > nav > div {
 	height: 280px;
 }
 
-#buscador {
-	padding-left: 6%;
-	clear: both;
-}
-
-#buscador input {
-	width: 30%;
-	clear: both;
-	margin-top: 3%;
-}
-
 li.active {
 	background: #4D82BC;
 	color: #FFFFFF;
@@ -409,7 +397,7 @@ li.active {
 
 label,
 input {
-	width: 600px;
+	width: 200px;
 	height: 30px;
 	display: inline;
 	margin-top: 2%;
