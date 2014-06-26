@@ -1,0 +1,153 @@
+﻿#avion-EMB-120{
+	background: transparent url('../img/EMB-120.png');
+	width:559px;
+	height:232px;
+}
+
+#avion-ER-145{
+	background: transparent url('../img/ER-145.png');
+	width:839px;
+	height:282px;
+}
+
+#avion-ER-145_2{
+	background: transparent url('../img/ER-145_2.png');
+	width:839px;
+	height:282px;
+}
+
+#avion-ER-170{
+	background: transparent url('../img/ER-170.png');
+	width:978px;
+	height:282px;
+}
+
+/****************************************************/
+
+#asientos table{
+	font: 10pt Arial,Tahoma,Georgia,Verdana,Helvetica,Geneva,sans-serif;
+	border-collapse: separate;
+	empty-cells: show;
+}
+
+#tabla-EMB-120_E{
+    border-spacing: 8px 11px;
+}
+
+#tabla-ER-145_E {
+	border-spacing: 4px 7px;
+}
+
+#tabla-ER-145_2_E {
+    border-spacing: 3px 11px;
+}
+
+#tabla-ER-170_E {
+    border-spacing: 3px 18px;
+}
+
+#tabla-ER-145_P{
+    border-spacing: 9px 8px;
+}
+
+#tabla-ER-145_2_P{
+    border-spacing: 3px 9px;
+}
+
+#tabla-ER-170_P{
+    border-spacing: 3px 19px;
+}
+
+/****************************************************/
+
+#asientos table td{
+	border: 2px solid #999999;
+	font: bold 11pt Arial,Tahoma,Georgia,Verdana,Helvetica,Geneva,sans-serif;
+	text-align: left;
+	border-radius: 4px;
+}
+
+#tabla-EMB-120_E td{
+	width: 13px;
+	height: 18px;
+}
+
+#tabla-ER-145_P td{
+	background-color: #f98820;
+	width: 13px;
+	height: 18px;
+}
+
+#tabla-ER-145_E td{
+	width: 13px;
+	height: 18px;
+}
+
+#tabla-ER-145_2_P td{
+	background-color: #f98820;
+	width: 8px;
+	height: 14px;
+}
+
+#tabla-ER-145_2_E td{
+	width: 8px;
+	height: 14px;
+}
+
+#tabla-ER-170_P td{
+	background-color: #f98820;
+	width: 8px;
+	height: 14px;
+}
+
+#tabla-ER-170_E td{
+	width: 8px;
+	height: 14px;
+}
+
+/****************************************************/
+
+#primera-ER-145, 
+#economy-ER-145,
+#primera-ER-145_2, 
+#economy-ER-145_2,
+#primera-ER-170,
+#economy-ER-170
+{
+	float: left;
+}
+
+#economy-EMB-120{
+	padding-top: 91px;
+	padding-left: 182px;
+}
+
+#primera-ER-145{
+	padding-top: 114px;
+	padding-left: 196px;
+}
+
+#economy-ER-145{
+	padding-top: 106px;
+	padding-left: 28px;
+}
+
+#primera-ER-145_2{
+	padding-top: 110px;
+	padding-left: 180px;
+}
+
+#economy-ER-145_2{
+	padding-top: 104px;
+	padding-left: 21px;
+}
+
+#primera-ER-170{
+	padding-top: 99px;
+	padding-left: 181px;
+}
+
+#economy-ER-170{
+	padding-top: 100px;
+	padding-left: 18px;
+}

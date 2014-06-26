@@ -249,9 +249,18 @@ html {
 
 /*---------------------------estilos de tabs--------------------------*/
 
+/*Ini - jasobrile - 26/06/2014*/
+#section1{
+	background: url("../img/Mar_de_nubes.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+/*Fin - jasobrile - 26/06/2014*/
+
 nav {
 	background-color: #fff;
-	border: 1px solid #dedede;
+	/*Ini - jasobrile - 26/06/2014*/
+	/*border: 1px solid #dedede;*/
+	border: 5px solid #dedede;
+	/*Fin - jasobrile - 26/06/2014*/
 	border-radius: 4px;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
 	color: #888;

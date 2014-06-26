@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
 	<head>
-		<meta charset="utf-8">
+		<!--meta charset="utf-8"-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>Aerolíneas Del Plata</title>
 		<meta name="title" content="Aerolíneas Del Plata" />
 		<meta name="description" content="Aerolíneas Del Plata, la mejor opción para recorrer el país" />
@@ -17,7 +18,15 @@
 		<link rel="stylesheet" type="text/css" href="estilos/jquery.fullPage.css"/>
 		<link rel="stylesheet" type="text/css" href="estilos/estilos.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
-
+		
+		<!--Ini - jasobrile - 26/06/2014-->
+		<!--PopUp Asientos de aviones-->
+		<link rel="stylesheet" type="text/css" href="estilos/popUp.css" />
+		<link rel="stylesheet" type="text/css" href="estilos/aviones.css" />
+		<script type="text/javascript" src="js/popUp.js"></script>
+		<!--PopUp Asientos de aviones-->
+		<!--Fin - jasobrile - 26/06/2014-->
+		
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('#wrapper').fullpage({
@@ -205,7 +214,23 @@
 
 
 				        <div class="content tab3"  style="display:none;">
-				          <div><h2>Acá va el check-in</h2></div>
+							<h2>Acá va el check-in</h2>
+							<!--Ini - jasobrile - 26/06/2014-->
+							<!--PopUp Asientos de aviones-->
+							<?php
+								require_once $_SERVER{'DOCUMENT_ROOT'} . '\Sitio\popUp_Aviones\f_popUp_aviones.php';
+
+								$modelo_avion = 'EMB-120';
+								//$modelo_avion = 'ER-145';
+								//$modelo_avion = 'ER-145_2';
+								//$modelo_avion = 'ER-170';
+
+								echo '<input type="hidden" id="modelo_avion" value="'.$modelo_avion.'"/>';
+
+								f_popUp_aviones($modelo_avion);
+							?>
+							<!--PopUp Asientos de aviones-->
+							<!--Fin - jasobrile - 26/06/2014-->
 				        </div>
 					</nav>
 				</div>
