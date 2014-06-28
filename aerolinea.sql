@@ -30,10 +30,16 @@ USE `aerolinea`;
 
 CREATE TABLE IF NOT EXISTS `avion` (
   `codigo` int(11) NOT NULL,
-  `asientos_primera` int(11) NOT NULL,
+  `marca` varchar(30) COLLATE utf8_spanish_ci NOT NULL,
+  `modelo` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `total_pasajes` int(11) NOT NULL,
   `asientos_economy` int(11) NOT NULL,
-  `columna_primera` int(11) NOT NULL,
-  `columna_economy` int(11) NOT NULL,
+  `filas_economy` int(11) NOT NULL,
+  `columnas_economy` int(11) NOT NULL,
+  `asientos_primera` int(11) NOT NULL,
+  `filas_primera` int(11) NOT NULL,
+  `columnas_primera` int(11) NOT NULL,
+  
   PRIMARY KEY (`codigo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci COMMENT='Tabla de Aviones';
 
@@ -126,13 +132,38 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `aeropuerto`
+--
+
+CREATE TABLE IF NOT EXISTS `aeropuerto` (
+  `codigo_OACI` char(4) COLLATE utf8_spanish_ci NOT NULL,
+  `ciudad` varchar(60) COLLATE utf8_spanish_ci NOT NULL,
+  `provincia` varchar(60) COLLATE utf8_spanish_ci NOT NULL,
+  `nombre_aerop` varchar(150) COLLATE utf8_spanish_ci NOT NULL,
+  PRIMARY KEY (`codigo_OACI`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `vuelo`
 --
 
 CREATE TABLE IF NOT EXISTS `vuelo` (
   `codigo` int(11) NOT NULL,
-  `origen` int(11) NOT NULL,
-  `destino` int(11) NOT NULL,
+  `origen` char(4) NOT NULL,
+  `destino` char(4) NOT NULL,
+  `tipo_avion` int(2) NOT NULL,
+  `precio_primera` int(2) NOT NULL,
+  `precio_economy` int(2) NOT NULL,
+  `lunes` tinyint(1) NOT NULL,
+  `martes` tinyint(1) NOT NULL,
+  `miercoles` tinyint(1) NOT NULL,
+  `jueves` tinyint(1) NOT NULL,
+  `viernes` tinyint(1) NOT NULL,
+  `sabado` tinyint(1) NOT NULL,
+  `domingo` tinyint(1) NOT NULL,
+  
   `fecha` date NOT NULL,
   `hora` time NOT NULL,
   `avion` int(11) NOT NULL,
