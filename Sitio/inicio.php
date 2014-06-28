@@ -169,7 +169,7 @@
         						<img class="icon" src="img/buscador.png">Buscador
         					</li>
           				    <li id="tab2">
-			            		<img class="icon" src="img/reserva.png">Reserva
+			            		<img class="icon" src="img/pago.png">Pago
 			           		</li>
 			            	<li id="tab3">
 			            		<img class="icon" src="img/checkin.png">Check-IN
@@ -209,7 +209,7 @@
               			</div>
                 
    						<div class="content tab2"  style="display:none;">
-				     		<h2>Acá va la reserva</h2>
+				     		<h2>Acá va el pago</h2>
 				    	</div>
 
 
