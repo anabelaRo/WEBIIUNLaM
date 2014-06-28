@@ -179,30 +179,30 @@
 						<div class="content tab1">
    						                     
                 			<form>
-								<legend><div>
+									<legend><div>
 									<h2>Buscá tu vuelo</h2></div>
 								</legend>
-								<label for="origen">Origen:</label>
+								<label for="origendestino">Origen:
 									<input type="text" name="origen" id="origen"/>
-								<label for="destino">Destino:</label>
-									<input type="text" name="destino" id="destino"/>
-								</label><br>
+								Destino:
+									<input type="text" name="destino" id="destino"/></label>
+								</label>
 								
-								<label for="fsalida">Fecha Salida:</label>
+								<label for="fsalidafregreso">F.Salida:
 									<input type="text" name="fsalida" placeholder="Fecha de salida" id="txtFromDate" class="datepicker"/>
-								<label for="fregreso"> Fecha Regreso:</label>
+								F.Regreso:
 									<input type="text" name="fregreso" placeholder="Fecha de regreso" id="txtToDate" class="datepicker"/>
-									<br>
-									<br>
-								<label for="clase"> Clase:
+									</label>
+								<label for="clase"> <span id="clase">Clase:
 									<select>
 										<option value=""> Seleccione clase </option> 
 										<option value="1"> Primera </option> 
 										<option value="2"> Economy </option> 
-									</select>
-								</label>
-								<br>
+									</span></select><br>
 								<input type="submit" value="Buscar"/>
+								</label>
+							
+								
 
 							</form>  
               			  
