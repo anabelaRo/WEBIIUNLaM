@@ -237,7 +237,25 @@
 			</div>
 
 			<div class="section" id="section2">
-				<h1>Slide 3</h1>
+				<h2>SE AGREGA FUNCIONALIDAD <BR>
+					PARA PROBAR BBDD</h2>
+
+					<?php	
+			require_once  $_SERVER{'DOCUMENT_ROOT'} . '/sitio/bbdd/Clases/Connection_BBDD_Objeto.php';
+		
+			$db = new Database();
+			
+			$filas = $db->execute ('select * from vuelo');
+			
+			foreach ($filas as $value)
+			{
+			   echo $value['codigo']  . " - " . $value['origen'] . " - " . $value['destino'] . " - " . $value['fecha'] . " - " . $value['hora'] . " - " . $value['avion'] . "<br/>";
+			}
+			
+			
+			$db->disconnect();
+			
+		?>
 			</div>
 		</div>
 	</body>
