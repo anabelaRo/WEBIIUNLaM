@@ -37,6 +37,7 @@
 }
 		
 var asiento_ant = "";
+var asiento_selec = "";
 
 function changeBgcolor(asiento)
 {
@@ -60,70 +61,36 @@ function changeBgcolor(asiento)
 
 	asiento_ant = asiento;
 	
-	/*var xmlhttp;
-
-	if (window.XMLHttpRequest)
-	{
-		xmlhttp = new XMLHttpRequest(); // code for IE7+, Firefox, Chrome, Opera, Safari
-	}
-	else
-	{
-		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); // code for IE6, IE5
-	}
-
-	xmlhttp.onreadystatechange = function()
-	{
-		if (xmlhttp.readyState==4 && xmlhttp.status==200)
-		{
-		   document.getElementById("num_asiento").innerHTML=xmlhttp.responseText;
-		}
-	}
-	
-	var url = 'llamado.php?asiento=' + asiento;
-	
-	xmlhttp.open("POST", url, true);
-	
-	xmlhttp.send();*/
-
-	var http = getXMLHTTPRequest(); // creo una instancia del objeto XMLHTTPRequest.
-	
-	var variable = "HOLA";
-	
-	var url = 'llamado.php?variable=' + variable; // creación de la URL.
-    http.open("GET", url, true); // fijando los parametros para el envío de datos.
-    http.onreadystatechange = handler; // Qué función utilizar en caso de que el estado de la petición cambie.
-    http.send(null); // enviar petición.
-	
-	//enviarvariable('hola'); // llamo a la función pasándole como parámetro el valor de la variable que quieres enviar.
-}
-
-// Esta función se encarga de crear el objeto XMLHTTPRequest y lo devuelve.
-function getXMLHTTPRequest() {
-  try {
-    req = new XMLHttpRequest();
-  } catch(err1) {
-    try {
-      req = new ActiveXObject("Msxml2.XMLHTTP");
-    } catch (err2) {
-      try {
-        req = new ActiveXObject("Microsoft.XMLHTTP");
-      } catch (err3) {
-        req = false;
-      }
-    }
-  }
-  return req;
-}
-
-function handler() {
-  if (http.readyState == 4) {
-    if(http.status == 200) {
-      alert(http.responseText); // El texto de respuesta del archivo index.php lo muestra como una alerta.
-    }
-  }
+	asiento_selec = asiento.id;
 }
 
 function aceptar()
 {
+	loadXMLDoc();
+}
 
+function loadXMLDoc()
+{ 
+	var xmlhttp;
+	
+	if (window.XMLHttpRequest)
+	{
+		xmlhttp = new XMLHttpRequest(); //code for IE7+, Firefox, Chrome, Opera, Safari
+	}
+	else
+	{
+		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); //code for IE6, IE5
+	}
+	
+	xmlhttp.onreadystatechange = function()
+	{
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+		{
+			document.getElementById("div_asiento_selecc").innerHTML = xmlhttp.responseText;
+		}
+	}
+	
+	xmlhttp.open("GET", "popUp_Aviones/var_asiento_selecc.php?asiento_selecc=" + asiento_selec, true);
+
+	xmlhttp.send();	
 }

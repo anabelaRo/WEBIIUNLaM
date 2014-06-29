@@ -138,25 +138,29 @@
 			<div class="section active" id="section0">
 				<div class="slide active" id="slide1">
 					<h1>
-						<img src="img/logo.png"/><br/>
+						<img src="img/logo.png"/>
+						<br/>
 						Aerolíneas Del Plata
 					</h1>
 				</div>
 				<div class="slide" id="slide2">
 					<h1>
-						<img src="img/logo.png"/><br/>
+						<img src="img/logo.png"/>
+						<br/>
 						Aerolíneas Del Plata
 					</h1>
 				</div>
 				<div class="slide" id="slide3">
 					<h1>
-						<img src="img/logo.png"/><br/>
+						<img src="img/logo.png"/>
+						<br/>
 						Aerolíneas Del Plata
 					</h1>
 				</div>
 				<div class="slide" id="slide4">
 					<h1>
-						<img src="img/logo.png"/><br/>
+						<img src="img/logo.png"/>
+						<br/>
 						Aerolíneas Del Plata
 					</h1>
 				</div>
@@ -164,59 +168,63 @@
 			<div class="section" id="section1">
 				<div id="tabs">
 					<nav>
-						 <ul class="menu-tabs">
+						<ul class="menu-tabs">
         					<li id="tab1" class="active">
-        						<img class="icon" src="img/buscador.png">Buscador
+        						<img class="icon" src="img/buscador.png"/>Buscador
         					</li>
-          				    <li id="tab2">
-			            		<img class="icon" src="img/pago.png">Pago
-			           		</li>
-			            	<li id="tab3">
-			            		<img class="icon" src="img/checkin.png">Check-IN
-			           		 </li>
-			       		 </ul>
+							<li id="tab2">
+								<img class="icon" src="img/pago.png"/>Pago
+							</li>
+							<li id="tab3">
+								<img class="icon" src="img/checkin.png"/>Check-IN
+							</li>
+						</ul>
 
-						<div class="content tab1">
-   						                     
-                			<form>
-									<legend><div>
-									<h2>Buscá tu vuelo</h2></div>
+						<div class="content tab1">              
+							<form>
+								<legend>
+									<div>
+										<h2>Buscá tu vuelo</h2>
+									</div>
 								</legend>
-								<label for="origendestino">Origen:
-									<input type="text" name="origen" id="origen"/>
-								Destino:
-									<input type="text" name="destino" id="destino"/></label>
-								</label>
+								<label for="origen">Origen:</label>
+								<input type="text" name="origen" id="origen"/>
 								
-								<label for="fsalidafregreso">F.Salida:
-									<input type="text" name="fsalida" placeholder="Fecha de salida" id="txtFromDate" class="datepicker"/>
-								F.Regreso:
-									<input type="text" name="fregreso" placeholder="Fecha de regreso" id="txtToDate" class="datepicker"/>
-									</label>
-								<label for="clase"> <span id="clase">Clase:
-									<select>
-										<option value=""> Seleccione clase </option> 
-										<option value="1"> Primera </option> 
-										<option value="2"> Economy </option> 
-									</span></select><br>
+								<label for="destino">Destino:</label>
+								<input type="text" name="destino" id="destino"/>
+								
+								<br/>
+								
+								<label for="fsalida">F. Salida:</label>
+								<input type="text" name="fsalida" placeholder="Fecha de salida" id="txtFromDate" class="datepicker"/>
+								
+								<label for="fregreso">F. Regreso:</label>
+								<input type="text" name="fregreso" placeholder="Fecha de regreso" id="txtToDate" class="datepicker"/>
+								
+								<br/>
+								<br/>
+								
+								<label>Clase:</label>
+								<select>
+									<option value=""> Seleccione clase </option> 
+									<option value="1"> Primera </option> 
+									<option value="2"> Economy </option> 
+								</select>
+			
+								<br/>
+								
 								<input type="submit" value="Buscar"/>
-								</label>
-							
-								
-
-							</form>  
-              			  
-              			</div>
-                
-   						<div class="content tab2"  style="display:none;">
-				     		<h2>Acá va el pago</h2>
-				    	</div>
-
-
-				        <div class="content tab3"  style="display:none;">
+							</form>
+              		</div>
+						
+   					<div class="content tab2"  style="display:none;">
+							<h2>Acá va el pago</h2>
+						</div>
+						
+						<div class="content tab3"  style="display:none;">
 							<h2>Acá va el check-in</h2>
+
 							<!--Ini - jasobrile - 26/06/2014-->
-							<!--PopUp Asientos de aviones-->
 							<?php
 								require_once $_SERVER{'DOCUMENT_ROOT'} . '\Sitio\popUp_Aviones\f_popUp_aviones.php';
 
@@ -229,33 +237,31 @@
 
 								f_popUp_aviones($modelo_avion);
 							?>
-							<!--PopUp Asientos de aviones-->
 							<!--Fin - jasobrile - 26/06/2014-->
-				        </div>
+						</div>
 					</nav>
 				</div>
 			</div>
 
 			<div class="section" id="section2">
-				<h2>SE AGREGA FUNCIONALIDAD <BR>
+				<h2>SE AGREGA FUNCIONALIDAD <BR/>
 					PARA PROBAR BBDD</h2>
 
 					<?php	
-			require_once  $_SERVER{'DOCUMENT_ROOT'} . '/sitio/bbdd/Clases/Connection_BBDD_Objeto.php';
-		
-			$db = new Database();
-			
-			$filas = $db->execute ('select * from vuelo');
-			
-			foreach ($filas as $value)
-			{
-			   echo $value['codigo']  . " - " . $value['origen'] . " - " . $value['destino'] . " - " . $value['fecha'] . " - " . $value['hora'] . " - " . $value['avion'] . "<br/>";
-			}
-			
-			
-			$db->disconnect();
-			
-		?>
+						require_once  $_SERVER{'DOCUMENT_ROOT'} . '/sitio/bbdd/Clases/Connection_BBDD_Objeto.php';
+					
+						$db = new Database();
+						
+						$filas = $db->execute ('select * from vuelo');
+						
+						foreach ($filas as $value)
+						{
+							echo $value['codigo']  . " - " . $value['origen'] . " - " . $value['destino'] . " - " . $value['fecha'] . " - " . $value['hora'] . " - " . $value['avion'] . "<br/>";
+						}
+						
+						$db->disconnect();
+						
+					?>
 			</div>
 		</div>
 	</body>

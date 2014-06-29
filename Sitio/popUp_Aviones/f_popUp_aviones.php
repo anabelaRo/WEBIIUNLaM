@@ -1,7 +1,7 @@
 ﻿<?php
 	function f_popUp_aviones($modelo_avion)
 	{
-		echo '	<div id="div_asiento">
+		echo '<div id="div_asiento">
 					<a href="#openModal" onclick="resize_popUp()">
 						<div id="btn_asiento">
 							<span>Seleccionar asiento</span>
@@ -26,5 +26,9 @@
 						</div>
 					</div>
 				</div>';
+				
+		echo '<div id="div_asiento_selecc">';
+					$texto = isset($_GET['asiento_selecc']) ? $_GET['asiento_selecc'] : "";
+		echo '</div>';
 	}
 ?>

@@ -404,37 +404,16 @@ li.active {
 	color: #FFFFFF;
 }
 
-label,
-input {
-	width: 200px;
-	height: 30px;
-	display: inline;
-	margin-top: 2%;
-}
-
-	/* datepicker */
+/*datepicker*/
 .ui-widget {
     font-size: 0.8em;
 }
 
 /* ==== AGREGO ALINEADO DE FORM - ANABELA 28/06 ====== */
-label {
-text-align: center;
-  display: block;
-  margin: .7em 0 0 0;
-  height: 35px;
-  font-size: 0,8em;
-}
-
-input {
-	width: 150px;
-	height: 35px;
+label, input{
+	width: 200px;
+	height: 30px;
+	display: inline;
 	margin-top: 3%;
 }
-
-#clase{
-display: block;
-margin-top: 5%;
-}
-
 /* ==== TERMINA EDICION DE FORM - ANABELA ====== */
