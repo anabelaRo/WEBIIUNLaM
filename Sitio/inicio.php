@@ -19,13 +19,11 @@
 		<link rel="stylesheet" type="text/css" href="estilos/estilos.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
 		
-		<!--Ini - jasobrile - 26/06/2014-->
-		<!--PopUp Asientos de aviones-->
+		<!--Ini - jasobrile - 26/06/2014 - PopUp Asientos de aviones-->
 		<link rel="stylesheet" type="text/css" href="estilos/popUp.css" />
 		<link rel="stylesheet" type="text/css" href="estilos/aviones.css" />
 		<script type="text/javascript" src="js/popUp.js"></script>
-		<!--PopUp Asientos de aviones-->
-		<!--Fin - jasobrile - 26/06/2014-->
+		<!--Fin - jasobrile - 26/06/2014 - PopUp Asientos de aviones-->
 		
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -165,6 +163,13 @@
 					</h1>
 				</div>
 			</div>
+			
+			<!--Ini - jasobrile - 29/06/2014 - Conexión a la BB.DD-->
+			<?php
+				require_once $_SERVER{'DOCUMENT_ROOT'} . '/Sitio/bbdd/Clases/Connection_BBDD_Objeto.php';
+			?>
+			<!--Fin - jasobrile - 29/06/2014 - Conexión a la BB.DD-->
+			
 			<div class="section" id="section1">
 				<div id="tabs">
 					<nav>
@@ -224,7 +229,7 @@
 						<div class="content tab3"  style="display:none;">
 							<h2>Acá va el check-in</h2>
 
-							<!--Ini - jasobrile - 26/06/2014-->
+							<!--Ini - jasobrile - 26/06/2014 - PopUp Asientos de aviones-->
 							<?php
 								require_once $_SERVER{'DOCUMENT_ROOT'} . '\Sitio\popUp_Aviones\f_popUp_aviones.php';
 
@@ -237,7 +242,7 @@
 
 								f_popUp_aviones($modelo_avion);
 							?>
-							<!--Fin - jasobrile - 26/06/2014-->
+							<!--Fin - jasobrile - 26/06/2014 - PopUp Asientos de aviones-->
 						</div>
 					</nav>
 				</div>
@@ -248,7 +253,7 @@
 					PARA PROBAR BBDD</h2>
 
 					<?php	
-						require_once  $_SERVER{'DOCUMENT_ROOT'} . '/sitio/bbdd/Clases/Connection_BBDD_Objeto.php';
+						//require_once  $_SERVER{'DOCUMENT_ROOT'} . '/sitio/bbdd/Clases/Connection_BBDD_Objeto.php';
 					
 						$db = new Database();
 						

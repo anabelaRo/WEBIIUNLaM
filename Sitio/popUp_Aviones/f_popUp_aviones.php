@@ -13,11 +13,11 @@
 					<div id="div_popUp">
 						<a href="#close" title="Cerrar" class="close"> X </a>';
 
-							require_once $_SERVER{'DOCUMENT_ROOT'} . '\Sitio\popUp_Aviones\f_generar_asientos.php';
+						require_once $_SERVER{'DOCUMENT_ROOT'} . '\Sitio\popUp_Aviones\f_generar_asientos.php';
 
-							f_generar_asientos($modelo_avion);
+						f_generar_asientos($modelo_avion);
 
-				echo '	<div id="div_aceptar">
+			echo '	<div id="div_aceptar">
 							<a href="#close" onclick="aceptar()">
 								<div id="btn_aceptar">
 									<span>Aceptar</span>

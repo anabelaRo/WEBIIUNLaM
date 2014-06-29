@@ -45,12 +45,12 @@
 				break;
 		}
 
-		echo '	<div id="avion-'.$modelo.'">
+		echo '<div id="avion-'.$modelo.'">
 					<div id="asientos">';
 		
 			if($modelo != 'EMB-120')
 			{
-				echo '	<div id="primera-'.$modelo.'">	
+				echo '<div id="primera-'.$modelo.'">	
 							<table id="tabla-'.$modelo.'_P">
 								<tbody>';
 
@@ -83,11 +83,11 @@
 										echo '</tr>';
 									}
 
-				echo '			</tbody>
+				echo '		</tbody>
 							</table>
 						</div>';
 			}
-				echo '	<div id="economy-'.$modelo.'">	
+				echo '<div id="economy-'.$modelo.'">	
 							<table id="tabla-'.$modelo.'_E">
 								<tbody>';
 
@@ -136,7 +136,7 @@
 										echo '</tr>';
 									}
 
-		echo '					</tbody>
+		echo '				</tbody>
 							</table>
 						</div>
 					</div>
