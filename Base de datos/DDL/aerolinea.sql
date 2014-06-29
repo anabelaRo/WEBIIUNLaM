@@ -181,13 +181,13 @@ CREATE TABLE IF NOT EXISTS `vuelo` (
   `cod_avion` int(2) NOT NULL,
   `precio_primera` decimal(7,2) NOT NULL,
   `precio_economy` decimal(7,2) NOT NULL,
-  `lunes` tinyint(1) NOT NULL,
-  `martes` tinyint(1) NOT NULL,
-  `miercoles` tinyint(1) NOT NULL,
-  `jueves` tinyint(1) NOT NULL,
-  `viernes` tinyint(1) NOT NULL,
-  `sabado` tinyint(1) NOT NULL,
-  `domingo` tinyint(1) NOT NULL
+  `lunes` tinyint(1) DEFAULT NULL,
+  `martes` tinyint(1) DEFAULT NULL,
+  `miercoles` tinyint(1) DEFAULT NULL,
+  `jueves` tinyint(1) DEFAULT NULL,
+  `viernes` tinyint(1) DEFAULT NULL,
+  `sabado` tinyint(1) DEFAULT NULL,
+  `domingo` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
