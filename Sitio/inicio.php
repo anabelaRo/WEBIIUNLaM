@@ -210,6 +210,8 @@
 											<label class="label_text_3" for="fregreso">F. Regreso:</label>
 											<input type="text" class="input_text" name="fregreso" placeholder="Fecha de regreso" id="txtToDate" class="datepicker"/>
 
+											<br/>
+											
 											<label class="label_text_4" for="clase">Clase:</label>
 											<select class="input_combo" name="clase">
 												<option value=""> Seleccione clase </option> 
@@ -237,6 +239,9 @@
 										<form  method="post" name="form_pago" action="#">
 											<label class="label_text">Código de reserva:</label>
 											<input type="text" class="input_text" id="text_cod_reserv" name="text_cod_reserv" value="" />
+											
+											<br/>
+											
 											<input type="button" class="input_button" id="btn_cod_reserv" name="btn_cod_reserv" value="Comience su Pago" onclick="check_and_submit(this.form)"/>
 										</form>
 									</div>
@@ -266,6 +271,9 @@
 										<form  method="post" name="form_check_in" action="#">
 											<label class="label_text">Código de reserva:</label>
 											<input type="text" class="input_text" id="text_cod_reserv" name="text_cod_reserv" value="" />
+											
+											<br/>
+											
 											<input type="button" class="input_button" id="btn_cod_reserv" name="btn_cod_reserv" value="Comience su Check-in" onclick="check_and_submit(this.form)"/>
 										</form>
 									</div>
@@ -312,11 +320,11 @@
 					
 						$db = new Database();
 						
-						$filas = $db->execute ('select * from vuelo');
+						$filas = $db->execute ('select * from pasaje');
 						
 						foreach ($filas as $value)
 						{
-							echo $value['codigo']  . " - " . $value['origen'] . " - " . $value['destino'] . " - " . $value['fecha'] . " - " . $value['hora'] . " - " . $value['avion'] . "<br/>";
+							echo $value['cod_reserva']  . " - " . $value['cod_vuelo'] . " - " . $value['cod_usuario'] . " - " . $value['cod_pago'] . " - " . $value['fecha_reserva'] . " - " . $value['flag_check_in'] . " - " . $value['fecha_vuelo'] . " - " . $value['cod_asiento'] ."<br/>";
 						}
 						
 						$db->disconnect();

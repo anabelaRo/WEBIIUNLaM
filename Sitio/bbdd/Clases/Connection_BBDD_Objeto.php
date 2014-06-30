@@ -10,7 +10,7 @@
 				public function __construct()
 				{
 					$this -> hostname = "localhost";
-					$this -> database = "prueba";
+					$this -> database = "aerolinea";
 					$this -> user = "root";
 					$this -> pass = "";
 					
