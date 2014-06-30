@@ -73,7 +73,7 @@
 					onSlideLeave: function(anchorLink, index, slideIndex, direction){}
 				});
 
-				$(".menu-tabs > li").click(function(e){
+				$(".menu-tabs > li,.menu-tabs > li > img").click(function(e){
 			    switch(e.target.id){
 			      case "tab1":
 			        //cambiamos el estao de la pestaÃ±a
@@ -178,13 +178,13 @@
 					<nav>
 						<ul class="menu-tabs">
         					<li id="tab1" class="active">
-        						<img class="icon" src="img/buscador.png"/>Buscador
+        						<img id="tab1" class="icon" src="img/buscador.png"/>Buscador
         					</li>
 							<li id="tab2">
-								<img class="icon" src="img/pago.png"/>Pago
+								<img id="tab2" class="icon" src="img/pago.png"/>Pago
 							</li>
 							<li id="tab3">
-								<img class="icon" src="img/checkin.png"/>Check-IN
+								<img id="tab3" class="icon" src="img/checkin.png"/>Check-IN
 							</li>
 						</ul>
 

@@ -251,7 +251,7 @@ html {
 
 /*Ini - jasobrile - 26/06/2014*/
 #section1{
-	background: url("../img/Mar_de_nubes.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url("../img/Mar_de_nubes.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 /*Fin - jasobrile - 26/06/2014*/
 
@@ -402,6 +402,10 @@ div#tabs > nav > div {
 li.active {
 	background: #4D82BC;
 	color: #FFFFFF;
+}
+
+.menu-tabs * {
+	cursor: pointer;
 }
 
 /*datepicker*/
