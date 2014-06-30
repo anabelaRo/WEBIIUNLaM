@@ -409,11 +409,156 @@ li.active {
     font-size: 0.8em;
 }
 
-/* ==== AGREGO ALINEADO DE FORM - ANABELA 28/06 ====== */
-label, input{
-	width: 200px;
-	height: 30px;
-	display: inline;
-	margin-top: 3%;
+/*Ini - jasobrile - 29/06/2014 - Agrego estilos para los 3 Tabs*/
+#div_reserva_vuelo, #div_check_in, #div_pago {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	width: 475px;
+	overflow: hidden;
+	border: 2px solid #4d82bc;
+	border-radius: 10px;
+	width: 95%;
+	height: 95%;
 }
-/* ==== TERMINA EDICION DE FORM - ANABELA ====== */
+
+ #div_busc_vuelo, #div_busc_checkIn, #div_busc_pago {
+    border: 5px solid #e5ecf7;
+    margin: 0;
+    padding: 5px 20px;
+	 border-radius: 10px;
+	 height: 93%;
+}
+
+#box_vuelo .title_h3, #box_pago .title_h3, #box_checkIn .title_h3{
+    color: #033d7d;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+	 margin: 10px 0px 25px;
+	 font-weight: bold;
+}
+
+#box_vuelo .label_text, #box_vuelo .label_text_1, #box_vuelo .label_text_2, 
+#box_vuelo .label_text_3, #box_vuelo .label_text_4, #box_pago .label_text,
+#box_checkIn .label_text{
+	color: #333;
+	font: 15px Arial,Helvetica,sans-serif;
+	padding: 0px 0px 0px;
+	font-weight: bold;
+}
+
+#box_vuelo .label_text{
+	margin: 0 13px 0 25px;
+}
+
+#box_pago .label_text{
+	 margin: 0 5px 0 25px;
+}
+
+#box_checkIn .label_text{
+	 margin: 0 5px 0 25px;
+}
+
+#box_vuelo .label_text_1{
+	 margin: 0 34px 0 15px;
+}
+
+#box_vuelo .label_text_2{
+	margin: 0 5px 0 25px;
+}
+
+#box_vuelo .label_text_3{
+	 margin: 0 13px 0 15px;
+}
+
+#box_vuelo .label_text_4{
+	 margin: 0 23px 0 25px;
+}
+
+#box_vuelo .input_text, #box_vuelo .input_combo, 
+#box_pago .input_text, #box_checkIn .input_text{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #666;
+    font-size: 15px;
+    padding-left: 5px;
+    vertical-align: calc();
+	 height: 25px;
+}
+
+#box_vuelo .input_text{
+	margin: 0px 0px 15px 0px;
+	width: 150px;
+}
+
+#box_vuelo .input_combo{
+	 margin: 0px 0px 15px 0px;
+	 width: 157px;
+}
+
+#box_pago .input_text,
+#box_checkIn .input_text{
+    margin: 0px 0px 10px 0px;
+	 width: 200px;
+}
+
+#box_vuelo .input_button, #box_vuelo .input_button:hover,
+#box_pago .input_button, #box_pago .input_button:hover ,
+#box_checkIn .input_button, #box_checkIn .input_button:hover  {
+	 background-color: #033d7d;
+    border: 0 none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font: bold 12px Arial,Helvetica,sans-serif;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#box_vuelo .input_button, #box_vuelo .input_button:hover {
+	margin: 25px 0 0 221px;
+	padding: 4px 20px 2px;
+}
+
+#box_pago .input_button, #box_pago .input_button:hover {
+	margin: 25px 0px 0px 205px;
+	padding: 4px 5px 2px;
+}
+
+#box_checkIn .input_button, #box_checkIn .input_button:hover {
+	margin: 25px 0px 0px 200px;
+	padding: 4px 5px 2px;
+}
+
+/**************MENSAJE DE ERROR*****************/
+#div_msj_error_pago, #div_msj_error_checkin{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 100%;
+	 border: 1px solid #ff0000;
+    color: #333333;
+	 border-radius: 10px;
+	 overflow: hidden;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 0.5em;
+	 font-weight: bold;
+	 margin-top: 6%;
+}
+
+#mensaje_img_pago, #mensaje_img_checkin {
+	margin: 5px 20px auto;
+	float: left;
+}
+
+#mensaje_img_pago img, #mensaje_img_checkin img{
+	width: 40px;
+}
+
+#mensaje_text_pago, #mensaje_text_checkin{
+	float: left;
+	width: 82%;
+	margin: 4px 0 0;
+}
+/*Fin - jasobrile - 29/06/2014 - Agrego estilos para los 3 Tabs*/

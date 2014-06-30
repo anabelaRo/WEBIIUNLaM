@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 	<head>
 		<!--meta charset="utf-8"-->
@@ -29,7 +29,10 @@
 			$(document).ready(function() {
 				$('#wrapper').fullpage({
 					verticalCentered: true,
-					resize : true,
+					<!--Ini - jasobrile - 29/06/2014 - Se deshabilita el calculo automatico del tamaño de la letra -->
+					//resize : true,
+					resize : false,
+					<!--Fin - jasobrile - 29/06/2014 - Se deshabilita el calculo automatico del tamaño de la letra -->
 					slidesColor : ['#ccc', '#fff'],
 					anchors:['firstSlide', 'secondSlide'],
 					scrollingSpeed: 700,
@@ -84,7 +87,7 @@
 
 			      break;
 			      case "tab2":
-			        //cambiamos el estao de la pestaÃ±a
+			        //cambiamos el estado de la pestaña
 			        $("#tab1").removeClass("active");
 			        $("#tab3").removeClass("active");
 			        $("#tab2").addClass("active");
@@ -186,48 +189,100 @@
 						</ul>
 
 						<div class="content tab1">              
-							<form>
-								<legend>
-									<div>
-										<h2>Buscá tu vuelo</h2>
-									</div>
-								</legend>
-								<label for="origen">Origen:</label>
-								<input type="text" name="origen" id="origen"/>
-								
-								<label for="destino">Destino:</label>
-								<input type="text" name="destino" id="destino"/>
-								
-								<br/>
-								
-								<label for="fsalida">F. Salida:</label>
-								<input type="text" name="fsalida" placeholder="Fecha de salida" id="txtFromDate" class="datepicker"/>
-								
-								<label for="fregreso">F. Regreso:</label>
-								<input type="text" name="fregreso" placeholder="Fecha de regreso" id="txtToDate" class="datepicker"/>
-								
-								<br/>
-								<br/>
-								
-								<label>Clase:</label>
-								<select>
-									<option value=""> Seleccione clase </option> 
-									<option value="1"> Primera </option> 
-									<option value="2"> Economy </option> 
-								</select>
-			
-								<br/>
-								
-								<input type="submit" value="Buscar"/>
-							</form>
+							<!--Ini - jasobrile - 29/06/2014 - Buscador-->
+							<div id="div_reserva_vuelo">
+								<div id="div_busc_vuelo">
+									<div id="box_vuelo">
+										<h3 class="title_h3">Busque su Vuelo</h3>
+										
+										<form method="post" name="form_buscar_vuelo" action="#">
+											<label class="label_text" for="origen">Origen:</label>
+											<input type="text" class="input_text" name="origen" id="origen"/>
+											
+											<label class="label_text_1" for="destino">Destino:</label>
+											<input type="text" class="input_text" name="destino" id="destino"/>
+											
+											<br/>
+											
+											<label class="label_text_2" for="fsalida">F. Salida:</label>
+											<input type="text" class="input_text" name="fsalida" placeholder="Fecha de salida" id="txtFromDate" class="datepicker"/>
+											
+											<label class="label_text_3" for="fregreso">F. Regreso:</label>
+											<input type="text" class="input_text" name="fregreso" placeholder="Fecha de regreso" id="txtToDate" class="datepicker"/>
+
+											<label class="label_text_4" for="clase">Clase:</label>
+											<select class="input_combo" name="clase">
+												<option value=""> Seleccione clase </option> 
+												<option value="1"> Primera </option> 
+												<option value="2"> Economy </option> 
+											</select>
+											
+											<br/>
+											
+											<input type="submit" class="input_button" value="Buscar"/>
+										</form>
+									</div>						
+								</div>
+							</div>
+							<!--Fin - jasobrile - 29/06/2014 - Buscador-->
               		</div>
 						
    					<div class="content tab2"  style="display:none;">
-							<h2>Acá va el pago</h2>
+							<!--Ini - jasobrile - 29/06/2014 - Pago-->
+							<div id="div_pago">
+								<div id="div_busc_pago">
+									<div id="box_pago">
+										<h3 class="title_h3">Realice su Pago</h3>
+										
+										<form  method="post" name="form_pago" action="#">
+											<label class="label_text">Código de reserva:</label>
+											<input type="text" class="input_text" id="text_cod_reserv" name="text_cod_reserv" value="" />
+											<input type="button" class="input_button" id="btn_cod_reserv" name="btn_cod_reserv" value="Comience su Pago" onclick="check_and_submit(this.form)"/>
+										</form>
+									</div>
+									
+									<div id="div_msj_error_pago">
+										<div id="mensaje_img_pago" class="warning">
+											<img src="img/alerta.jpg">
+										</div>
+										<div id="mensaje_text_pago" class="warning">
+											<p>
+												Lo sentimos, no se encontró el Código de Reserva ingresado. Inténtelo nuevamente.</p>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--Fin - jasobrile - 29/06/2014 - Pago-->
 						</div>
 						
 						<div class="content tab3"  style="display:none;">
-							<h2>Acá va el check-in</h2>
+							<!--Ini - jasobrile - 29/06/2014 - Check-in-->
+							<div id="div_check_in">
+								<div id="div_busc_checkIn">
+									<div id="box_checkIn">
+										<h3 class="title_h3">Realice su Check-in</h3>
+										
+										<form  method="post" name="form_check_in" action="#">
+											<label class="label_text">Código de reserva:</label>
+											<input type="text" class="input_text" id="text_cod_reserv" name="text_cod_reserv" value="" />
+											<input type="button" class="input_button" id="btn_cod_reserv" name="btn_cod_reserv" value="Comience su Check-in" onclick="check_and_submit(this.form)"/>
+										</form>
+									</div>
+									
+									<div id="div_msj_error_checkin">
+										<div id="mensaje_img_checkin" class="warning">
+											<img src="img/alerta.jpg">
+										</div>
+										<div id="mensaje_text_checkin" class="warning">
+											<p>
+												Lo sentimos, no se encontró el Código de Reserva ingresado. Inténtelo nuevamente.</p>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--Fin - jasobrile - 29/06/2014 - Check-in-->
 
 							<!--Ini - jasobrile - 26/06/2014 - PopUp Asientos de aviones-->
 							<?php
