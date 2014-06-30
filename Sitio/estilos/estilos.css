@@ -260,6 +260,9 @@ nav {
 	/*Ini - jasobrile - 26/06/2014*/
 	/*border: 1px solid #dedede;*/
 	border: 5px solid #dedede;
+	/*width: 60%;*/
+	width: 630px;
+	height: 340px;
 	/*Fin - jasobrile - 26/06/2014*/
 	border-radius: 4px;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
@@ -267,7 +270,6 @@ nav {
 	display: block;
 	margin: 8px 22px 8px 22px;
 	overflow: hidden;
-	width: 60%;
 	vertical-align: center;
 }
 
