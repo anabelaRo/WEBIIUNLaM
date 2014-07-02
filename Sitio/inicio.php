@@ -19,20 +19,24 @@
 		<link rel="stylesheet" type="text/css" href="estilos/estilos.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
 		
-		<!--Ini - jasobrile - 26/06/2014 - PopUp Asientos de aviones-->
+		<!--PopUp Asientos de aviones-->
 		<link rel="stylesheet" type="text/css" href="estilos/popUp.css" />
 		<link rel="stylesheet" type="text/css" href="estilos/aviones.css" />
 		<script type="text/javascript" src="js/popUp.js"></script>
-		<!--Fin - jasobrile - 26/06/2014 - PopUp Asientos de aviones-->
+		<!--PopUp Asientos de aviones-->
+		
+		<!--Funcion generica de llamado a AJAX-->
+		<script type="text/javascript" src="js/recarga_ajax.js"></script>
+		<!--Funcion generica de llamado a AJAX-->
 		
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('#wrapper').fullpage({
 					verticalCentered: true,
-					<!--Ini - jasobrile - 29/06/2014 - Se deshabilita el calculo automatico del tamaño de la letra -->
+					<!--Se deshabilita el calculo automatico del tamaño de la letra-->
 					//resize : true,
 					resize : false,
-					<!--Fin - jasobrile - 29/06/2014 - Se deshabilita el calculo automatico del tamaño de la letra -->
+					<!--Se deshabilita el calculo automatico del tamaño de la letra-->
 					slidesColor : ['#ccc', '#fff'],
 					anchors:['firstSlide', 'secondSlide'],
 					scrollingSpeed: 700,
@@ -74,42 +78,41 @@
 				});
 
 				$(".menu-tabs > li,.menu-tabs > li > img").click(function(e){
-			    switch(e.target.id){
-			      case "tab1":
-			        //cambiamos el estao de la pestaÃ±a
-			        $("#tab1").addClass("active");
-			        $("#tab3").removeClass("active");
-			        $("#tab2").removeClass("active");
-			        //y aqui el display para ocultar y mostrar
-			        $("div.tab1").css("display", "block");
-			        $("div.tab3").css("display", "none");
-			        $("div.tab2").css("display", "none");
+					 switch(e.target.id){
+						case "tab1":
+						  //cambiamos el estao de la pestaÃ±a
+						  $("#tab1").addClass("active");
+						  $("#tab3").removeClass("active");
+						  $("#tab2").removeClass("active");
+						  //y aqui el display para ocultar y mostrar
+						  $("div.tab1").css("display", "block");
+						  $("div.tab3").css("display", "none");
+						  $("div.tab2").css("display", "none");
 
-			      break;
-			      case "tab2":
-			        //cambiamos el estado de la pestaña
-			        $("#tab1").removeClass("active");
-			        $("#tab3").removeClass("active");
-			        $("#tab2").addClass("active");
-			        //y aqui el display para ocultar y mostrar
-			        $("div.tab1").css("display", "none");
-			        $("div.tab3").css("display", "none");
-			        $("div.tab2").css("display", "block");
-			      break;
-			      case "tab3":
-			        //cambiamos el estao de la pestaÃ±a
-			        $("#tab1").removeClass("active");
-			        $("#tab2").removeClass("active");
-			        $("#tab3").addClass("active");
-			        //y aqui el display para ocultar y mostrar
-			        $("div.tab1").css("display", "none");
-			        $("div.tab2").css("display", "none");
-			        $("div.tab3").css("display", "block");
-			      break;                   
-			 
-			    }   
-			    return false;
-			});
+						break;
+						case "tab2":
+						  //cambiamos el estado de la pestaña
+						  $("#tab1").removeClass("active");
+						  $("#tab3").removeClass("active");
+						  $("#tab2").addClass("active");
+						  //y aqui el display para ocultar y mostrar
+						  $("div.tab1").css("display", "none");
+						  $("div.tab3").css("display", "none");
+						  $("div.tab2").css("display", "block");
+						break;
+						case "tab3":
+						  //cambiamos el estao de la pestaÃ±a
+						  $("#tab1").removeClass("active");
+						  $("#tab2").removeClass("active");
+						  $("#tab3").addClass("active");
+						  //y aqui el display para ocultar y mostrar
+						  $("div.tab1").css("display", "none");
+						  $("div.tab2").css("display", "none");
+						  $("div.tab3").css("display", "block");
+						break;                   
+					 }   
+					 return false;
+				});
 			});
 			$(function() {
 				$( "#txtFromDate" ).datepicker({
@@ -166,13 +169,7 @@
 					</h1>
 				</div>
 			</div>
-			
-			<!--Ini - jasobrile - 29/06/2014 - Conexión a la BB.DD-->
-			<?php
-				require_once $_SERVER{'DOCUMENT_ROOT'} . '/Sitio/bbdd/Clases/Connection_BBDD_Objeto.php';
-			?>
-			<!--Fin - jasobrile - 29/06/2014 - Conexión a la BB.DD-->
-			
+
 			<div class="section" id="section1">
 				<div id="tabs">
 					<nav>
@@ -188,8 +185,8 @@
 							</li>
 						</ul>
 
+						<!--TAB Buscador-->
 						<div class="content tab1">              
-							<!--Ini - jasobrile - 29/06/2014 - Buscador-->
 							<div id="div_reserva_vuelo">
 								<div id="div_busc_vuelo">
 									<div id="box_vuelo">
@@ -226,11 +223,11 @@
 									</div>						
 								</div>
 							</div>
-							<!--Fin - jasobrile - 29/06/2014 - Buscador-->
               		</div>
+						<!--TAB Buscador-->
 						
+						<!--TAB Pago-->
    					<div class="content tab2"  style="display:none;">
-							<!--Ini - jasobrile - 29/06/2014 - Pago-->
 							<div id="div_pago">
 								<div id="div_busc_pago">
 									<div id="box_pago">
@@ -258,11 +255,11 @@
 									</div>
 								</div>
 							</div>
-							<!--Fin - jasobrile - 29/06/2014 - Pago-->
 						</div>
+						<!--TAB Pago-->
 						
+						<!--TAB Check-in-->
 						<div class="content tab3"  style="display:none;">
-							<!--Ini - jasobrile - 29/06/2014 - Check-in-->
 							<div id="div_check_in">
 								<div id="div_busc_checkIn">
 									<div id="box_checkIn">
@@ -278,6 +275,20 @@
 										</form>
 									</div>
 									
+									<!--PopUp Asientos de aviones-->
+									<?php
+										require_once $_SERVER{'DOCUMENT_ROOT'} . '\Sitio\popUp_Aviones\f_popUp_aviones.php';
+
+										$modelo_avion = 'EMB-120';
+										//$modelo_avion = 'ER-145';
+										//$modelo_avion = 'ER-145_2';
+										//$modelo_avion = 'ER-170';
+
+										echo '<input type="hidden" id="modelo_avion" value="'.$modelo_avion.'"/>';
+
+										f_popUp_aviones($modelo_avion);
+									?>
+									<!--PopUp Asientos de aviones-->
 									<div id="div_msj_error_checkin">
 										<div id="mensaje_img_checkin" class="warning">
 											<img src="img/alerta.jpg">
@@ -290,23 +301,9 @@
 									</div>
 								</div>
 							</div>
-							<!--Fin - jasobrile - 29/06/2014 - Check-in-->
-
-							<!--Ini - jasobrile - 26/06/2014 - PopUp Asientos de aviones-->
-							<?php
-								require_once $_SERVER{'DOCUMENT_ROOT'} . '\Sitio\popUp_Aviones\f_popUp_aviones.php';
-
-								$modelo_avion = 'EMB-120';
-								//$modelo_avion = 'ER-145';
-								//$modelo_avion = 'ER-145_2';
-								//$modelo_avion = 'ER-170';
-
-								echo '<input type="hidden" id="modelo_avion" value="'.$modelo_avion.'"/>';
-
-								f_popUp_aviones($modelo_avion);
-							?>
-							<!--Fin - jasobrile - 26/06/2014 - PopUp Asientos de aviones-->
 						</div>
+						<!--TAB Check-in-->
+						
 					</nav>
 				</div>
 			</div>
@@ -315,21 +312,27 @@
 				<h2>SE AGREGA FUNCIONALIDAD <BR/>
 					PARA PROBAR BBDD</h2>
 
+					<!--Conexión a la BB.DD-->
 					<?php	
-						//require_once  $_SERVER{'DOCUMENT_ROOT'} . '/sitio/bbdd/Clases/Connection_BBDD_Objeto.php';
-					
-						$db = new Database();
+						//Funcion generica para consultas a bb.dd
+						require_once  $_SERVER{'DOCUMENT_ROOT'} . '/Sitio/bbdd/f_ejecutar_query.php';
+						//Funcion generica para consultas a bb.dd
 						
-						$filas = $db->execute ('select * from pasaje');
-						
-						foreach ($filas as $value)
+						$tipo_query = "S"; //"S"-> Select / "I"-> Insert ó Update
+						$query = "select * from usuario";
+						//$query = 'insert into usuario values(5, 12345678, "Prueba", "2014-07-01", "prueba@hotmail.com")';
+						//$query = 'update usuario set nombre_apellido = "actualizado" where codigo = 5';
+						//$campos = array("codigo", "dni", "nombre_apellido", "fecha_nacimiento", "email");
+
+						$resultado = f_ejecutar_query($tipo_query, $query);
+
+						//Solo si "$tipo_query = S":
+						foreach ($resultado as $value)
 						{
-							echo $value['cod_reserva']  . " - " . $value['cod_vuelo'] . " - " . $value['cod_usuario'] . " - " . $value['cod_pago'] . " - " . $value['fecha_reserva'] . " - " . $value['flag_check_in'] . " - " . $value['fecha_vuelo'] . " - " . $value['cod_asiento'] ."<br/>";
+							echo $value['codigo']  . " - " . $value['dni'] . " - " . $value['nombre_apellido'] . " - " . $value['fecha_nacimiento'] . " - " . $value['email'] . "<br/>";
 						}
-						
-						$db->disconnect();
-						
 					?>
+					<!--Conexión a la BB.DD-->
 			</div>
 		</div>
 	</body>

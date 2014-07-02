@@ -28,7 +28,7 @@
 				</div>';
 				
 		echo '<div id="div_asiento_selecc">';
-					$texto = isset($_GET['asiento_selecc']) ? $_GET['asiento_selecc'] : "";
+
 		echo '</div>';
 	}
 ?>

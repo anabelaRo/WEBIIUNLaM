@@ -1,7 +1,7 @@
 <?php
 	echo '<input type="hidden" id="asiento_selecc" value=""/>';
 								
-	$texto = isset($_GET['asiento_selecc']) ? $_GET['asiento_selecc'] : "";
+	$texto = isset($_POST['asiento_selecc']) ? $_POST['asiento_selecc'] : "";
 
 	echo $texto;
 ?>
