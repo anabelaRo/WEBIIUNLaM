@@ -531,6 +531,7 @@ li.active {
 	margin: 25px 0px 0px 200px;
 	padding: 4px 5px 2px;
 }
+/*Estilos para los 3 Tabs*/
 
 /**************MENSAJE DE ERROR*****************/
 #div_msj_error_pago, #div_msj_error_checkin{
@@ -543,18 +544,19 @@ li.active {
 	 border-radius: 10px;
 	 overflow: hidden;
     font-family: Arial,Helvetica,sans-serif;
-    font-size: 0.5em;
+    font-size: 0.4em;
 	 font-weight: bold;
 	 margin-top: 6%;
 }
 
 #mensaje_img_pago, #mensaje_img_checkin {
-	margin: 5px 20px auto;
+	margin: 1px 20px auto;
 	float: left;
 }
 
 #mensaje_img_pago img, #mensaje_img_checkin img{
 	width: 40px;
+	margin: 2px;
 }
 
 #mensaje_text_pago, #mensaje_text_checkin{
@@ -562,4 +564,10 @@ li.active {
 	width: 82%;
 	margin: 4px 0 0;
 }
-/*Estilos para los 3 Tabs*/
+
+#tabs section{
+	display: table-cell;
+	vertical-align: middle;
+	height: 36px;
+	font-size: 2em;
+}

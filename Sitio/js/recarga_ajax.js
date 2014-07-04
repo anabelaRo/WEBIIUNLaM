@@ -13,14 +13,6 @@
 		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); //code for IE6, IE5
 	}
 	
-	xmlhttp.onreadystatechange = function()
-	{
-		if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
-		{
-			document.getElementById(div_contenedor).innerHTML = xmlhttp.responseText;
-		}
-	}
-
 	if (len != 0)
 	{
 		for (var i = 0; i < len; i++) 
@@ -36,6 +28,14 @@
 		}
 	}
 
+	xmlhttp.onreadystatechange = function()
+	{
+		if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+		{
+			document.getElementById(div_contenedor).innerHTML = xmlhttp.responseText;
+		}
+	}
+	
 	xmlhttp.open("POST", ruta_archivo, true);
 	
 	xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded');

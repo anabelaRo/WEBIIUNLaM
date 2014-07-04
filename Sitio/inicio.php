@@ -27,6 +27,7 @@
 		
 		<!--Funcion generica de llamado a AJAX-->
 		<script type="text/javascript" src="js/recarga_ajax.js"></script>
+		<script type="text/javascript" src="js/funciones_validacion.js"></script>
 		<!--Funcion generica de llamado a AJAX-->
 		
 		<script type="text/javascript">
@@ -233,26 +234,18 @@
 									<div id="box_pago">
 										<h3 class="title_h3">Realice su Pago</h3>
 										
-										<form  method="post" name="form_pago" action="#">
+										<form  id="form_pago" method="post" name="form_pago" action="#">
 											<label class="label_text">Código de reserva:</label>
-											<input type="text" class="input_text" id="text_cod_reserv" name="text_cod_reserv" value="" />
+											<input type="text" class="input_text" id="text_cod_reserv_P" name="text_cod_reserv_P" value="" />
 											
 											<br/>
 											
-											<input type="button" class="input_button" id="btn_cod_reserv" name="btn_cod_reserv" value="Comience su Pago" onclick="check_and_submit(this.form)"/>
+											<input type="button" class="input_button" id="btn_cod_reserv" name="btn_cod_reserv" value="Comience su Pago" onclick="valida_codigo_reserva('Pago')"/>
 										</form>
 									</div>
 									
-									<div id="div_msj_error_pago">
-										<div id="mensaje_img_pago" class="warning">
-											<img src="img/alerta.jpg">
-										</div>
-										<div id="mensaje_text_pago" class="warning">
-											<p>
-												Lo sentimos, no se encontró el Código de Reserva ingresado. Inténtelo nuevamente.</p>
-											</p>
-										</div>
-									</div>
+									<div id="div_recargar_pago"></div>
+									
 								</div>
 							</div>
 						</div>
@@ -267,17 +260,17 @@
 										
 										<form  method="post" name="form_check_in" action="#">
 											<label class="label_text">Código de reserva:</label>
-											<input type="text" class="input_text" id="text_cod_reserv" name="text_cod_reserv" value="" />
+											<input type="text" class="input_text" id="text_cod_reserv_C" name="text_cod_reserv_C" value="" />
 											
 											<br/>
 											
-											<input type="button" class="input_button" id="btn_cod_reserv" name="btn_cod_reserv" value="Comience su Check-in" onclick="check_and_submit(this.form)"/>
+											<input type="button" class="input_button" id="btn_cod_reserv" name="btn_cod_reserv" value="Comience su Check-in" onclick="valida_codigo_reserva('Check_in')"/>
 										</form>
 									</div>
 									
 									<!--PopUp Asientos de aviones-->
 									<?php
-										require_once $_SERVER{'DOCUMENT_ROOT'} . '\Sitio\popUp_Aviones\f_popUp_aviones.php';
+										/*require_once $_SERVER{'DOCUMENT_ROOT'} . '\Sitio\popUp_Aviones\f_popUp_aviones.php';
 
 										$modelo_avion = 'EMB-120';
 										//$modelo_avion = 'ER-145';
@@ -286,19 +279,22 @@
 
 										echo '<input type="hidden" id="modelo_avion" value="'.$modelo_avion.'"/>';
 
-										f_popUp_aviones($modelo_avion);
+										f_popUp_aviones($modelo_avion);*/
 									?>
 									<!--PopUp Asientos de aviones-->
-									<div id="div_msj_error_checkin">
+									
+									<div id="div_recargar_check_in"></div>
+									
+									<!--div id="div_msj_error_checkin">
 										<div id="mensaje_img_checkin" class="warning">
 											<img src="img/alerta.jpg">
 										</div>
 										<div id="mensaje_text_checkin" class="warning">
 											<p>
-												Lo sentimos, no se encontró el Código de Reserva ingresado. Inténtelo nuevamente.</p>
+												Lo sentimos, no se encontró el Código de Reserva ingresado. Inténtelo nuevamente.
 											</p>
 										</div>
-									</div>
+									</div-->
 								</div>
 							</div>
 						</div>
