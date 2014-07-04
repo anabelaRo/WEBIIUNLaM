@@ -217,6 +217,9 @@
 												<option value="2"> Economy </option> 
 											</select>
 											
+											<label class="label_text_3" for="clase">Ida y Vuelta:</label>
+											<input type="checkbox" name="vehicle" value="S">
+											
 											<br/>
 											
 											<input type="submit" class="input_button" value="Buscar"/>
