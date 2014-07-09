@@ -1,4 +1,4 @@
-﻿function loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden)
+﻿function loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta)
 { 
 	var xmlhttp;
 	var var_hidden = "";
