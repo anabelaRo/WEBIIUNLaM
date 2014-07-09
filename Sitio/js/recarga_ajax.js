@@ -28,17 +28,34 @@
 		}
 	}
 
-	xmlhttp.onreadystatechange = function()
+	if(campos_consulta.length != 0)
 	{
-		if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
-		{
-			document.getElementById(div_contenedor).innerHTML = xmlhttp.responseText;
-		}
+		var_hidden = var_hidden + "&campos=" + campos_consulta;
 	}
 	
-	xmlhttp.open("POST", ruta_archivo, true);
+	//xmlhttp.open("POST", ruta_archivo, true);
+	xmlhttp.open("POST", ruta_archivo, false);
 	
 	xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
 	
 	xmlhttp.send(var_hidden);
+	
+	//xmlhttp.onreadystatechange = function()
+	//{
+	if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+	{
+		if(campos_consulta.length != 0)
+		{
+			var respuesta = xmlhttp.responseText;
+					
+			var res_parseada = respuesta.split("|");
+		
+			return res_parseada;
+		}
+		else
+		{
+			document.getElementById(div_contenedor).innerHTML = xmlhttp.responseText;
+		}
+	}
+	//}
 }
