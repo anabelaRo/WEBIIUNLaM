@@ -30,6 +30,10 @@
 		<script type="text/javascript" src="js/funciones_validacion.js"></script>
 		<!--Funcion generica de llamado a AJAX-->
 		
+		<!--sesion-->
+		<link rel="stylesheet" type="text/css" href="estilos/sesion.css"/>
+		<!--sesion-->
+		
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('#wrapper').fullpage({
@@ -307,32 +311,33 @@
 				</div>
 			</div>
 
+			<!--Inicio - estadisticas-->
+			
 			<div class="section" id="section2">
-				<h2>SE AGREGA FUNCIONALIDAD <BR/>
-					PARA PROBAR BBDD</h2>
-
-					<!--Conexión a la BB.DD-->
-					<?php	
-						//Funcion generica para consultas a bb.dd
-						require_once  $_SERVER{'DOCUMENT_ROOT'} . '/Sitio/bbdd/f_ejecutar_query.php';
-						//Funcion generica para consultas a bb.dd
-						
-						$tipo_query = "S"; //"S"-> Select / "I"-> Insert ó Update
-						$query = "select * from usuario";
-						//$query = 'insert into usuario values(5, 12345678, "Prueba", "2014-07-01", "prueba@hotmail.com")';
-						//$query = 'update usuario set nombre_apellido = "actualizado" where codigo = 5';
-						//$campos = array("codigo", "dni", "nombre_apellido", "fecha_nacimiento", "email");
-
-						$resultado = f_ejecutar_query($tipo_query, $query);
-
-						//Solo si "$tipo_query = S":
-						foreach ($resultado as $value)
-						{
-							echo $value['codigo']  . " - " . $value['dni'] . " - " . $value['nombre_apellido'] . " - " . $value['fecha_nacimiento'] . " - " . $value['email'] . "<br/>";
-						}
-					?>
-					<!--Conexión a la BB.DD-->
+			
+				<div id="contenedor1_slide3">
+				
+					<div class="contenedor2_slide3">
+							
+						<div class="titulo_slide3">Estadísticas</div>							
+						             
+							<div id="interior_1_slide3">
+							
+								<div id="interior_2_slide3">
+										
+										<?php
+											require_once $_SERVER{'DOCUMENT_ROOT'} . '\Sitio\sesion\formulario_login.php';											
+										?>
+										
+								</div>
+							</div>
+					
+					</div>
+				</div>
+				
 			</div>
+			
+			<!--Fin - estadisticas-->
 		</div>
 	</body>
 </html>

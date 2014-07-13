@@ -1,0 +1,143 @@
+/*estilos utilizados en graficos.php*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+
+.usu, .contr{
+	color: #333;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    padding: 0;	
+	margin: 15px;
+}
+
+
+.usu, .contr{
+	margin-left:130px;
+}
+.usu {
+	margin-right:41px;
+	margin-top:40px;	
+}
+
+
+.title_h3{
+    color: #033d7d;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+	margin: 10px 50px 40px 25px;
+	font-weight: bold;
+}
+
+
+.input_button2 {
+	background-color: #033d7d;
+    border: 0 none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font: bold 12px Arial,Helvetica,sans-serif;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+	padding: 4px 20px 2px;
+	margin-left:22px;
+	margin-top:10px;
+}
+
+
+.input_text{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #666;
+    font-size: 15px;
+    padding-left: 5px;
+    vertical-align: calc();
+	height: 25px;
+	margin: 0px 0px 10px 0px;
+	width: 200px;
+	
+}
+
+
+#contenedor_grafico{
+	background: url("../img/5.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	height: 645px;
+	text-align:right;
+	color:white;
+}
+
+#contenedor1 {
+	margin-left: 25%;
+	margin-top: 170px;
+	height: 280px;
+}
+
+.contenedor2 {
+	background-color: #fff;
+	/*Ini - jasobrile - 26/06/2014*/
+	/*border: 1px solid #dedede;*/
+	border: 5px solid #dedede;
+	/*width: 60%;*/
+	width: 630px;
+	height: 340px;
+	/*Fin - jasobrile - 26/06/2014*/
+	border-radius: 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	color: #888;
+	display: block;
+	margin: 8px 22px 8px 22px;
+	overflow: hidden;
+	vertical-align: center;
+}
+
+
+.titulo {
+	
+    font: bold 40px Arial,Helvetica,sans-serif;
+	color: #033d7d;
+	text-align:center;
+}
+
+
+#interior_1{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	width: 475px;
+	overflow: hidden;
+	border: 2px solid #4d82bc;
+	border-radius: 10px;
+	width: 95%;
+	height: 80%;
+}
+
+ #interior_2{
+    border: 5px solid #e5ecf7;
+    margin: 0;
+    padding: 5px 20px;
+	border-radius: 10px;
+	height: 93%;
+	text-align:center;
+}
+
+#contenido{
+text-align:center;
+}
+
+a{
+color:white; /*agrega color blanco a links*/
+}
+
+
+
+
+/*estilos utilizados en graficos.php*/

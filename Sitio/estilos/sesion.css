@@ -1,0 +1,61 @@
+/*estilos utilizados en formulario_login.php*/
+
+
+.usu, .contr{
+	color: #333;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    padding: 0;	
+	margin: 15px;
+}
+
+.usu, .contr{
+	margin-left:130px;
+}
+.usu {
+	margin-right:41px;
+	margin-top:40px;	
+}
+
+
+.title_h3{
+    color: #033d7d;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+	margin: 10px 50px 40px 25px;
+	font-weight: bold;
+}
+
+
+.input_button {
+	background-color: #033d7d;
+    border: 0 none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font: bold 12px Arial,Helvetica,sans-serif;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+	padding: 4px 20px 2px;
+	margin-left:220px;
+	margin-top:50px;
+}
+
+
+.input_text{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #666;
+    font-size: 15px;
+    padding-left: 5px;
+    vertical-align: calc();
+	height: 25px;
+	margin: 0px 0px 10px 0px;
+	width: 200px;
+	
+}
+
+
+
+
+/*estilos utilizados en formulario_login.php*/
