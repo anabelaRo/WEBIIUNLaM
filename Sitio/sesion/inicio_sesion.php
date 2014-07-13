@@ -2,9 +2,7 @@
 
 <?php
 	session_start();
-	if (!isset($_SESSION['logueado']))
-		header('location: /Sitio/inicio.php');
-
+	
 						$_SESSION['usuario']=$_POST['usuario'];
 						$_SESSION['pass']=$_POST['pass'];
 					
