@@ -217,16 +217,16 @@
 											<label class="label_text_4" for="clase">Clase:</label>
 											<select class="input_combo" name="clase">
 												<option value=""> Seleccione clase </option> 
-												<option value="1"> Primera </option> 
-												<option value="2"> Economy </option> 
+												<option value="primera"> Primera </option> <!-- modifico values | anabela 15/07-->
+												<option value="economy"> Economy </option> <!-- modifico values | anabela 15/07-->
 											</select>
 											
 											<label class="label_text_3" for="clase">Ida y Vuelta:</label>
-											<input type="checkbox" name="vehicle" value="S">
+											<input type="checkbox" name="idayvuelta" id="idayvuelta"> <!-- modifico value  y name | anabela 15/07-->
 											
 											<br/>
 											
-											<input type="submit" class="input_button" value="Buscar"/>
+											<input type="button" class="input_button" id="btn_cod_buscador" name="btn_cod_buscador" value="Buscar vuelos" onclick="valida_buscador()"/>
 										</form>
 									</div>						
 								</div>
