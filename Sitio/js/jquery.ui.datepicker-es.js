@@ -18,5 +18,5 @@ jQuery(function($){
 		isRTL: false,
 		showMonthAfterYear: false,
 		yearSuffix: ''};
-	$.datepicker.setDefaults($.datepicker.regional['es']);
+	$.datepicker.setDefaults($.datepicker.regional['us']); /* seteo lenguage como US para la búsqueda -- anabela 15/05 */
 });
