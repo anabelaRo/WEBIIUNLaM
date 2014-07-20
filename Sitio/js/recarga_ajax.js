@@ -54,7 +54,10 @@
 		}
 		else
 		{
-			document.getElementById(div_contenedor).innerHTML = xmlhttp.responseText;
+			if(div_contenedor != "")
+			{
+				document.getElementById(div_contenedor).innerHTML = xmlhttp.responseText;
+			}
 		}
 	}
 	//}
