@@ -21,8 +21,7 @@
 		$fecha_vuelo = $_POST['fecha_vuelo'];
 		$cod_reserva = $_POST['cod_reserva'];
 		$cod_asiento = strtoupper($_POST['cod_asiento']);
-		
-		//$categoria = strtoupper($_POST['categoria']);
+		$categoria = $_POST['categoria'];
   
         $pdf = new PDF();             //Crea objeto PDF
         $pdf->AddPage('P', 'Letter'); //pagina Vertical, Carta

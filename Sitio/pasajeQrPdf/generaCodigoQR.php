@@ -30,7 +30,7 @@
 							
 								$db = new Database();
 								
-								$filas = $db->exec_Select ("select 	u.nombre_apellido, v.codigo, p.fecha_vuelo, p.cod_reserva, p.cod_asiento, v.codigo as codvuelo, v.origen, co.descripcion as corigen, v.destino, cd.descripcion as cdestino 
+								$filas = $db->exec_Select ("select 	u.nombre_apellido, v.codigo, p.fecha_vuelo, p.clase_pasaje, p.cod_reserva, p.cod_asiento, v.codigo as codvuelo, v.origen, co.descripcion as corigen, v.destino, cd.descripcion as cdestino 
 														from pasaje as p 
 														join vuelo as v on p.cod_vuelo=v.codigo
 														join usuario as u on u.codigo=p.cod_usuario							
@@ -70,6 +70,12 @@
 									echo "<div id='cod_asiento' class='campos_pasaje'>";
 									echo $value['cod_asiento'];
 									echo "</div>";
+									
+									echo "<div id='clase_pasaje' class='campos_pasaje'>";
+									if ($value['clase_pasaje']=='e')
+										echo $categoria="ECONOMY";
+									else echo $categoria="PRIMERA";
+									echo "</div>";
 								}
 
 								//set it to writable location, a place for temp generated PNG files
@@ -95,7 +101,9 @@
 								"\n\nCODIGO DE RESERVA:\n" . $value['cod_reserva'].
 								"\n\nCIUDAD DE ORIGEN:\n" . $value['corigen'].
 								"\n\nCIUDAD DE DESTINO:\n" . $value['cdestino'].
-								"\n\nCODIGO DE ASIENTO:\n" . $value['cod_asiento'];
+								"\n\nCODIGO DE ASIENTO:\n" . $value['cod_asiento'].
+								"\n\nCATEGORIA:\n" . $categoria;
+								
 								
 								$filename = $PNG_TEMP_DIR.'test'.md5(/*$_REQUEST[''].*/'|'.$errorCorrectionLevel.'|'.$matrixPointSize).'.png';
 								QRcode::png($total, $filename, $errorCorrectionLevel, $matrixPointSize, 2); 
@@ -113,6 +121,7 @@
 										echo "<input type='hidden' name='fecha_vuelo' 		value='$value[fecha_vuelo]'		/><br>";
 										echo "<input type='hidden' name='cod_reserva' 		value='$value[cod_reserva]'		/><br>";				
 										echo "<input type='hidden' name='cod_asiento' 		value='$value[cod_asiento]'		/><br>";
+										echo "<input type='hidden' name='categoria' 		value='$categoria'				/><br>";
 										$db->disconnect();
 								?>	
 								

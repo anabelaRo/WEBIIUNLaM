@@ -135,6 +135,12 @@ body {
 	text-align:center;
 }
 
+#clase_pasaje{
+	position:absolute;
+	left:475px;
+	top:121px;
+}
+
 .campos_pasaje{
 	font-size:20px;
 	font-family: arial;
