@@ -1,4 +1,5 @@
 -- phpMyAdmin SQL Dump
+-- phpMyAdmin SQL Dump
 -- version 4.2.5
 -- http://www.phpmyadmin.net
 --
@@ -102,7 +103,8 @@ CREATE TABLE IF NOT EXISTS forma_pago (
 --
 
 CREATE TABLE IF NOT EXISTS pago (
-	codigo			int(6)			NOT NULL,
+	codigo			int(6)			PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	cod_pasaje		int(6)			NOT NULL UNIQUE,
 	cod_forma_pago	int(1)			NOT NULL,
 	nro_tarjeta		bigint(20)		DEFAULT NULL,
 	importe			decimal(6,2)	NOT NULL
@@ -123,16 +125,14 @@ CREATE TABLE IF NOT EXISTS pago (
 --
 
 CREATE TABLE IF NOT EXISTS pasaje (
-	cod_pasaje		int(6) 		NOT NULL,
-	cod_reserva		varchar(8)	COLLATE utf8_spanish_ci NOT NULL,
+	codigo			int(6) 		PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	reserva			int(6)		UNIQUE NOT NULL,
 	cod_vuelo		int(6)		NOT NULL,
 	cod_usuario		int(6)		NOT NULL,
-	cod_pago		int(6)		DEFAULT NULL,
 	clase_pasaje	char(1)		NOT NULL,
 	fecha_reserva	datetime	NOT NULL,
 	flag_check_in	tinyint(1)	DEFAULT NULL,
 	fecha_vuelo		datetime	NOT NULL,
-	hora_vuelo		varchar(5)	COLLATE utf8_spanish_ci DEFAULT NULL,
 	cod_asiento		varchar(4)	COLLATE utf8_spanish_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
@@ -168,7 +168,7 @@ CREATE TABLE IF NOT EXISTS provincia (
 --
 
 CREATE TABLE IF NOT EXISTS usuario (
-	codigo				int(6)		NOT NULL,
+	codigo				int(6)		PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	dni					int(9)		NOT NULL,
 	nombre_apellido		varchar(60)	COLLATE utf8_spanish_ci NOT NULL,
 	fecha_nacimiento	date		NOT NULL,
@@ -196,7 +196,8 @@ CREATE TABLE IF NOT EXISTS vuelo (
 	jueves			tinyint(1)		DEFAULT NULL,
 	viernes			tinyint(1)		DEFAULT NULL,
 	sabado			tinyint(1)		DEFAULT NULL,
-	domingo			tinyint(1)		DEFAULT NULL
+	domingo			tinyint(1)		DEFAULT NULL,
+	hora_vuelo		varchar(5)		COLLATE utf8_spanish_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
@@ -218,8 +219,10 @@ CREATE TABLE IF NOT EXISTS vuelo (
 --
 ALTER TABLE aeropuerto
 	ADD PRIMARY KEY (codigo_OACI),
-	ADD KEY ciudad_prov (ciudad,provincia),
-	ADD KEY provincia (provincia);
+	ADD KEY (ciudad),
+	ADD KEY (provincia);
+--	ADD KEY (ciudad,provincia);
+
 
 --
 -- Indices de la tabla avion
@@ -232,8 +235,8 @@ ALTER TABLE avion
 --
 ALTER TABLE ciudad
 	ADD PRIMARY KEY (cod_prov,codigo),
-	ADD KEY cod_prov (cod_prov),
-	ADD KEY cod_ciudad (codigo);
+	ADD KEY (cod_prov),
+	ADD KEY (codigo);
 
 --
 -- Indices de la tabla forma_pago
@@ -245,17 +248,17 @@ ALTER TABLE forma_pago
 -- Indices de la tabla pago
 --
 ALTER TABLE pago
-	ADD PRIMARY KEY (codigo),
-	ADD KEY cod_forma_pago (cod_forma_pago);
+	-- ADD PRIMARY KEY (codigo),
+	ADD KEY (cod_forma_pago),
+	ADD KEY (cod_pasaje);
 
 --
 -- Indices de la tabla pasaje
 --
 ALTER TABLE pasaje
-	ADD PRIMARY KEY (cod_pasaje),
-	ADD KEY cod_usuario (cod_usuario),
-	ADD KEY cod_vuelo (cod_vuelo),
-	ADD KEY cod_pago (cod_pago);
+--	ADD PRIMARY KEY (cod_pasaje),
+	ADD KEY (cod_usuario),
+	ADD KEY (cod_vuelo);
 
 --
 -- Indices de la tabla provincia
@@ -266,34 +269,21 @@ ALTER TABLE provincia
 --
 -- Indices de la tabla usuario
 --
-ALTER TABLE usuario
-	ADD PRIMARY KEY (codigo);
+-- ALTER TABLE usuario
+	-- ADD PRIMARY KEY (codigo);
 
 --
 -- Indices de la tabla vuelo
 --
 ALTER TABLE vuelo
 	ADD PRIMARY KEY (codigo),
-	ADD KEY cod_avion (cod_avion),
-	ADD KEY destino (destino),
-	ADD KEY origen (origen);
+	ADD KEY (cod_avion),
+	ADD KEY (destino),
+	ADD KEY (origen);
 
 --
 -- Restricciones para tablas volcadas
 --
-
---
--- Filtros para la tabla aeropuerto
---
-ALTER TABLE aeropuerto
-	ADD CONSTRAINT aeropuerto_ibfk_4 FOREIGN KEY (provincia)
-		REFERENCES ciudad (cod_prov),
-	ADD CONSTRAINT aeropuerto_ibfk_1 FOREIGN KEY (ciudad, provincia)
-		REFERENCES ciudad (codigo, cod_prov),
-	ADD CONSTRAINT aeropuerto_ibfk_2 FOREIGN KEY (ciudad, provincia)
-		REFERENCES ciudad (codigo, cod_prov),
-	ADD CONSTRAINT aeropuerto_ibfk_3 FOREIGN KEY (ciudad)
-		REFERENCES ciudad (codigo);
 
 --
 -- Filtros para la tabla ciudad
@@ -303,21 +293,36 @@ ALTER TABLE ciudad
 		REFERENCES provincia (codigo);
 
 --
+-- Filtros para la tabla aeropuerto
+--
+ALTER TABLE aeropuerto
+	ADD CONSTRAINT FK_Aeropuerto_Ciudad FOREIGN KEY (ciudad)
+		REFERENCES ciudad (codigo),
+	ADD CONSTRAINT FK_Aeropuerto_CiudadProvincia FOREIGN KEY (provincia)
+		REFERENCES ciudad (cod_prov);
+	-- ADD CONSTRAINT aeropuerto_ibfk_1 FOREIGN KEY (ciudad, provincia)
+		-- REFERENCES ciudad (codigo, cod_prov),
+	-- ADD CONSTRAINT aeropuerto_ibfk_2 FOREIGN KEY (ciudad, provincia)
+		-- REFERENCES ciudad (codigo, cod_prov),
+	-- ADD CONSTRAINT aeropuerto_ibfk_3 FOREIGN KEY (ciudad)
+		-- REFERENCES ciudad (codigo);
+
+--
 -- Filtros para la tabla pago
 --
 ALTER TABLE pago
 	ADD CONSTRAINT FK_Pago_FormaPago FOREIGN KEY (cod_forma_pago)
-		REFERENCES forma_pago (codigo);
+		REFERENCES forma_pago (codigo),
+	ADD CONSTRAINT FK_Pago_Pasaje FOREIGN KEY (cod_pasaje)
+		REFERENCES pasaje (codigo);
 
 --
 -- Filtros para la tabla pasaje
 --
 ALTER TABLE pasaje
-	ADD CONSTRAINT pasaje_ibfk_1 FOREIGN KEY (cod_pago)
-		REFERENCES pago (codigo),
-	ADD CONSTRAINT pasaje_ibfk_2 FOREIGN KEY (cod_usuario)
+	ADD CONSTRAINT FK_Pasaje_Usuario FOREIGN KEY (cod_usuario)
 		REFERENCES usuario (codigo),
-	ADD CONSTRAINT pasaje_ibfk_3 FOREIGN KEY (cod_vuelo)
+	ADD CONSTRAINT FK_Pasaje_Vuelo FOREIGN KEY (cod_vuelo)
 		REFERENCES vuelo (codigo);
 
 --
