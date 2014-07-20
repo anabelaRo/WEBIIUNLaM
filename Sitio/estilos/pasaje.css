@@ -1,0 +1,162 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+	padding: 0;
+	margin: 0;
+}
+
+
+body {
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+	background: url("../img/Mar_de_nubes.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#contenedor{
+	
+	height: 645px;
+	text-align:right;
+	color:white;
+}
+
+#contenedor1 {
+	margin-left: 10%;
+	height: 280px;
+}
+
+.contenedor2 {
+	background-color: #fff;
+	border: 5px solid #dedede;	
+	width: 1080px;
+	height: 550px;
+	border-radius: 4px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	color: #888;
+	display: block;
+	margin-top: 50px;
+	overflow: hidden;
+	vertical-align: center;
+}
+
+.titulo{
+	
+    font: bold 40px Arial,Helvetica,sans-serif;
+	color: #033d7d;
+	text-align:center;
+
+}
+
+#interior_1{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	width: 475px;
+	overflow: hidden;
+	border: 2px solid #4d82bc;
+	border-radius: 10px;
+	width: 97%;
+	height: 88%;
+}
+
+ #interior_2{
+    border: 5px solid #e5ecf7;
+    margin: 0;
+    padding: 5px 20px;
+	border-radius: 10px;
+	height: 96%;
+	position:relative;
+}
+
+#imagen_pasaje{
+	width: 980px;
+	height: 400px;
+	text-align:center;
+}
+
+#codigo_qr{
+	position:absolute;
+	left:710px;
+	top:121px;
+}
+
+#codigo_qr_imagen{
+	width: 250px;
+	height: 250px;
+}
+
+#nombre_apellido{
+	position:absolute;
+	left:70px;
+	top:121px;
+}
+
+#cod_vuelo{
+	position:absolute;
+	left:75px;
+	top:300px;
+	width: 140px;
+	text-align:center;	
+}
+
+#fecha_vuelo{
+	position:absolute;
+	left:225px;
+	top:280px;
+	width: 145px;
+	text-align:center;
+}
+
+#corigen{
+	position:absolute;
+	left:70px;
+	top:190px;
+}
+
+#cdestino{
+	position:absolute;
+	left:475px;
+	top:190px;
+	width: 235px;
+}
+
+#cod_reserva{
+	position:absolute;
+	left:383px;
+	top:300px;
+	width: 140px;
+	text-align:center;
+}
+
+#cod_asiento{
+	position:absolute;
+	left:535px;
+	top:300px;
+	width: 160px;
+	text-align:center;
+}
+
+.campos_pasaje{
+	font-size:20px;
+	font-family: arial;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#btn_formulario{	
+	position:absolute;
+	left:440px;
+	top:285px;
+}
+
+#boton_formu{	
+	background-color: #033d7d;
+    border: 0 none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font: bold 12px Arial,Helvetica,sans-serif;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+	padding: 4px 20px 2px;
+}
