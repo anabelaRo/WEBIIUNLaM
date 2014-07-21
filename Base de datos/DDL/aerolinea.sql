@@ -104,7 +104,7 @@ CREATE TABLE IF NOT EXISTS forma_pago (
 
 CREATE TABLE IF NOT EXISTS pago (
 	codigo			int(6)			PRIMARY KEY NOT NULL AUTO_INCREMENT,
-	cod_pasaje		int(6)			NOT NULL UNIQUE,
+	cod_reserva		int(6)			NOT NULL,
 	cod_forma_pago	int(1)			NOT NULL,
 	nro_tarjeta		bigint(20)		DEFAULT NULL,
 	importe			decimal(6,2)	NOT NULL
@@ -125,8 +125,7 @@ CREATE TABLE IF NOT EXISTS pago (
 --
 
 CREATE TABLE IF NOT EXISTS pasaje (
-	cod_pasaje		int(6) 		PRIMARY KEY NOT NULL AUTO_INCREMENT,
-	cod_reserva		int(6)		UNIQUE NOT NULL,
+	cod_reserva		int(6)		PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	cod_vuelo		int(6)		NOT NULL,
 	cod_usuario		int(6)		NOT NULL,
 	clase_pasaje	char(1)		NOT NULL,
@@ -250,13 +249,12 @@ ALTER TABLE forma_pago
 ALTER TABLE pago
 	-- ADD PRIMARY KEY (codigo),
 	ADD KEY (cod_forma_pago),
-	ADD KEY (cod_pasaje);
+	ADD KEY (cod_reserva);
 
 --
 -- Indices de la tabla pasaje
 --
 ALTER TABLE pasaje
---	ADD PRIMARY KEY (cod_pasaje),
 	ADD KEY (cod_usuario),
 	ADD KEY (cod_vuelo);
 
@@ -313,8 +311,8 @@ ALTER TABLE aeropuerto
 ALTER TABLE pago
 	ADD CONSTRAINT FK_Pago_FormaPago FOREIGN KEY (cod_forma_pago)
 		REFERENCES forma_pago (codigo),
-	ADD CONSTRAINT FK_Pago_Pasaje FOREIGN KEY (cod_pasaje)
-		REFERENCES pasaje (cod_pasaje);
+	ADD CONSTRAINT FK_Pago_Reserva FOREIGN KEY (cod_reserva)
+		REFERENCES pasaje (cod_reserva);
 
 --
 -- Filtros para la tabla pasaje
