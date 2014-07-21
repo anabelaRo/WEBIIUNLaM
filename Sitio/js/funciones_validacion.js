@@ -44,7 +44,15 @@
 		 	if (retorno[0] == '') 
 
 		 	{
-		 	alert("no existe reserva");
+		 	cod_reserv_P.style.backgroundColor = '#FC9C9C'; //Pinta de color rojo el campo que dió error
+			cod_reserv_P.focus(); //Posiciona el foco en el campo que dió el error
+			
+			msj_error = 'Código de Reserva incorrecto'; //Este mensaje se carga en "div_msj_error.php", llamado en la linea de abajo
+			ruta_archivo = "php/div_msj_error.php"; //Ruta del Archivo a cargar en el DIV
+			nom_var_hidden = ["msj_error"]; //Se carga el vector con el/los nombres de las variables hidden, si es que las hay
+			valor_var_hidden = [msj_error]; //Se carga el vector con el/los valores que tienen que tomar las variables definidas en "nom_var_hidden"
+			campos_consulta = "";
+			loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
 
 		 	}		
 		 	/* --------------- anda ----------- */

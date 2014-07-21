@@ -102,14 +102,16 @@ span{
 		?>
 		<div class="contenedorb">
 		
-		<form method="post" name="form_datos_pago" action="#">
+		<form method="post" name="form_datos_pago" action="/sitio/pasajeQrPdf/pasajeElectronico.php">
 
 	<h2>Información de reserva:</h2>	
 		</br><!--<img src="img/flights.png" width="100" height="100" >	-->											
 				<label class="dni" for="dni">Dni: </label>	<?php echo $dni ?><!--	Villa Gesell-->
 				<label class="nombre" for="nombre">Nombre: </label>	<?php echo $nombre ?><!--<Bahia Blanca--> 
 				</br>	
-
+				
+				<input type = "hidden"  name= "cod_reserva" value = '<?php echo $cod_reserva;?>'>;
+				
 				<label class="origen" for="Origen">Desde: </label><?php echo $origen ?><!--<Bahia Blanca--> <!--	<?php $origen?>-->
 														
 				<label class="destino" for="Destino">Hasta: </label><?php echo $destino ?><!--	Villa Gesell-->
@@ -130,7 +132,7 @@ span{
 				</br>
 				<label class="label_text_1" for="num_tarjeta">Número de Tarjeta:</label>
 				<input type="text" class="input_text" name="num_tarjeta" id="num_tarjeta"/>
-				<input type="button" class="input_button" id="btn_datos_pago" name="btn_datos_pago" value="Pagar" onclick="genera_pago('<?php echo $dni;?>','<?php echo $nombre?>','<?php echo $origen?>','<?php echo $destino?>','<?php echo $clase?>','<?php echo $fecha?>','<?php echo $hora?>','<?php echo $precio?>','<?php echo $cod_reserva?>')"/>
+				<input type="submit" class="input_button" id="btn_datos_pago" name="btn_datos_pago" value="Pagar" onclick="genera_pago('<?php echo $dni;?>','<?php echo $nombre?>','<?php echo $origen?>','<?php echo $destino?>','<?php echo $clase?>','<?php echo $fecha?>','<?php echo $hora?>','<?php echo $precio?>','<?php echo $cod_reserva?>')"/>
 			<!--<input type="button" class="input_button" id="btn_datos_pago" name="btn_datos_pago" value="Pagar" onclick="genera_pago('<?php echo $dni;?>','<?php echo $nombre?>','<?php echo $origen?>','<?php echo $destino?>','<?php echo $clase?>','<?php echo $codpasaje?>','<?php echo $fecha?>','<?php echo $hora?>','<?php echo $precio?>','<?php echo $cod_reserva?>')"/>-->
 		</form>
 		</div>
