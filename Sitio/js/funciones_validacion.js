@@ -234,13 +234,6 @@ var numtarjeta = document.getElementById("num_tarjeta");
 
 	}
 
-/* ======= FALTAN TODAS LAS VALIDACONES ============ */
-/* ======= SI ESTA EN LISTA DE ESPERA PUEDE PAGAR? ============ */
-/* =======  if inserta ok actualiza cod pago en pasaje ============ */
- 
-
-
-	alert("termina la funcion");
 
 }
 
