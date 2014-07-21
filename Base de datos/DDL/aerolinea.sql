@@ -9,12 +9,12 @@
 -- Versión de PHP: 5.5.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+SET time_zone = "-03:00";
 
 --
 -- Base de datos: 'aerolinea'
 --
-CREATE DATABASE IF NOT EXISTS aerolinea DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci;
+CREATE DATABASE IF NOT EXISTS aerolinea DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE aerolinea;
 
 -- --------------------------------------------------------
@@ -26,11 +26,11 @@ USE aerolinea;
 --
 
 CREATE TABLE IF NOT EXISTS aeropuerto (
-	codigo_OACI		char(4)			COLLATE utf8_spanish_ci NOT NULL,
+	codigo_OACI		char(4)			COLLATE utf8_general_ci NOT NULL,
 	ciudad			int(3)			NOT NULL,
 	provincia		int(2)			NOT NULL,
-	nombre_aerop	varchar(150)	COLLATE utf8_spanish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+	nombre_aerop	varchar(150)	COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- RELACIONES PARA LA TABLA aeropuerto:
@@ -50,8 +50,8 @@ CREATE TABLE IF NOT EXISTS aeropuerto (
 
 CREATE TABLE IF NOT EXISTS avion (
 	codigo				int(2)		NOT NULL,
-	marca				varchar(30)	COLLATE utf8_spanish_ci NOT NULL,
-	modelo				varchar(50)	COLLATE utf8_spanish_ci NOT NULL,
+	marca				varchar(30)	COLLATE utf8_general_ci NOT NULL,
+	modelo				varchar(50)	COLLATE utf8_general_ci NOT NULL,
 	total_pasajes		int(3)		NOT NULL,
 	asientos_economy	int(3)		NOT NULL,
 	filas_economy		int(2)		NOT NULL,
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS avion (
 	asientos_primera	int(3)		NOT NULL,
 	filas_primera		int(2)		NOT NULL,
 	columnas_primera	int(1)		NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -72,8 +72,8 @@ CREATE TABLE IF NOT EXISTS avion (
 CREATE TABLE IF NOT EXISTS ciudad (
 	cod_prov	int(2)		NOT NULL,
 	codigo		int(3)		NOT NULL,
-	descripcion	varchar(50)	COLLATE utf8_spanish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+	descripcion	varchar(50)	COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- RELACIONES PARA LA TABLA ciudad:
@@ -91,8 +91,8 @@ CREATE TABLE IF NOT EXISTS ciudad (
 
 CREATE TABLE IF NOT EXISTS forma_pago (
 	codigo		int(1)		NOT NULL,
-	descripcion	varchar(50)	COLLATE utf8_spanish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+	descripcion	varchar(50)	COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -108,7 +108,7 @@ CREATE TABLE IF NOT EXISTS pago (
 	cod_forma_pago	int(1)			NOT NULL,
 	nro_tarjeta		bigint(20)		DEFAULT NULL,
 	importe			decimal(6,2)	NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- RELACIONES PARA LA TABLA pago:
@@ -133,8 +133,8 @@ CREATE TABLE IF NOT EXISTS pasaje (
 	flag_lista_espera	tinyint(1)	DEFAULT NULL,
 	flag_check_in		tinyint(1)	DEFAULT NULL,
 	fecha_vuelo			datetime	NOT NULL,
-	cod_asiento			varchar(4)	COLLATE utf8_spanish_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+	cod_asiento			varchar(4)	COLLATE utf8_general_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- RELACIONES PARA LA TABLA pasaje:
@@ -156,8 +156,8 @@ CREATE TABLE IF NOT EXISTS pasaje (
 
 CREATE TABLE IF NOT EXISTS provincia (
 	codigo		int(2)		NOT NULL,
-	descripcion	varchar(50)	COLLATE utf8_spanish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+	descripcion	varchar(50)	COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -170,10 +170,10 @@ CREATE TABLE IF NOT EXISTS provincia (
 CREATE TABLE IF NOT EXISTS usuario (
 	codigo				int(6)		PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	dni					int(9)		NOT NULL,
-	nombre_apellido		varchar(60)	COLLATE utf8_spanish_ci NOT NULL,
+	nombre_apellido		varchar(60)	COLLATE utf8_general_ci NOT NULL,
 	fecha_nacimiento	date		NOT NULL,
-	email				varchar(50)	COLLATE utf8_spanish_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+	email				varchar(50)	COLLATE utf8_general_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -185,8 +185,8 @@ CREATE TABLE IF NOT EXISTS usuario (
 
 CREATE TABLE IF NOT EXISTS vuelo (
 	codigo			int(6)			NOT NULL,
-	origen			char(4)			COLLATE utf8_spanish_ci NOT NULL,
-	destino			char(4)			COLLATE utf8_spanish_ci NOT NULL,
+	origen			char(4)			COLLATE utf8_general_ci NOT NULL,
+	destino			char(4)			COLLATE utf8_general_ci NOT NULL,
 	cod_avion		int(2)			NOT NULL,
 	precio_primera	decimal(7,2)	NOT NULL,
 	precio_economy	decimal(7,2)	NOT NULL,
@@ -197,8 +197,8 @@ CREATE TABLE IF NOT EXISTS vuelo (
 	viernes			tinyint(1)		DEFAULT NULL,
 	sabado			tinyint(1)		DEFAULT NULL,
 	domingo			tinyint(1)		DEFAULT NULL,
-	hora_vuelo		varchar(5)		COLLATE utf8_spanish_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+	hora_vuelo		varchar(5)		COLLATE utf8_general_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- RELACIONES PARA LA TABLA vuelo:
