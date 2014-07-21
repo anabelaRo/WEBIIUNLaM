@@ -125,8 +125,8 @@ CREATE TABLE IF NOT EXISTS pago (
 --
 
 CREATE TABLE IF NOT EXISTS pasaje (
-	codigo			int(6) 		PRIMARY KEY NOT NULL AUTO_INCREMENT,
-	reserva			int(6)		UNIQUE NOT NULL,
+	cod_pasaje		int(6) 		PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	cod_reserva		int(6)		UNIQUE NOT NULL,
 	cod_vuelo		int(6)		NOT NULL,
 	cod_usuario		int(6)		NOT NULL,
 	clase_pasaje	char(1)		NOT NULL,
@@ -314,7 +314,7 @@ ALTER TABLE pago
 	ADD CONSTRAINT FK_Pago_FormaPago FOREIGN KEY (cod_forma_pago)
 		REFERENCES forma_pago (codigo),
 	ADD CONSTRAINT FK_Pago_Pasaje FOREIGN KEY (cod_pasaje)
-		REFERENCES pasaje (codigo);
+		REFERENCES pasaje (cod_pasaje);
 
 --
 -- Filtros para la tabla pasaje
