@@ -67,6 +67,7 @@ body {
 	position:relative;
 }
 
+/*------Inicio estilo de Boarding-Pass------*/
 #imagen_pasaje{
 	width: 980px;
 	height: 400px;
@@ -142,7 +143,7 @@ body {
 }
 
 .campos_pasaje{
-	font-size:20px;
+	font-size:18px;
 	font-family: arial;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -166,3 +167,167 @@ body {
     text-decoration: none;
 	padding: 4px 20px 2px;
 }
+
+/*------Fin estilo de Boarding-Pass------*/
+
+/*------Inicio estilo de Pasaje Electronico------*/
+#imagen_pasaje_electr{
+	width: 980px;
+	height: auto;
+	text-align:center;
+}
+
+#nombre_apellido_electr{
+	position:absolute;
+	left:70px;
+	top:121px;
+}
+
+#dni_electr{
+	position:absolute;
+	left:70px;
+	top:141px;
+}
+
+#cod_vuelo_electr{
+	position:absolute;
+	left:208px;
+	top:574px;
+	width: 140px;
+	text-align:center;	
+}
+
+#marca_electr{
+	position:absolute;
+	left:668px;
+	top:565px;
+	width: 140px;
+	text-align:center;
+}
+
+#modelo_electr{
+	position:absolute;
+	left:668px;
+	top:587px;
+	width: 140px;
+	text-align:center;
+}
+
+#fecha_vuelo_electr{
+	position:absolute;
+	left:353px;
+	top:565px;
+	width: 145px;
+	text-align:center;
+}
+
+#fecha_reserva{
+	position:absolute;
+	left:753px;
+	top:200px;
+	width: 145px;
+	text-align:center;
+}
+
+#corigen_electr{
+	position:absolute;
+	left:70px;
+	top:200px;
+}
+
+#cdestino_electr{
+	position:absolute;
+	left:70px;
+	top:290px;
+}
+
+#cod_reserva_electr{
+	position:absolute;
+	left:753px;
+	top:147px;
+	width: 140px;
+	text-align:center;
+}
+
+#clase_pasaje_electr{
+	position:absolute;
+	left:508px;
+	top:574px;
+	width: 140px;
+	text-align:center;
+}
+
+#aeropOrigen{
+	position:absolute;
+	left:70px;
+	top:220px;
+}
+
+#aeropDestino{
+	position:absolute;
+	left:70px;
+	top:310px;
+}
+
+#provOrigen{
+	position:absolute;
+	left:70px;
+	top:210px;
+}
+
+#provDestino{
+	position:absolute;
+	left:70px;
+	top:110px;
+}
+
+#cod_pago{
+	position:absolute;
+	left:70px;
+	top:380px;
+}
+
+#importe{
+	position:absolute;
+	left:70px;
+	top:400px;
+}
+
+#pago_descr{
+	position:absolute;
+	left:70px;
+	top:420px;
+}
+
+#nro_tarjeta{
+	position:absolute;
+	left:70px;
+	top:440px;
+}
+
+.campos_pasaje_electr{
+	font-size:18px;
+	font-family: arial;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#btn_formulario_electr{	
+	position:absolute;
+	left:440px;
+	top:400px;
+}
+
+#boton_formu_electr{	
+	background-color: #033d7d;
+    border: 0 none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font: bold 12px Arial,Helvetica,sans-serif;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+	padding: 4px 20px 2px;
+}
+/*------Fin estilo de Boarding-Pass------*/

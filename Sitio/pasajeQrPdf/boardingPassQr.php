@@ -13,7 +13,7 @@
 				
 			<div class="contenedor2">
 							
-				<div class="titulo">Pasaje</div>							
+				<div class="titulo">Boarding-Pass</div>							
 						             
 					<div id="interior_1">
 							
@@ -77,7 +77,8 @@
 									else echo $categoria="PRIMERA";
 									echo "</div>";
 								}
-
+				// ********* COMIENZA CODIGO QR ******************
+							
 								//set it to writable location, a place for temp generated PNG files
 								$PNG_TEMP_DIR = dirname(__FILE__).DIRECTORY_SEPARATOR.'temp'.DIRECTORY_SEPARATOR;
 
@@ -107,13 +108,17 @@
 								
 								$filename = $PNG_TEMP_DIR.'test'.md5(/*$_REQUEST[''].*/'|'.$errorCorrectionLevel.'|'.$matrixPointSize).'.png';
 								QRcode::png($total, $filename, $errorCorrectionLevel, $matrixPointSize, 2); 
-
+								
+				
 								echo 	'<div id="codigo_qr">
 											<img src="'.$PNG_WEB_DIR.basename($filename).'" id="codigo_qr_imagen" /><hr/>
 										</div>';
-									
+										
+				// ********* FIN CODIGO QR ******************
+				
+				
 								echo 	'<div id="btn_formulario">';
-								echo"<form id='botonImprimir' action='archivopdf.php' method='post' name='impresion'>";										
+								echo"<form id='botonImprimir' action='boardingPassPdf.php' method='post' name='impresion'>";										
 										echo "<input type='hidden' name='corigen' 			value='$value[corigen]'			/><br>";
 										echo "<input type='hidden' name='cdestino' 			value='$value[cdestino]'		/><br>";
 										echo "<input type='hidden' name='nombre_apellido' 	value='$value[nombre_apellido]'	/><br>";
@@ -125,7 +130,7 @@
 										$db->disconnect();
 								?>	
 								
-										<input type="submit" id="boton_formu" value="Imprimir pasaje" name="Boton"/>								
+										<input type="submit" id="boton_formu" value="Imprimir" name="Boton"/>								
 									</form>
 							</div>
 						</div>

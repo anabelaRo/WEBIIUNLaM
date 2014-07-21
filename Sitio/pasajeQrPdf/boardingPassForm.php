@@ -6,8 +6,8 @@
 
 
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<title> Aerolineas</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+		<title>Aerolíneas Del Plata</title>
 		
 	
 	</head>
@@ -18,7 +18,7 @@
 		<div id="contenedor">
 		
 		
-				<form  id="form_pago" method="post" name="form_pago" action="generaCodigoQR.php">
+				<form  id="form_pago" method="post" name="form_pago" action="boardingPassQr.php">
 					
 					
 					<label class="label_text">Código de reserva:</label>
@@ -26,7 +26,7 @@
 					
 					<br/>
 					
-					<input type="submit" name="btn_cod_reserv" value="Comience su Pago"/>
+					<input type="submit" name="btn_cod_reserv" value="Buscar"/>
 				</form>
 				
 				
