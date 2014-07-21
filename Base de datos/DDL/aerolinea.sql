@@ -125,14 +125,15 @@ CREATE TABLE IF NOT EXISTS pago (
 --
 
 CREATE TABLE IF NOT EXISTS pasaje (
-	cod_reserva		int(6)		PRIMARY KEY NOT NULL AUTO_INCREMENT,
-	cod_vuelo		int(6)		NOT NULL,
-	cod_usuario		int(6)		NOT NULL,
-	clase_pasaje	char(1)		NOT NULL,
-	fecha_reserva	datetime	NOT NULL,
-	flag_check_in	tinyint(1)	DEFAULT NULL,
-	fecha_vuelo		datetime	NOT NULL,
-	cod_asiento		varchar(4)	COLLATE utf8_spanish_ci DEFAULT NULL
+	cod_reserva			int(6)		PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	cod_vuelo			int(6)		NOT NULL,
+	cod_usuario			int(6)		NOT NULL,
+	clase_pasaje		char(1)		NOT NULL,
+	fecha_reserva		datetime	NOT NULL,
+	flag_lista_espera	tinyint(1)	DEFAULT NULL,
+	flag_check_in		tinyint(1)	DEFAULT NULL,
+	fecha_vuelo			datetime	NOT NULL,
+	cod_asiento			varchar(4)	COLLATE utf8_spanish_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
