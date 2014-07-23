@@ -1,7 +1,7 @@
 <html>
 
 <head>	
-	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<!--Funcion generica de llamado a AJAX-->
 		<script type="text/javascript" src="/sitio/js/recarga_ajax.js"></script>
 		<script type="text/javascript" src="/Sitio/js/funciones_validacion.js"></script>
@@ -13,33 +13,34 @@
 	<body>
 		
 	
-	
-			<h3 class="title_h3">Inserte rango de fechas a buscar y ciudad de destino</h3>
-			<h5>(Formato aaaa-mm-dd)</h5>
+			<br/>
+			<h3 class="title_h3">Ingrese rango de fechas, ciudad de destino y avi&oacute;n</h3>
 		
 			<form name="formulario" method="post" action="" >
 			
-				<label class="usu" for="usuario">Desde:</label>
-				<input type="text" class="input_text" name="fecha_desde" id="fecha_desde"/>
+				<label class="formu">Desde:</label>
+				<input type="text" class="input_text" name="fecha_desde" placeholder="YYYY-MM-DD" id="fecha_desde"/>
 				</br>
 				
-				<label class="contr" for="pass">Hasta:</label>
-				<input type="text" class="input_text" name="fecha_hasta" id="fecha_hasta"/>
+				<label class="formu">Hasta:</label>
+				<input type="text" class="input_text" name="fecha_hasta" placeholder="YYYY-MM-DD" id="fecha_hasta"/>
 				</br>
 				
-				<label class="contr" for="pass">Ciudad:</label>
+				<label class="formu">Ciudad:</label>
 				<input type="text" class="input_text" name="cdestino" id="cdestino"/>
 				</br>
 				
-				Seleccione tipo de avión				
-				<select name="codigo" id="codigo">
+				<label class="formu">Avi&oacute;n:</label>			
+				<select name="codigo" id="codigo" class="input_text">
 					<option value='1' selected>Embraer EMB-120
 					<option value='2'>Embraer ER-145(C)
 					<option value='3'>Embraer ER-145(G)
 					<option value='4'>Embraer ER-170
 				</select>
-			
-			<input type="button" class="input_button" id="enviar" onclick="cargarGrafico3()" name="enviar" value="Ingresar"/>
+				</br>
+				</br>
+				
+			<input type="button" class="input_button" id="enviar" onclick="cargarGrafico3()" name="enviar" value="Generar"/>
 			</form>
 			
 

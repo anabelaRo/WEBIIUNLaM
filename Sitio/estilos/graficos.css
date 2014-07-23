@@ -134,9 +134,18 @@ text-align: center;
 text-align:center;
 }
 
+
+
 a{
 color:white; /*agrega color blanco a links*/
 }
+
+.formu{
+padding:50px;
+color: #333;
+font: bold 15px Arial,Helvetica,sans-serif;
+}
+
 
 
 
