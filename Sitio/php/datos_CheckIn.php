@@ -1,6 +1,6 @@
 ﻿<html>
 	<head>	
-		<link href='http://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'/>
+		<!--link href='http://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'/-->
 		<style type="text/css">
 			body {
 			font-family: arial,helvetica;
@@ -89,36 +89,37 @@
 			$vPrecio = isset($_POST['vPrecio']) ? $_POST['vPrecio'] : "";
 			$vCodReserva = isset($_POST['vCodReserva']) ? $_POST['vCodReserva'] : "";
 		?>
+		
 		<div class="contenedorb">
 		
-			<form method="post" name="form_datos_ckeckin" action="/sitio/pasajeQrPdf/pasajeElectronico.php">
+			<form method="post" target="_blank" name="form_datos_ckeckin" id="form_datos_ckeckinID">
 				<h2>Información de reserva:</h2>	
-				<br/><!--<img src="img/flights.png" width="100" height="100" >	-->											
-				<label class="nombre" for="nombre">Nombre: </label>	<?php echo $vNombre ?><!--<Bahia Blanca--> 
-				<label class="dni" for="dni">Dni: </label>	<?php echo $vDni ?><!--	Villa Gesell-->
+				<br/>										
+				<label class="nombre" for="nombre">Nombre: </label>	<?php echo $vNombre ?>
+				<label class="dni" for="dni">Dni: </label>	<?php echo $vDni ?>
 				<br/>	
-				
-				<label class="origen" for="vOrigen">Desde: </label><?php echo $vOrigen ?><!--<Bahia Blanca-->
-				<label class="destino" for="vDestino">Hasta: </label><?php echo $vDestino ?><!--	Villa Gesell-->
+				<label class="origen" for="vOrigen">Desde: </label><?php echo $vOrigen ?>
+				<label class="destino" for="vDestino">Hasta: </label><?php echo $vDestino ?>
 				<br/>
-				
-				<label class="vFechaVuelo" for="FSAL">Fecha Salida: </label> <?php echo $vFechaVuelo ?><!--	17/07/2014-->
-				<label class="vHoraVuelo" for="hora">Hora: </label> <?php echo $vHoraVuelo ?><!--	17/07/2014-->
+				<label class="vFechaVuelo" for="FSAL">Fecha Salida: </label> <?php echo $vFechaVuelo ?>
+				<label class="vHoraVuelo" for="hora">Hora: </label> <?php echo $vHoraVuelo ?>
 				<br/>
-				
 				<label>Clase: </label> <?php echo $vClase ?>
 				<label>Importe: </label> <?php echo $vPrecio ?>
 				<br/>
-
+				
 				<?php
 					require_once $_SERVER{'DOCUMENT_ROOT'} . '\Sitio\popUp_Aviones\f_popUp_aviones.php';
+					
 					echo '<input type="hidden" id="modelo_avion" value="'.$vCodAvion.'"/>';
+					
 					f_popUp_aviones($vCodAvion, $vCodVuelo, $vFechaVuelo, $vHoraVuelo, $vClase, $vCodReserva);
 				?>
 				
-<!--				<input type="button" class="input_button" id="btn_sel_asiento" name="btn_sel_asiento" value="Seleccionar asiento" onclick='<?php f_popUp_aviones($modelo_avion);?>'/>
-				<input type="submit" class="input_button" id="btn_datos_pago" name="btn_datos_pago" value="Pagar" onclick="genera_pago('<?php echo $dni;?>','<?php echo $nombre?>','<?php echo $origen?>','<?php echo $destino?>','<?php echo $clase?>','<?php echo $fecha?>','<?php echo $hora?>','<?php echo $precio?>','<?php echo $cod_reserva?>')"/>
--->			</form>
+				<input type = "hidden"  name= "cod_reserva" value = '<?php echo $vCodReserva;?>'>
+				
+				<input type="buttom" class="input_button" id="btn_datos_check_in" name="btn_datos_check_in" value="BoardingPass" onclick="genera_check_in('<?php echo $vDni;?>','<?php echo $vNombre?>','<?php echo $vOrigen?>','<?php echo $vDestino?>','<?php echo $vClase?>','<?php echo $vFechaVuelo?>','<?php echo $vHoraVuelo?>','<?php echo $vPrecio?>','<?php echo $vCodReserva?>')"/>
+			</form>
 		</div>
 	</body>
 </html>

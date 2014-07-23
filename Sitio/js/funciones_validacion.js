@@ -22,13 +22,15 @@ function valida_codigo_reserva(var_div)
 	var ruta_archivo = "";
 	var query = "";
 	var tipo_query = "";
-	var nom_var_hidden = [""];
-	var valor_var_hidden = [""];
+	var nom_var_hidden = [];
+	var valor_var_hidden = [];
+	var retorno;
+	var div_contenedor = "";
 	
 	if (var_div == 'Pago')
 	{
 		var cod_reserv_P = document.getElementById("text_cod_reserv_P"); //Campo del formuario a validar
-		var div_contenedor = "div_recargar_pago"; //Nombre del DIV en donde se va a cargar el Archivo enviado
+		div_contenedor = "div_recargar_pago"; //Nombre del DIV en donde se va a cargar el Archivo enviado
 		
 		if (validaVacio(cod_reserv_P.value) === false) 
 		{
@@ -39,40 +41,51 @@ function valida_codigo_reserva(var_div)
 			ruta_archivo = "php/div_msj_error.php"; //Ruta del Archivo a cargar en el DIV
 			nom_var_hidden = ["msj_error"]; //Se carga el vector con el/los nombres de las variables hidden, si es que las hay
 			valor_var_hidden = [msj_error]; //Se carga el vector con el/los valores que tienen que tomar las variables definidas en "nom_var_hidden"
+			div_contenedor = "div_recargar_pago"; //Nombre del DIV en donde se va a cargar el Archivo enviado
+			campos_consulta = "";
 		
 			loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
-		 
 		}
-		else 
+		else if (isNaN(cod_reserv_P.value))
 		{
-		/* ========================== agregado lunes 21 ======= */
-			
-		 	//query = 'SELECT cod_reserva FROM pago WHERE cod_reserva = ' + cod_reserv_P.value;
-			
-		 	query = 'SELECT cod_reserva FROM pasaje WHERE cod_reserva = ' + cod_reserv_P.value;
-		 	tipo_query = 'S';
-			ruta_archivo = "bbdd/f_ejecutar_query.php";
-			nom_var_hidden = ["query", "tipo_query"]; 
-			valor_var_hidden = [query, tipo_query]; 
-			campos_consulta = "cod_reserva";
-
-		 	retorno = loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
-
-		 	if (retorno[0] == '') 
-
-		 	{
-		 	cod_reserv_P.style.backgroundColor = '#FC9C9C'; //Pinta de color rojo el campo que dió error
-			cod_reserv_P.focus(); //Posiciona el foco en el campo que dió el error
+			cod_reserv_P.style.backgroundColor = '#FC9C9C';
+			cod_reserv_P.focus();
 			
 			msj_error = 'Código de Reserva incorrecto'; //Este mensaje se carga en "div_msj_error.php", llamado en la linea de abajo
 			ruta_archivo = "php/div_msj_error.php"; //Ruta del Archivo a cargar en el DIV
 			nom_var_hidden = ["msj_error"]; //Se carga el vector con el/los nombres de las variables hidden, si es que las hay
 			valor_var_hidden = [msj_error]; //Se carga el vector con el/los valores que tienen que tomar las variables definidas en "nom_var_hidden"
+			div_contenedor = "div_recargar_pago"; //Nombre del DIV en donde se va a cargar el Archivo enviado
 			campos_consulta = "";
+		
 			loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+		}
+		else 
+		{
+			query = 'SELECT cod_reserva FROM pasaje WHERE cod_reserva = ' + cod_reserv_P.value;
+			tipo_query = 'S';
+			ruta_archivo = "bbdd/f_ejecutar_query.php";
+			nom_var_hidden = ["query", "tipo_query"]; 
+			valor_var_hidden = [query, tipo_query]; 
+			campos_consulta = "cod_reserva";
+			div_contenedor = "";
+			
+			retorno = loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
 
+		 	if (retorno[0] == '') 
+		 	{
+				cod_reserv_P.style.backgroundColor = '#FC9C9C'; //Pinta de color rojo el campo que dió error
+				cod_reserv_P.focus(); //Posiciona el foco en el campo que dió el error
+
+				msj_error = 'Código de Reserva incorrecto'; //Este mensaje se carga en "div_msj_error.php", llamado en la linea de abajo
+				ruta_archivo = "php/div_msj_error.php"; //Ruta del Archivo a cargar en el DIV
+				nom_var_hidden = ["msj_error"]; //Se carga el vector con el/los nombres de las variables hidden, si es que las hay
+				valor_var_hidden = [msj_error]; //Se carga el vector con el/los valores que tienen que tomar las variables definidas en "nom_var_hidden"
+				campos_consulta = "";
+				div_contenedor = "div_recargar_pago"; 
+				
+				loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
 		 	}		
-		 	/* --------------- anda ----------- */
 		 	else
 		 	{
 				query = 	' select p1.cod_reserva'+
@@ -80,96 +93,93 @@ function valida_codigo_reserva(var_div)
 							'	on p1.cod_reserva = p2.cod_reserva'+
 							' where p1.cod_reserva = ' + cod_reserv_P.value +
 							' or p1.cod_reserva in (select cod_reserva'+
-	                        '  								from pasaje'+
-	                        '								where cod_reserva = ' + cod_reserv_P.value +
-	                        ' 								and flag_lista_espera = 1)';
+							'  							from pasaje'+
+							'								where cod_reserva = ' + cod_reserv_P.value +
+							' 								and flag_lista_espera = 1)';
+				
 				tipo_query = 'S';
 				ruta_archivo = "bbdd/f_ejecutar_query.php";
 				nom_var_hidden = ["query", "tipo_query"]; 
 				valor_var_hidden = [query, tipo_query]; 
 				campos_consulta = "cod_reserva";
+				div_contenedor = "";
 				
 				retorno = loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
 
 				if (retorno[0] != '') 
-					{
-
+				{
 					cod_reserv_P.style.backgroundColor = '#FC9C9C'; 
 					cod_reserv_P.focus(); 
-					
+
 					msj_error = 'La reserva se encuentra paga o está en lista de espera'; 
 					ruta_archivo = "php/div_msj_error.php"; 
 					nom_var_hidden = ["msj_error"]; 
 					valor_var_hidden = [msj_error]; 
 					campos_consulta = "";
+					div_contenedor = "div_recargar_pago";
+					
 					loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
-					}
-			    
+				}
 				else
-					{
-
+				{
 					query = 	'select 	co.descripcion as corigen1,' + 
-							'		cd.descripcion as cdestino1, ' +
-							'		p.clase_pasaje as clase1, ' +
-							'		date(p.fecha_vuelo) as fecha1, ' +
-							'		v.hora_vuelo as hora1, ' +
-							'		u.nombre_apellido as nombre1, ' +
-							'		u.dni as dni1, ' + 
-							'		cod_reserva as cod_reserva, ' + 
-							'		case p.clase_pasaje ' +
-							'			when p.clase_pasaje = "p" then v.precio_primera' +
-							'			when p.clase_pasaje = "e" then v.precio_economy end as precio' +
-					     	' from pasaje p join vuelo v 	' +
-							'		on p.cod_vuelo = v.codigo' +
-					   		'		join usuario u ' +
-					     	'			on u.codigo = p.cod_usuario ' +
-					     	'		join aeropuerto ao ' +
-					     	'			on v.origen = ao.codigo_OACI ' +
-					     	'		join ciudad co ' +
-					     	'			on ao.ciudad = co.codigo ' +
-					     	'		join aeropuerto ad ' +
-					     	'			on v.destino = ad.codigo_OACI ' +
-					     	'		join ciudad cd ' +
-					     	'			on ad.ciudad = cd.codigo ' +
-					     	'		join avion a ' +
-					     	'			on a.codigo = v.cod_avion ' +
-					       	'where cod_reserva = "' + cod_reserv_P.value + '" '; 
+								'		cd.descripcion as cdestino1, ' +
+								'		p.clase_pasaje as clase1, ' +
+								'		date(p.fecha_vuelo) as fecha1, ' +
+								'		v.hora_vuelo as hora1, ' +
+								'		u.nombre_apellido as nombre1, ' +
+								'		u.dni as dni1, ' + 
+								'		cod_reserva as cod_reserva, ' + 
+								'		case p.clase_pasaje ' +
+								'			when p.clase_pasaje = "p" then v.precio_primera' +
+								'			when p.clase_pasaje = "e" then v.precio_economy end as precio' +
+								' from pasaje p join vuelo v 	' +
+								'		on p.cod_vuelo = v.codigo' +
+								'		join usuario u ' +
+								'			on u.codigo = p.cod_usuario ' +
+								'		join aeropuerto ao ' +
+								'			on v.origen = ao.codigo_OACI ' +
+								'		join ciudad co ' +
+								'			on ao.ciudad = co.codigo ' +
+								'		join aeropuerto ad ' +
+								'			on v.destino = ad.codigo_OACI ' +
+								'		join ciudad cd ' +
+								'			on ad.ciudad = cd.codigo ' +
+								'		join avion a ' +
+								'			on a.codigo = v.cod_avion ' +
+								'where cod_reserva = "' + cod_reserv_P.value + '" '; 
 			
-				
-						tipo_query = 'S'; 
-						ruta_archivo = "bbdd/f_ejecutar_query.php"; 
-						nom_var_hidden = ["query", "tipo_query"];
-						valor_var_hidden = [query, tipo_query]; 
-						campos_consulta = "corigen1|cdestino1|clase1|fecha1|hora1|nombre1|dni1|cod_reserva|precio";
-						//campos_consulta = "corigen1|cdestino1|clase1|fecha1|hora1|nombre1|dni1|cod_reserva|precio";
+					tipo_query = 'S'; 
+					ruta_archivo = "bbdd/f_ejecutar_query.php"; 
+					nom_var_hidden = ["query", "tipo_query"];
+					valor_var_hidden = [query, tipo_query]; 
+					campos_consulta = "corigen1|cdestino1|clase1|fecha1|hora1|nombre1|dni1|cod_reserva|precio";
+					div_contenedor = "";
 					
-						var retorno = loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
-					
-				
-						div_contenedor = "box_pago";
-					
-						var corigen = retorno[0];
-						var cdestino = retorno[1];
-						var clase = retorno[2];
-						var fecha = retorno[3];
-						var hora = retorno[4];
-						var nombre = retorno[5];
-						var dni = retorno[6];
-						var cod_reserva = retorno[7];
-						var precio = retorno[8];
+					retorno = loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
 
-						ruta_archivo = "php/datos_Pago.php"; //Ruta del Archivo a cargar en el DIV
-						nom_var_hidden = ["corigen", "cdestino", "clase", "fecha", "hora", "nombre", "dni", "cod_reserva", "precio"]; //Se carga el vector con el/los nombres de las variables hidden, si es que las hay
-						valor_var_hidden = [corigen, cdestino, clase, fecha, hora, nombre, dni, cod_reserva, precio]; //Se carga el vector con el/los valores que tienen que tomar las variables definidas en "nom_var_hidden"
-						campos_consulta = "";
-						loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
-					}	
+					var corigen = retorno[0];
+					var cdestino = retorno[1];
+					var clase = retorno[2];
+					var fecha = retorno[3];
+					var hora = retorno[4];
+					var nombre = retorno[5];
+					var dni = retorno[6];
+					var cod_reserva = retorno[7];
+					var precio = retorno[8];
 
+					div_contenedor = "box_pago";
+					ruta_archivo = "php/datos_Pago.php"; //Ruta del Archivo a cargar en el DIV
+					nom_var_hidden = ["corigen", "cdestino", "clase", "fecha", "hora", "nombre", "dni", "cod_reserva", "precio"]; //Se carga el vector con el/los nombres de las variables hidden, si es que las hay
+					valor_var_hidden = [corigen, cdestino, clase, fecha, hora, nombre, dni, cod_reserva, precio]; //Se carga el vector con el/los valores que tienen que tomar las variables definidas en "nom_var_hidden"
+					campos_consulta = "";
+
+					loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+				}	
 			}
 		}
 	}
-
-	else 
+	else //var_div == 'Check-In'
 	{
 		var cod_reserv_C = document.getElementById("text_cod_reserv_C");
 		var div_contenedor = ""; //Nombre del DIV en donde se va a cargar el Archivo enviado
@@ -186,6 +196,20 @@ function valida_codigo_reserva(var_div)
 			nom_var_hidden = ["msj_error"]; //Se carga el vector con el/los nombres de las variables hidden, si es que las hay
 			valor_var_hidden = [msj_error]; //Se carga el vector con el/los valores que tienen que tomar las variables definidas en "nom_var_hidden"
 			
+			loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+		}
+		else if (isNaN(cod_reserv_C.value))
+		{
+			cod_reserv_C.style.backgroundColor = '#FC9C9C';
+			cod_reserv_C.focus();
+			
+			msj_error = 'Código de Check-In incorrecto'; //Este mensaje se carga en "div_msj_error.php", llamado en la linea de abajo
+			ruta_archivo = "php/div_msj_error.php"; //Ruta del Archivo a cargar en el DIV
+			nom_var_hidden = ["msj_error"]; //Se carga el vector con el/los nombres de las variables hidden, si es que las hay
+			valor_var_hidden = [msj_error]; //Se carga el vector con el/los valores que tienen que tomar las variables definidas en "nom_var_hidden"
+			div_contenedor = "div_recargar_check_in"; //Nombre del DIV en donde se va a cargar el Archivo enviado
+			campos_consulta = "";
+		
 			loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
 		}
 		else
@@ -330,7 +354,7 @@ function valida_codigo_reserva(var_div)
 				var vPrecio		= retorno2[11];
 				var vCodReserva	= retorno2[12];
 				
-				if (vClase == 'e')
+				if (vClase == 'E')
 				{
 					vClase = 'Economy';
 				}
@@ -343,74 +367,78 @@ function valida_codigo_reserva(var_div)
 				nom_var_hidden = ["vNombre", "vDni", "vCodVuelo", "vOrigen", "vCOrigen", "vDestino", "vCDestino", "vFechaVuelo", "vHoraVuelo", "vCodAvion", "vClase", "vPrecio", "vCodReserva"];
 				valor_var_hidden = [vNombre, vDni, vCodVuelo, vOrigen, vCOrigen, vDestino, vCDestino, vFechaVuelo, vHoraVuelo, vCodAvion, vClase, vPrecio, vCodReserva];
 				campos_consulta = "";
+				
 				loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
 			}
 		}
 	}
-	
 }
 
-//function genera_pago(dni, nombre, origen, destino, clase, codpasaje, fecha, hora, precio, cod_reserva)
+
+function genera_check_in(dni, nombre, origen, destino, clase, fecha, hora, precio, cod_reserva)
+{
+	document.getElementById("form_datos_ckeckinID").action="/Sitio/pasajeQrPdf/boardingPassQr.php";
+			
+	document.getElementById("form_datos_ckeckinID").submit();
+}
+
+
 function genera_pago(dni, nombre, origen, destino, clase, fecha, hora, precio, cod_reserva)
 {
-
-var div_contenedor = "";
-var campos_consulta = "";
-var ruta_archivo = "";
-var query = "";
-var tipo_query = "";
-var nom_var_hidden = [];
-var valor_var_hidden = [];
-var ultcodpago = "";
-var sigcodpago = "";
-var retorno3 = "";
-var mpago = document.getElementsByName("mpago")[0];
-var numtarjeta = document.getElementById("num_tarjeta");
+	var div_contenedor = "";
+	var campos_consulta = "";
+	var ruta_archivo = "";
+	var query = "";
+	var tipo_query = "";
+	var nom_var_hidden = [];
+	var valor_var_hidden = [];
+	var ultcodpago = "";
+	var sigcodpago = "";
+	var retorno3 = "";
+	var mpago = document.getElementsByName("mpago")[0];
+	var numtarjeta = document.getElementById("num_tarjeta");
 
 	if (numtarjeta.value == 0 || numtarjeta.value == '' ||  isNaN(numtarjeta.value) )
-
 	{		
-			
 			numtarjeta.style.backgroundColor = '#FC9C9C';
 			numtarjeta.focus();
 			
+			alert("El Número de Tarjeta ingresado es incorrecto");
+			
+			return false;
 	}
 	else
 	{	
-		 query = 'INSERT INTO pago VALUES(NULL, '+ cod_reserva + ',' + mpago.value + ',' + numtarjeta.value + ',' + precio + ')';
-		 tipo_query = 'I';
-		 ruta_archivo = "bbdd/f_ejecutar_query.php";
-		 nom_var_hidden = ["query", "tipo_query"];
-		 valor_var_hidden = [query, tipo_query];
+		query = 'INSERT INTO pago VALUES(NULL, '+ cod_reserva + ',' + mpago.value + ',' + numtarjeta.value + ',' + precio + ')';
+		tipo_query = 'I';
+		ruta_archivo = "bbdd/f_ejecutar_query.php";
+		nom_var_hidden = ["query", "tipo_query"];
+		valor_var_hidden = [query, tipo_query];
 
-
- 		retorno = loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
-
- 		 query = 'select cod_reserva from pago where cod_reserva = ' + cod_reserva + ')';
-		 tipo_query = 'S';
-		 ruta_archivo = "bbdd/f_ejecutar_query.php";
-		 nom_var_hidden = ["query", "tipo_query"];
-		 valor_var_hidden = [query, tipo_query];
-		 campos_consulta = "cod_reserva";
-			
-		
 		retorno = loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+
+		query = 'select cod_reserva from pago where cod_reserva = ' + cod_reserva + ')';
+		tipo_query = 'S';
+		ruta_archivo = "bbdd/f_ejecutar_query.php";
+		nom_var_hidden = ["query", "tipo_query"];
+		valor_var_hidden = [query, tipo_query];
+		campos_consulta = "cod_reserva";
 			
+		retorno = loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
 
 		if (retorno != '') 
-			{
+		{
+			alert("El pago fue procesado correctamente");
 			
-			alert("el pago fue procesado");
+			document.getElementById("form_datos_pagoID").action="/Sitio/pasajeQrPdf/pasajeElectronico.php";
 			
-			}
+			document.getElementById("form_datos_pagoID").submit();
+		}
 		else
-			{
-			alert("El pago no se proceso correctamente, vuelva a intentarlo");
-			}		
-
+		{
+			alert("El pago no se procesó correctamente, vuelva a intentarlo");
+		}		
 	}
-
-
 }
 
 function valida_buscador()
@@ -1367,8 +1395,8 @@ function cargarGrafico1()
 	var ruta_archivo = "";
 	var query = "";
 	var tipo_query = "";
-	var nom_var_hidden = [""];
-	var valor_var_hidden = [""];
+	var nom_var_hidden = [];
+	var valor_var_hidden = [];
 	
 	
 	
@@ -1392,7 +1420,7 @@ function cargarGrafico1()
 			alert("Debe cargar fecha hasta");
 				}
 				else{
-					var div_contenedor = "contenidoGrafico"; //Nombre del DIV en donde se va a cargar el Archivo enviado
+					var div_contenedor = "contenido"; //Nombre del DIV en donde se va a cargar el Archivo enviado
 					var fecha_hasta = $("#fecha_hasta").val();
 					var fecha_desde = $("#fecha_desde").val();
 					ruta_archivo = "/sitio/graficos/graf1.php"; 
@@ -1404,6 +1432,7 @@ function cargarGrafico1()
 			}	
 			
 }
+
 //GRAFICO 2
 function cargarGrafico2()
 {
@@ -1412,8 +1441,8 @@ function cargarGrafico2()
 	var ruta_archivo = "";
 	var query = "";
 	var tipo_query = "";
-	var nom_var_hidden = [""];
-	var valor_var_hidden = [""];
+	var nom_var_hidden = [];
+	var valor_var_hidden = [];
 	
 	
 	
@@ -1443,7 +1472,7 @@ function cargarGrafico2()
 							alert("Debe cargar destino");
 						}
 					else{
-					var div_contenedor = "contenidoGrafico"; //Nombre del DIV en donde se va a cargar el Archivo enviado
+					var div_contenedor = "contenido"; //Nombre del DIV en donde se va a cargar el Archivo enviado
 					var fecha_hasta = $("#fecha_hasta").val();
 					var fecha_desde = $("#fecha_desde").val();
 					var cdestino = $("#cdestino").val();
@@ -1456,6 +1485,7 @@ function cargarGrafico2()
 				}	
 			}
 }
+
 //GRAFICO 3
 function cargarGrafico3()
 {
@@ -1464,8 +1494,8 @@ function cargarGrafico3()
 	var ruta_archivo = "";
 	var query = "";
 	var tipo_query = "";
-	var nom_var_hidden = [""];
-	var valor_var_hidden = [""];
+	var nom_var_hidden = [];
+	var valor_var_hidden = [];
 	
 	
 	
@@ -1498,7 +1528,7 @@ function cargarGrafico3()
 							alert("Debe cargar destino");
 					}
 				else{				
-							var div_contenedor = "contenidoGrafico"; //Nombre del DIV en donde se va a cargar el Archivo enviado
+							var div_contenedor = "contenido"; //Nombre del DIV en donde se va a cargar el Archivo enviado
 							var fecha_hasta = $("#fecha_hasta").val();
 							var fecha_desde = $("#fecha_desde").val();
 							var cdestino = $("#cdestino").val();
@@ -1514,7 +1544,6 @@ function cargarGrafico3()
 			}	
 }
 
-
 //GRAFICO 4
 function cargarGrafico4()
 {
@@ -1523,8 +1552,8 @@ function cargarGrafico4()
 	var ruta_archivo = "";
 	var query = "";
 	var tipo_query = "";
-	var nom_var_hidden = [""];
-	var valor_var_hidden = [""];
+	var nom_var_hidden = [];
+	var valor_var_hidden = [];
 	
 	
 	
@@ -1548,7 +1577,7 @@ function cargarGrafico4()
 			alert("Debe cargar fecha hasta");
 				}
 				else{
-					var div_contenedor = "contenidoGrafico"; //Nombre del DIV en donde se va a cargar el Archivo enviado
+					var div_contenedor = "contenido"; //Nombre del DIV en donde se va a cargar el Archivo enviado
 					var fecha_hasta = $("#fecha_hasta").val();
 					var fecha_desde = $("#fecha_desde").val();
 					ruta_archivo = "/sitio/graficos/graf4.php"; 
@@ -1557,8 +1586,50 @@ function cargarGrafico4()
 					campos_consulta = "";
 					loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
 				}
-			}	
-			
+			}		
+}
+
+//Listado de bajas
+function generar_listado()
+{
+	var campos_consulta = "";
+	var msj_error = "";
+	var ruta_archivo = "";
+	var query = "";
+	var tipo_query = "";
+	var nom_var_hidden = [];
+	var valor_var_hidden = [];
+
+	var cod_vuelo = document.getElementById("cod_vuelo"); //Campo del formuario a validar
+	var fecha_vuelo = document.getElementById("fecha_vuelo"); //Campo del formuario a validar
+		
+	if (validaVacio(cod_vuelo.value) === false) 
+	{
+		cod_vuelo.style.backgroundColor = '#FC9C9C'; //Pinta de color rojo el campo que dió error
+		cod_vuelo.focus(); //Posiciona el foco en el campo que dió el error
+		alert("Debe ingresar el Código de Vuelo");
+		return false;
+	}
+	else if (validaVacio(fecha_vuelo.value) === false) 
+	{
+		fecha_vuelo.style.backgroundColor = '#FC9C9C'; //Pinta de color rojo el campo que dió error
+		fecha_vuelo.focus(); //Posiciona el foco en el campo que dió el error
+		alert("Debe ingresar la Fecha del Vuelo");
+		return false;
+	}
+	else
+	{
+		var div_contenedor = "contenido"; //Nombre del DIV en donde se va a cargar el Archivo enviado
+		//var fecha_hasta = $("#fecha_hasta").val();
+		//var fecha_desde = $("#fecha_desde").val();
+		
+		ruta_archivo = "/Sitio/php/barrido_lista_espera.php"; 
+		nom_var_hidden = ["cod_vuelo","fecha_vuelo"]; 
+		valor_var_hidden = [cod_vuelo.value,fecha_vuelo.value]; 
+		campos_consulta = "";
+		
+		loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+	}			
 }
 
 /*-------------------- fin funciones graficos----------------------------------*/

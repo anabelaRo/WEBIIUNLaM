@@ -1,20 +1,15 @@
 <!doctype html>
 <head>
-		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<title>Aerolíneas Del Plata</title>
 		<link rel="StyleSheet" href="/sitio/estilos/pasaje.css" type="text/css"/>
 </head>
 	
 <body>
-	
 	<div id="contenedor">
-			
 		<div id="contenedor1">
-				
 			<div class="contenedor2">
-							
-				<div class="titulo">Boarding-Pass</div>							
-						             
+				<div class="titulo">Boarding-Pass</div>							 
 					<div id="interior_1">
 							
 						<div id="interior_2">
@@ -30,17 +25,16 @@
 							
 								$db = new Database();
 								
-								$filas = $db->exec_Select ("select 	u.nombre_apellido, v.codigo, p.fecha_vuelo, p.clase_pasaje, p.cod_reserva, p.cod_asiento, v.codigo as codvuelo, v.origen, co.descripcion as corigen, v.destino, cd.descripcion as cdestino 
-														from pasaje as p 
-														join vuelo as v on p.cod_vuelo=v.codigo
-														join usuario as u on u.codigo=p.cod_usuario							
-														join aeropuerto ao on v.origen = ao.codigo_OACI 
-														join ciudad co on ao.ciudad = co.codigo 
-														join aeropuerto ad on v.destino = ad.codigo_OACI 
-														join ciudad cd on ad.ciudad = cd.codigo
-														where p.cod_reserva='$cod_reserva'");
+								$filas = $db->exec_Select ("	select 	u.nombre_apellido, v.codigo, p.fecha_vuelo, p.clase_pasaje, p.cod_reserva, p.cod_asiento, v.codigo as codvuelo, v.origen, co.descripcion as corigen, v.destino, cd.descripcion as cdestino, v.hora_vuelo as hora_vuelo 
+																		from pasaje as p 
+																		join vuelo as v on p.cod_vuelo=v.codigo
+																		join usuario as u on u.codigo=p.cod_usuario							
+																		join aeropuerto ao on v.origen = ao.codigo_OACI 
+																		join ciudad co on ao.ciudad = co.codigo 
+																		join aeropuerto ad on v.destino = ad.codigo_OACI 
+																		join ciudad cd on ad.ciudad = cd.codigo
+																		where p.cod_reserva='$cod_reserva'");
 												
-
 								foreach ($filas as $value)
 								
 								{	echo "<div id='nombre_apellido' class='campos_pasaje'>";
@@ -52,7 +46,7 @@
 									echo "</div>";
 									
 									echo "<div id='fecha_vuelo' class='campos_pasaje'>";
-									echo $value['fecha_vuelo'];
+									echo substr($value['fecha_vuelo'],0,10) . '<br/><br/>' . $value['hora_vuelo'];
 									echo "</div>";
 									
 									echo "<div id='corigen' class='campos_pasaje'>";
@@ -72,12 +66,20 @@
 									echo "</div>";
 									
 									echo "<div id='clase_pasaje' class='campos_pasaje'>";
-									if ($value['clase_pasaje']=='e')
-										echo $categoria="ECONOMY";
-									else echo $categoria="PRIMERA";
+									
+									if ($value['clase_pasaje'] == 'E')
+									{
+										echo $categoria = 'ECONOMY';
+									}
+									else 
+									{
+										echo $categoria = 'PRIMERA';
+									}
+									
 									echo "</div>";
 								}
-				// ********* COMIENZA CODIGO QR ******************
+								
+								// ********* COMIENZA CODIGO QR ******************
 							
 								//set it to writable location, a place for temp generated PNG files
 								$PNG_TEMP_DIR = dirname(__FILE__).DIRECTORY_SEPARATOR.'temp'.DIRECTORY_SEPARATOR;
@@ -98,23 +100,21 @@
 								
 								$total="NOMBRE Y APELLIDO:\n" . $value['nombre_apellido']./*en $total se carga lo que se quiere mostrar luego de escanear*/
 								"\n\nCODIGO DE VUELO:\n" . $value['codigo'].
-								"\n\nFECHA DE VUELO:\n" . $value['fecha_vuelo'].
+								"\n\nFECHA DE VUELO:\n" . substr($value['fecha_vuelo'],0,10) . ' ' . $value['hora_vuelo'] .
 								"\n\nCODIGO DE RESERVA:\n" . $value['cod_reserva'].
 								"\n\nCIUDAD DE ORIGEN:\n" . $value['corigen'].
 								"\n\nCIUDAD DE DESTINO:\n" . $value['cdestino'].
 								"\n\nCODIGO DE ASIENTO:\n" . $value['cod_asiento'].
 								"\n\nCATEGORIA:\n" . $categoria;
 								
-								
 								$filename = $PNG_TEMP_DIR.'test'.md5(/*$_REQUEST[''].*/'|'.$errorCorrectionLevel.'|'.$matrixPointSize).'.png';
 								QRcode::png($total, $filename, $errorCorrectionLevel, $matrixPointSize, 2); 
 								
-				
 								echo 	'<div id="codigo_qr">
 											<img src="'.$PNG_WEB_DIR.basename($filename).'" id="codigo_qr_imagen" /><hr/>
 										</div>';
 										
-				// ********* FIN CODIGO QR ******************
+								// ********* FIN CODIGO QR ******************
 				
 				
 								echo 	'<div id="btn_formulario">';
@@ -127,6 +127,7 @@
 										echo "<input type='hidden' name='cod_reserva' 		value='$value[cod_reserva]'		/><br>";				
 										echo "<input type='hidden' name='cod_asiento' 		value='$value[cod_asiento]'		/><br>";
 										echo "<input type='hidden' name='categoria' 		value='$categoria'				/><br>";
+										echo "<input type='hidden' name='hora_vuelo' 		value='$value[hora_vuelo]'		/><br>";
 										$db->disconnect();
 								?>	
 								

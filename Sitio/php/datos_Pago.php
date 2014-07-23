@@ -99,44 +99,55 @@ span{
 		$precio = isset($_POST['precio']) ? $_POST['precio'] : "";
 		$cod_reserva = isset($_POST['cod_reserva']) ? $_POST['cod_reserva'] : "";
 	
+		if ($clase == 'E')
+		{
+			$clase = "Economy";
+		}
+		else
+		{
+			$clase = 'Primary';
+		}
+		
 		?>
 		<div class="contenedorb">
-		
-		<form method="post" name="form_datos_pago" action="/sitio/pasajeQrPdf/pasajeElectronico.php">
 
-	<h2>Información de reserva:</h2>	
-		</br><!--<img src="img/flights.png" width="100" height="100" >	-->											
-				<label class="dni" for="dni">Dni: </label>	<?php echo $dni ?><!--	Villa Gesell-->
-				<label class="nombre" for="nombre">Nombre: </label>	<?php echo $nombre ?><!--<Bahia Blanca--> 
+			<h2>Información de reserva:</h2>	
+			
+			</br>			
+			
+			<!--form method="post" name="form_datos_pago" id="form_datos_pagoID" action="/sitio/pasajeQrPdf/pasajeElectronico.php"-->
+			<form method="post" target="_blank" name="form_datos_pago" id="form_datos_pagoID">
+				<label class="dni" for="dni">Dni: </label><?php echo $dni ?>
+				<label class="nombre" for="nombre">Nombre: </label><?php echo $nombre ?>
 				</br>	
-				
 				<input type = "hidden"  name= "cod_reserva" value = '<?php echo $cod_reserva;?>'>
-				
-				<label class="origen" for="Origen">Desde: </label><?php echo $origen ?><!--<Bahia Blanca--> <!--	<?php $origen?>-->
-														
-				<label class="destino" for="Destino">Hasta: </label><?php echo $destino ?><!--	Villa Gesell-->
+				<label class="origen" for="Origen">Desde: </label><?php echo $origen ?>								
+				<label class="destino" for="Destino">Hasta: </label><?php echo $destino ?>
 				</br>
-				
-				<label class="fecha" for="FSAL">Fecha Salida: </label>		<?php echo $fecha ?><!--	17/07/2014-->
-				<label class="hora" for="hora">Hora: </label>			<?php echo $hora ?><!--	17/07/2014-->
+				<label class="fecha" for="FSAL">Fecha Salida: </label> <?php echo $fecha ?>
+				<label class="hora" for="hora">Hora: </label> <?php echo $hora ?>
 				</br>
+				<label class="precio" for="precio">Precio: $ </label><?php echo $precio ?>
 				
-				<!--label class="label_text" for="forma_Pago">Forma de Pago:</label>
-				<input type="text" class="input_text" name="forma_Pago" id="forma_Pago"/-->
-				<label class="precio" for="precio">Precio: $ </label><?php echo $precio ?></br>
+				<label class="precio" for="clase">Clase: </label><?php echo $clase ?></br>
+				
 				<label class="label_text_4" for="forma_Pago">Forma de Pago:</label>
+				
 				<select class="input_combo" name="mpago">
 					<option value="1"> Débito </option>
 					<option value="2"> Crédito </option>
 				</select>	
+				
 				</br>
+				
 				<label class="label_text_1" for="num_tarjeta">Número de Tarjeta:</label>
 				<input type="text" class="input_text" name="num_tarjeta" id="num_tarjeta"/>
-				<input type="submit" class="input_button" id="btn_datos_pago" name="btn_datos_pago" value="Pagar" onclick="genera_pago('<?php echo $dni;?>','<?php echo $nombre?>','<?php echo $origen?>','<?php echo $destino?>','<?php echo $clase?>','<?php echo $fecha?>','<?php echo $hora?>','<?php echo $precio?>','<?php echo $cod_reserva?>')"/>
-			<!--<input type="button" class="input_button" id="btn_datos_pago" name="btn_datos_pago" value="Pagar" onclick="genera_pago('<?php echo $dni;?>','<?php echo $nombre?>','<?php echo $origen?>','<?php echo $destino?>','<?php echo $clase?>','<?php echo $codpasaje?>','<?php echo $fecha?>','<?php echo $hora?>','<?php echo $precio?>','<?php echo $cod_reserva?>')"/>-->
-		</form>
+				
+				<!--type="submit"-->
+				<input type="buttom" class="input_button" id="btn_datos_pago" name="btn_datos_pago" value="Pagar" onclick="genera_pago('<?php echo $dni;?>','<?php echo $nombre?>','<?php echo $origen?>','<?php echo $destino?>','<?php echo $clase?>','<?php echo $fecha?>','<?php echo $hora?>','<?php echo $precio?>','<?php echo $cod_reserva?>')"/>
+			</form>
+			
 		</div>
-	
 	</body>	
 </html>	
 										
