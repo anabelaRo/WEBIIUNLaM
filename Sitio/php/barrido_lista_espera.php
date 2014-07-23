@@ -94,7 +94,7 @@
 															'where p.cod_vuelo = '.$cod_vuelo. ' '.
 															'  and p.fecha_vuelo = "'.$fecha_vuelo. '" '.
 															'  and p.flag_check_in IS NULL '.
-															'  and p.flag_lista_espera = 1 '.
+															'  and p.flag_lista_espera = -1 '.
 															'	and p.clase_pasaje = "E" ;'
 													 );
 				
@@ -230,8 +230,8 @@
 															'where p.cod_vuelo = '.$cod_vuelo. ' '.
 															'  and p.fecha_vuelo = "'.$fecha_vuelo. '" '.
 															'  and p.flag_check_in IS NULL '.
-															'  and p.flag_lista_espera = 1 '.
-															'	and p.clase_pasaje = "P" ;'
+															'  and p.flag_lista_espera = -1 '.
+															'  and p.clase_pasaje = "P" ;'
 													 );
 				
 				$cantidad_habilitar_P = 0;
