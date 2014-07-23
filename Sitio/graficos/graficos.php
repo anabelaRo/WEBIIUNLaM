@@ -34,8 +34,9 @@
 									<input type="button" class="input_button2" value="Ocupación por avión y destino" onclick="cargarContenido('3')"/>
 									<input type="button" class="input_button2" value="Cantidad de reservas caídas" onclick="cargarContenido('4')"/>
 									<input type="button" class="input_button2" value="Lista de espera" onclick="cargarContenido('5')"/>
-									</div>	
-										<div id='contenido'></div>
+									</div>
+									
+										<div id='contenidoGrafico'></div>
 										
 										<script type='text/javascript'>
 										// Funcion para cargar un contenido en un div
@@ -43,24 +44,24 @@
 										{
 										if(pagina==1)
 											{
-											$("#contenido").load("/sitio/graficos/formulario_consulta_graf1.php");
+											$("#contenidoGrafico").load("/sitio/graficos/formulario_consulta_graf1.php");
 											}
 										else if (pagina==2)
 											{
-											$("#contenido").load("/sitio/graficos/formulario_consulta_graf2.php");
+											$("#contenidoGrafico").load("/sitio/graficos/formulario_consulta_graf2.php");
 											}
 										else if (pagina==3){
-											$("#contenido").load("/sitio/graficos/formulario_consulta_graf3.php");
+											$("#contenidoGrafico").load("/sitio/graficos/formulario_consulta_graf3.php");
 											}
 										else if (pagina==4){
-											$("#contenido").load("/sitio/graficos/formulario_consulta_graf4.php");
+											$("#contenidoGrafico").load("/sitio/graficos/formulario_consulta_graf4.php");
 											}
 										else {
-										$("#contenido").load("/sitio/graficos/formulario_consulta_graf1.php");
+										$("#contenidoGrafico").load("/sitio/graficos/formulario_consulta_graf1.php");
 											
 										}
 										}
-										//$("#contenido").html("<img src='/sitio/graficos/grafico3.php'/>");
+										//$("#contenidoGrafico").html("<img src='/sitio/graficos/grafico3.php'/>");
 										</script>
 	
 										

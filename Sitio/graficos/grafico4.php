@@ -3,8 +3,8 @@ require_once ('jpgraph/src/jpgraph.php');
 require_once ('jpgraph/src/jpgraph_pie.php');
 require_once ('jpgraph/src/jpgraph_pie3d.php');
 
-$fecha_desde = $_POST['fecha_desde'];
-$fecha_hasta = $_POST['fecha_hasta'];
+$fecha_desde = $_GET['fecha_desde'];
+$fecha_hasta = $_GET['fecha_hasta'];
 
 $mysqli= new mysqli("localhost","root", "", "aerolinea");
 

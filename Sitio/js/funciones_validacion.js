@@ -1357,6 +1357,214 @@ function f_volver_buscar()
 }
 
 
+/*-------------------- inicio funciones graficos----------------------------------*/
+
+//GRAFICO 1
+function cargarGrafico1()
+{
+	var campos_consulta = "";
+	var msj_error = "";
+	var ruta_archivo = "";
+	var query = "";
+	var tipo_query = "";
+	var nom_var_hidden = [""];
+	var valor_var_hidden = [""];
+	
+	
+	
+		var fecha_desde = document.getElementById("fecha_desde"); //Campo del formuario a validar
+		var fecha_hasta = document.getElementById("fecha_hasta"); //Campo del formuario a validar
+		
+		
+		
+		if (validaVacio(fecha_desde.value) === false) 
+		{
+			fecha_desde.style.backgroundColor = '#FC9C9C'; //Pinta de color rojo el campo que dió error
+			fecha_desde.focus(); //Posiciona el foco en el campo que dió el error
+			alert("Debe cargar fecha desde");
+		 
+		}
+		else{ 
+			if (validaVacio(fecha_hasta.value) === false) 
+				{
+			fecha_hasta.style.backgroundColor = '#FC9C9C'; //Pinta de color rojo el campo que dió error
+			fecha_hasta.focus(); //Posiciona el foco en el campo que dió el error
+			alert("Debe cargar fecha hasta");
+				}
+				else{
+					var div_contenedor = "contenidoGrafico"; //Nombre del DIV en donde se va a cargar el Archivo enviado
+					var fecha_hasta = $("#fecha_hasta").val();
+					var fecha_desde = $("#fecha_desde").val();
+					ruta_archivo = "/sitio/graficos/graf1.php"; 
+					nom_var_hidden = ["fecha_desde","fecha_hasta"]; 
+					valor_var_hidden = [fecha_desde,fecha_hasta]; 
+					campos_consulta = "";
+					loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+				}
+			}	
+			
+}
+//GRAFICO 2
+function cargarGrafico2()
+{
+	var campos_consulta = "";
+	var msj_error = "";
+	var ruta_archivo = "";
+	var query = "";
+	var tipo_query = "";
+	var nom_var_hidden = [""];
+	var valor_var_hidden = [""];
+	
+	
+	
+		var fecha_desde = document.getElementById("fecha_desde"); //Campo del formuario a validar
+		var fecha_hasta = document.getElementById("fecha_hasta"); //Campo del formuario a validar
+		var cdestino = document.getElementById("cdestino"); //Campo del formuario a validar
+		
+		
+		if (validaVacio(fecha_desde.value) === false) 
+		{
+			fecha_desde.style.backgroundColor = '#FC9C9C'; //Pinta de color rojo el campo que dió error
+			fecha_desde.focus(); //Posiciona el foco en el campo que dió el error
+			alert("Debe cargar fecha desde");
+		 
+		}
+		else{ 
+			if (validaVacio(fecha_hasta.value) === false) 
+				{
+			fecha_hasta.style.backgroundColor = '#FC9C9C'; //Pinta de color rojo el campo que dió error
+			fecha_hasta.focus(); //Posiciona el foco en el campo que dió el error
+			alert("Debe cargar fecha hasta");
+				}else {
+					if (validaVacio(cdestino.value) === false) 
+						{
+							cdestino.style.backgroundColor = '#FC9C9C'; //Pinta de color rojo el campo que dió error
+							cdestino.focus(); //Posiciona el foco en el campo que dió el error
+							alert("Debe cargar destino");
+						}
+					else{
+					var div_contenedor = "contenidoGrafico"; //Nombre del DIV en donde se va a cargar el Archivo enviado
+					var fecha_hasta = $("#fecha_hasta").val();
+					var fecha_desde = $("#fecha_desde").val();
+					var cdestino = $("#cdestino").val();
+					ruta_archivo = "/sitio/graficos/graf2.php"; 
+					nom_var_hidden = ["fecha_desde","fecha_hasta","cdestino"]; 
+					valor_var_hidden = [fecha_desde,fecha_hasta,cdestino]; 
+					campos_consulta = "";
+					loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+						}
+				}	
+			}
+}
+//GRAFICO 3
+function cargarGrafico3()
+{
+	var campos_consulta = "";
+	var msj_error = "";
+	var ruta_archivo = "";
+	var query = "";
+	var tipo_query = "";
+	var nom_var_hidden = [""];
+	var valor_var_hidden = [""];
+	
+	
+	
+		var fecha_desde = document.getElementById("fecha_desde"); //Campo del formuario a validar
+		var fecha_hasta = document.getElementById("fecha_hasta"); //Campo del formuario a validar
+		var cdestino = document.getElementById("cdestino"); //Campo del formuario a validar
+		var codigo = document.getElementById("codigo"); //Campo del formuario a validar
+		
+		
+		
+		if (validaVacio(fecha_desde.value) === false) 
+		{
+			fecha_desde.style.backgroundColor = '#FC9C9C'; //Pinta de color rojo el campo que dió error
+			fecha_desde.focus(); //Posiciona el foco en el campo que dió el error
+			alert("Debe cargar fecha desde");
+		 
+		}
+		else{ 
+			if (validaVacio(fecha_hasta.value) === false) 
+				{
+				fecha_hasta.style.backgroundColor = '#FC9C9C'; //Pinta de color rojo el campo que dió error
+				fecha_hasta.focus(); //Posiciona el foco en el campo que dió el error
+				alert("Debe cargar fecha hasta");
+				}
+			else {
+				if (validaVacio(cdestino.value) === false) 
+					{
+							cdestino.style.backgroundColor = '#FC9C9C'; //Pinta de color rojo el campo que dió error
+							cdestino.focus(); //Posiciona el foco en el campo que dió el error
+							alert("Debe cargar destino");
+					}
+				else{				
+							var div_contenedor = "contenidoGrafico"; //Nombre del DIV en donde se va a cargar el Archivo enviado
+							var fecha_hasta = $("#fecha_hasta").val();
+							var fecha_desde = $("#fecha_desde").val();
+							var cdestino = $("#cdestino").val();
+							var codigo = $("#codigo").val();
+							ruta_archivo = "/sitio/graficos/graf3.php"; 
+							nom_var_hidden = ["fecha_desde","fecha_hasta","cdestino","codigo"]; 
+							valor_var_hidden = [fecha_desde,fecha_hasta,cdestino,codigo]; 
+							campos_consulta = "";
+							loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+							
+						}
+					}	
+			}	
+}
+
+
+//GRAFICO 4
+function cargarGrafico4()
+{
+	var campos_consulta = "";
+	var msj_error = "";
+	var ruta_archivo = "";
+	var query = "";
+	var tipo_query = "";
+	var nom_var_hidden = [""];
+	var valor_var_hidden = [""];
+	
+	
+	
+		var fecha_desde = document.getElementById("fecha_desde"); //Campo del formuario a validar
+		var fecha_hasta = document.getElementById("fecha_hasta"); //Campo del formuario a validar
+		
+		
+		
+		if (validaVacio(fecha_desde.value) === false) 
+		{
+			fecha_desde.style.backgroundColor = '#FC9C9C'; //Pinta de color rojo el campo que dió error
+			fecha_desde.focus(); //Posiciona el foco en el campo que dió el error
+			alert("Debe cargar fecha desde");
+		 
+		}
+		else{ 
+			if (validaVacio(fecha_hasta.value) === false) 
+				{
+			fecha_hasta.style.backgroundColor = '#FC9C9C'; //Pinta de color rojo el campo que dió error
+			fecha_hasta.focus(); //Posiciona el foco en el campo que dió el error
+			alert("Debe cargar fecha hasta");
+				}
+				else{
+					var div_contenedor = "contenidoGrafico"; //Nombre del DIV en donde se va a cargar el Archivo enviado
+					var fecha_hasta = $("#fecha_hasta").val();
+					var fecha_desde = $("#fecha_desde").val();
+					ruta_archivo = "/sitio/graficos/graf4.php"; 
+					nom_var_hidden = ["fecha_desde","fecha_hasta"]; 
+					valor_var_hidden = [fecha_desde,fecha_hasta]; 
+					campos_consulta = "";
+					loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+				}
+			}	
+			
+}
+
+/*-------------------- fin funciones graficos----------------------------------*/
+
+
+
 function validaVacio(campo)
 {
 	for (i = 0; i < campo.length; i++)

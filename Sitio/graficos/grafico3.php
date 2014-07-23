@@ -4,10 +4,10 @@ require_once ('jpgraph/src/jpgraph_pie.php');
 require_once ('jpgraph/src/jpgraph_pie3d.php');
 
 
-$fecha_desde = $_POST['fecha_desde'];
-$fecha_hasta = $_POST['fecha_hasta'];
-$cdestino = $_POST['cdestino'];
-$codigo = $_POST['codigo'];
+$fecha_desde = $_GET['fecha_desde'];
+$fecha_hasta = $_GET['fecha_hasta'];
+$cdestino = $_GET['cdestino'];
+$codigo = $_GET['codigo'];
 
 $mysqli= new mysqli("localhost","root", "", "aerolinea");
 
