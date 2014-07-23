@@ -18,6 +18,7 @@
 		<link rel="stylesheet" type="text/css" href="estilos/jquery.fullPage.css"/>
 		<link rel="stylesheet" type="text/css" href="estilos/estilos.css"/>
 		<link rel="stylesheet" type="text/css" href="estilos/reserva.css"/>
+		<link rel="stylesheet" type="text/css" href="estilos/checkIn.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
 		
 		<!--PopUp Asientos de aviones-->

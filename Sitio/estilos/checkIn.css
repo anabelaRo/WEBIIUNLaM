@@ -1,0 +1,127 @@
+#div_datos_check_in .title_h3_check {
+    color: #033d7d;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0 18px;
+}
+#div_botones_check {
+    width: 568px;
+}
+#div_datos_check_in .label_text_check {
+    color: #333;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    margin: 0 40px 0 20px;
+    padding: 0;
+}
+#div_datos_check_in .label_text_check_1 {
+    color: #333;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    margin: 0 23px 0 0;
+    padding: 0;
+}
+#div_datos_check_in .label_text_check_2 {
+    color: #333;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    margin: 0 48px 0 20px;
+    padding: 0;
+}
+#div_datos_check_in .label_text_check_3 {
+    color: #333;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    margin: 0 41px 0 20px;
+    padding: 0;
+}
+#div_datos_check_in .label_text_check_4 {
+    color: #333;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    margin: 0 7px 0 20px;
+    padding: 0;
+}
+#div_datos_check_in .label_text_check_5 {
+    color: #333;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    margin: 0 15px 0 149px;
+    padding: 0;
+}
+#div_datos_check_in .label_text_check_6 {
+    color: #333;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    margin: 0 58px 0 19px;
+    padding: 0;
+}
+#div_datos_check_in .label_text_check_7 {
+    color: #333;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    margin: 0 3px 0 106px;
+    padding: 0;
+}
+#div_datos_check_in .input_text_check {
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    color: #929292;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    width: 226px;
+}
+#div_datos_check_in .input_text_check_1 {
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    color: #929292;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    width: 125px;
+}
+#div_datos_check_in .input_text_check_2 {
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    color: #929292;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    width: 410px;
+}
+#div_datos_check_in .input_text_check_3 {
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    color: #929292;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    width: 410px;
+}
+#div_datos_check_in .input_text_check_4 {
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    color: #929292;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    width: 77px;
+}
+#div_datos_check_in .input_text_check_5 {
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    color: #929292;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    width: 120px;
+}
+#div_datos_check_in .input_text_check_6 {
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    color: #929292;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    width: 120px;
+}
+#div_datos_check_in .input_text_check_7 {
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    color: #929292;
+    font: bold 15px Arial,Helvetica,sans-serif;
+    width: 120px;
+}
+#div_botones_check .input_button_check {
+    background-color: #033d7d;
+    border: 0 none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font: bold 12px Arial,Helvetica,sans-serif;
+    height: 30px;
+    margin: -5px 0 0 365px;
+    padding: 0 12px;
+    text-align: center;
+    text-decoration: none;
+}
