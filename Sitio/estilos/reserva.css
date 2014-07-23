@@ -1,0 +1,345 @@
+﻿#div_realizar_reserva .title_h3_res{
+	color: #033d7d;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 10px 0 18px;
+}
+
+#div_realizar_reserva_1 .title_h3_res_1{
+	color: #033d7d;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 10px 0 18px;
+}
+
+
+#div_realizar_reserva_2 .title_h3_res{
+	color: #033d7d;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 0 2px;
+}
+
+#div_realizar_reserva_2 .title_h3_res_1{
+	color: #033d7d;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 5px 0 2px;
+}
+
+
+#div_realizar_reserva_3 .title_h3_res{
+	color: #033d7d;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 10px 0 18px;
+}
+
+
+#div_botones_res {
+	width: 568px;
+}
+
+/**********************************************/
+
+#div_realizar_reserva .label_text_res {
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 44px 0 75px;
+	padding: 0;
+}
+
+#div_realizar_reserva .label_text_res_1{
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 38px 0 75px;
+	padding: 0;
+}
+
+#div_realizar_reserva .label_text_res_2{
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 4px 0 74px;
+	padding: 0;
+}
+
+#div_realizar_reserva .label_text_res_3{
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 13px 0 0px;
+	padding: 0;
+}
+
+#div_realizar_reserva .label_text_res_4{
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 55px 0 75px;
+	padding: 0;
+}
+
+#div_realizar_reserva .label_text_res_5{
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 3px 0 0px;
+	padding: 0;
+}
+
+
+#div_realizar_reserva_1 .label_text_res {
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 10px 0 45px;
+	padding: 0;
+}
+
+#div_realizar_reserva_1 .label_text_res_1{
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 105px 0 45px;
+	padding: 0;
+}
+
+#div_realizar_reserva_1 .label_text_res_2{
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 45px;
+	padding: 0;
+}
+
+#div_realizar_reserva_1 .label_text_res_3{
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 95px 0 45px;
+	padding: 0;
+}
+
+
+#div_realizar_reserva_2 .label_text_res {
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 10px 0 74px;
+	padding: 0;
+}
+
+#div_realizar_reserva_2 .label_text_res_1{
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 4px 0 74px;
+	padding: 0;
+}
+
+#div_realizar_reserva_2 .label_text_res_2{
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 3px 0 74px;
+	padding: 0;
+}
+
+#div_realizar_reserva_2 .label_text_res_3{
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 14px 0 0;
+	padding: 0;
+}
+
+#div_realizar_reserva_2 .label_text_res_4{
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 21px 0 74px;
+	padding: 0;
+}
+
+#div_realizar_reserva_2 .label_text_res_5{
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 3px 0 0px;
+	padding: 0;
+}
+
+#div_realizar_reserva_2 .label_text_res_6{
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 3px 0 0px;
+	padding: 0;
+}
+
+
+#div_realizar_reserva_3 .label_text_res {
+	color: #333;
+	font: bold 15px/5 Arial,Helvetica,sans-serif;
+	margin: 0 37px 0 75px;
+	padding: 0;
+}
+
+#div_realizar_reserva_3 .label_text_res_1 {
+	color: #333;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	margin: 0 15px 0 75px;
+	padding: 0;
+}
+
+/**********************************************/
+
+#div_realizar_reserva .input_text_res{
+	background: none repeat scroll 0 0 white;
+	border: 0 none;
+	color: #929292;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	width: 372px;
+}
+
+#div_realizar_reserva .input_text_res_1{
+	width: 120px;
+	color: #929292;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	border: 0px;
+	background: none repeat scroll 0 0 white;
+}
+
+
+#div_realizar_reserva_1 .input_text_res{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #666;
+	font-size: 15px;
+	height: 22px;
+	margin: 0 0 12px;
+	padding-left: 5px;
+	width: 300px;
+}
+
+#div_realizar_reserva_1 .input_text_res:focus {
+	box-shadow: 0 0 3px 2px #5b9dd9, 0 0 0 1px #5b9dd9;
+}
+
+
+#div_realizar_reserva_2 .input_text_res{
+	background: none repeat scroll 0 0 white;
+	border: 0 none;
+	color: #929292;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	width: 372px;
+}
+
+#div_realizar_reserva_2 .input_text_res_1{
+	width: 98px;
+	color: #929292;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	border: 0px;
+	background: none repeat scroll 0 0 white;
+}
+
+#div_realizar_reserva_2 .input_text_res_2{
+	width: 20px;
+	color: #929292;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	border: 0px;
+	background: none repeat scroll 0 0 white;
+}
+
+
+#div_realizar_reserva_3 .input_text_res{
+	background: none repeat scroll 0 0 white;
+	border: 0 none;
+	color: #929292;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	width: 100px;
+}
+
+/**********************************************/
+
+#div_realizar_reserva .input_combo_res {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font: bold 15px Arial,Helvetica,sans-serif;
+	color: #929292;
+	font-size: 15px;
+	height: 21px;
+	margin: 0;
+	padding-left: 5px;
+	width: 75px;
+}
+
+#div_realizar_reserva .input_combo_res:focus {
+	box-shadow: 0 0 3px 2px #5b9dd9, 0 0 0 1px #5b9dd9;
+}
+
+/**********************************************/
+
+#div_realizar_reserva .input_button_res, #div_realizar_reserva_1 .input_button_res {
+	background-color: #033d7d;
+	border: 0 none;
+	border-radius: 5px;
+	color: #ffffff;
+	cursor: pointer;
+	font: bold 12px Arial,Helvetica,sans-serif;
+	height: 30px;
+	margin: 20px 0 0 5px;
+	padding: 0 12px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#div_realizar_reserva .input_button_res_1, #div_realizar_reserva_1 .input_button_res_1 {
+	background-color: #033d7d;
+	border: 0 none;
+	border-radius: 5px;
+	color: #ffffff;
+	cursor: pointer;
+	font: bold 12px Arial,Helvetica,sans-serif;
+	height: 30px;
+	margin: 0 0 0 318px;
+	padding: 0 12px;
+	text-align: center;
+	text-decoration: none;
+	width: 137px;
+}
+
+#div_realizar_reserva_2 .input_button_res {
+	background-color: #033d7d;
+	border: 0 none;
+	border-radius: 5px;
+	color: #ffffff;
+	cursor: pointer;
+	font: bold 12px Arial,Helvetica,sans-serif;
+	height: 30px;
+	margin: 3px 0 0 5px;
+	padding: 0 12px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#div_realizar_reserva_2 .input_button_res_1 {
+	background-color: #033d7d;
+	border: 0 none;
+	border-radius: 5px;
+	color: #ffffff;
+	cursor: pointer;
+	font: bold 12px Arial,Helvetica,sans-serif;
+	height: 30px;
+	margin: 0 0 0 335px;
+	padding: 0 12px;
+	text-align: center;
+	text-decoration: none;
+	width: 137px;
+}
+
+
+#div_realizar_reserva_3 .input_button_res {
+	background-color: #033d7d;
+	border: 0 none;
+	border-radius: 5px;
+	color: #ffffff;
+	cursor: pointer;
+	font: bold 12px Arial,Helvetica,sans-serif;
+	height: 30px;
+	margin: 10px 0 0 236px;
+	padding: 0 15px;
+	text-align: center;
+	text-decoration: none;
+}

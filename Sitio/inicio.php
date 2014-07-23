@@ -17,6 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="estilos/jquery-ui-1.10.4.css">
 		<link rel="stylesheet" type="text/css" href="estilos/jquery.fullPage.css"/>
 		<link rel="stylesheet" type="text/css" href="estilos/estilos.css"/>
+		<link rel="stylesheet" type="text/css" href="estilos/reserva.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
 		
 		<!--PopUp Asientos de aviones-->
@@ -43,13 +44,13 @@
 					resize : false,
 					<!--Se deshabilita el calculo automatico del tamaño de la letra-->
 					slidesColor : ['#ccc', '#fff'],
-					anchors:['firstSlide', 'secondSlide'],
+					anchors:['slideUno', 'slideDos', 'slideTres'],
 					scrollingSpeed: 700,
 					easing: 'easeInQuart',
 					menu: true,
 					navigation: true,
 					navigationPosition: 'right',
-					navigationTooltips: ['Home', 'Reservas'],
+					navigationTooltips: ['Home', 'Reservas', 'Estadísticas'],
 					slidesNavigation: true,
 					slidesNavPosition: 'bottom',
 					loopBottom: false,
@@ -124,6 +125,8 @@
 					defaultDate: "+1d",
 					changeMonth: true,
 					numberOfMonths: 1,
+					dateFormat: "dd/mm/yy",
+					minDate: 0,
 					onClose: function( selectedDate ) {
 						$( "#txtToDate" ).datepicker( "option", "minDate", selectedDate );
 						$( "#txtToDate" ).datepicker( "option", "disabled", false );
@@ -134,6 +137,7 @@
 					defaultDate: "+1w",
 					changeMonth: true,
 					numberOfMonths: 1,
+					dateFormat: "dd/mm/yy",
 					disabled: true,
 /*					onClose: function( selectedDate ) {
 						$( "#txtFromDate" ).datepicker( "option", "maxDate", selectedDate );
@@ -142,7 +146,7 @@
 			});
 		</script>
 	</head>
-	<body>
+	<body onload = "mostrar_fecha();">
 		<div id="wrapper">
 			<div class="section active" id="section0">
 				<div class="slide active" id="slide1">
@@ -209,20 +213,20 @@
 											<label class="label_text_2" for="fsalida">F. Salida:</label>
 											<input type="text" class="input_text" name="fsalida" placeholder="Fecha de salida" id="txtFromDate" class="datepicker"/>
 											
-											<label class="label_text_3" for="fregreso">F. Regreso:</label>
+											<label class="label_text_3" for="fregreso" id="lbl_f_regreso">F. Regreso:</label>
 											<input type="text" class="input_text" name="fregreso" placeholder="Fecha de regreso" id="txtToDate" class="datepicker"/>
 
 											<br/>
 											
 											<label class="label_text_4" for="clase">Clase:</label>
-											<select class="input_combo" name="clase">
-												<option value=""> Seleccione clase </option> 
-												<option value="primera"> Primera </option> <!-- modifico values | anabela 15/07-->
-												<option value="economy"> Economy </option> <!-- modifico values | anabela 15/07-->
+											<select class="input_combo" name="clase" id="cmb_clase">
+												<option value=""> Seleccione Clase </option> 
+												<option value="Primera"> Primera </option>
+												<option value="Economy"> Economy </option>
 											</select>
 											
 											<label class="label_text_3" for="clase">Ida y Vuelta:</label>
-											<input type="checkbox" name="idayvuelta" id="idayvuelta"> <!-- modifico value  y name | anabela 15/07-->
+											<input type="checkbox" name="idayvuelta" id="idayvuelta" onclick="mostrar_fecha();">
 											
 											<br/>
 											
