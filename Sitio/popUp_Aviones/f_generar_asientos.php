@@ -114,7 +114,7 @@
 												{
 													$existe = 'S';
 													
-													echo '<td id="'.$fila.'-'.$j.'" title="Asiento: '.$fila.'-'.$j.'" style="background-color:#ff0000" onClick="changeBgcolor(this)"></td>';
+													echo '<td id="'.$fila.'-'.$j.'" title="Asiento: '.$fila.'-'.$j.'" style="background-color:#ff0000"></td>';
 												}
 												
 												if ($existe == 'N')
@@ -198,7 +198,7 @@
 												{
 													$existe = 'S';
 													
-													echo '<td id="'.$fila.'-'.$j.'" title="Asiento: '.$fila.'-'.$j.'" style="background-color:#ff0000" disabled="disabled" onClick="changeBgcolor(this)"></td>';
+													echo '<td id="'.$fila.'-'.$j.'" title="Asiento: '.$fila.'-'.$j.'" style="background-color:#ff0000"></td>';
 												}
 												
 												if ($existe == 'N')
