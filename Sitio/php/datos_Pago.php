@@ -110,7 +110,7 @@ span{
 				<label class="nombre" for="nombre">Nombre: </label>	<?php echo $nombre ?><!--<Bahia Blanca--> 
 				</br>	
 				
-				<input type = "hidden"  name= "cod_reserva" value = '<?php echo $cod_reserva;?>'>;
+				<input type = "hidden"  name= "cod_reserva" value = '<?php echo $cod_reserva;?>'>
 				
 				<label class="origen" for="Origen">Desde: </label><?php echo $origen ?><!--<Bahia Blanca--> <!--	<?php $origen?>-->
 														
