@@ -66,18 +66,12 @@ function changeBgcolor(asiento)
 
 function aceptar()
 {
-	var div_contenedor = "div_asiento_selecc"; //Nombre del DIV en donde se va a cargar el Archivo enviado
-	var ruta_archivo = "popUp_Aviones/var_asiento_selecc.php"; //Ruta del Archivo a cargar en el DIV
-	//Sin variables hidden:
-	//var nom_var_hidden = "";
-	//var valor_var_hidden = "";
+	var div_contenedor = "div_asiento_selecc";
+	var ruta_archivo = "popUp_Aviones/var_asiento_selecc.php";
 
-	//Si se necesita enviar variables hidden al archivo definido en "ruta_archivo":
-	//Las variables viajaran junto al archivo y se deberan tomar desde éste con el metodo "$_POST":
-	//$ejemplo = isset($_POST['var_hidden_ejemplo']) ? $_POST['var_hidden_ejemplo'] : "";
-	var nom_var_hidden = ["asiento_selecc"]; //Se carga el vector con el/los nombres de las variables hidden, si es que las hay
-	var valor_var_hidden = [asiento_selec]; //Se carga el vector con el/los valores que tienen que tomar las variables definidas en "nom_var_hidden"
-
-	//Esta funcion se encarga de recargar un archivo, en un DIV:
-	loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden);
+	var nom_var_hidden = ["asiento_selecc"];
+	var valor_var_hidden = [asiento_selec];
+	var campos_consulta = "";
+	
+	loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
 }
