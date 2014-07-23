@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <title>Ejemplo de cargar una pagina en un div</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+	<title>Aerolíneas Del Plata</title>
     <script type="text/javascript" src="/Sitio/js/jquery-1.11.1.js"></script>
     <link rel="stylesheet" type="text/css" href="/Sitio/estilos/graficos.css"/>
 	
@@ -28,12 +28,13 @@
 							<div id="interior_1">
 							
 								<div id="interior_2">
-								
-									<input type="button" class="input_button2" value="Grafico 1" onclick="cargarContenido('1')"/>
-									<input type="button" class="input_button2" value="Grafico 2" onclick="cargarContenido('2')"/>
-									<input type="button" class="input_button2" value="Grafico 3" onclick="cargarContenido('3')"/>
-									<input type="button" class="input_button2" value="Grafico 4" onclick="cargarContenido('4')"/>
-										
+									<div id="id_de_boton">
+									<input type="button" class="input_button2" value="Pasajes vendidos" onclick="cargarContenido('1')"/>
+									<input type="button" class="input_button2" value="Pasajes vendidos por categoría y destino" onclick="cargarContenido('2')"/>
+									<input type="button" class="input_button2" value="Ocupación por avión y destino" onclick="cargarContenido('3')"/>
+									<input type="button" class="input_button2" value="Cantidad de reservas caídas" onclick="cargarContenido('4')"/>
+									<input type="button" class="input_button2" value="Lista de espera" onclick="cargarContenido('5')"/>
+									</div>	
 										<div id='contenido'></div>
 										
 										<script type='text/javascript'>
@@ -42,20 +43,24 @@
 										{
 										if(pagina==1)
 											{
-											$("#contenido").html("<img src='/sitio/graficos/grafico1.php'/>");
+											$("#contenido").load("/sitio/graficos/formulario_consulta_graf1.php");
 											}
 										else if (pagina==2)
 											{
-											$("#contenido").html("<img src='/sitio/graficos/grafico2.php'/>");
+											$("#contenido").load("/sitio/graficos/formulario_consulta_graf2.php");
 											}
 										else if (pagina==3){
-											$("#contenido").html("<img src='/sitio/graficos/grafico3.php'/>");
+											$("#contenido").load("/sitio/graficos/formulario_consulta_graf3.php");
+											}
+										else if (pagina==4){
+											$("#contenido").load("/sitio/graficos/formulario_consulta_graf4.php");
 											}
 										else {
-										$("#contenido").html("<img src='/sitio/graficos/grafico4.php'/>");
+										$("#contenido").load("/sitio/graficos/formulario_consulta_graf1.php");
 											
 										}
 										}
+										//$("#contenido").html("<img src='/sitio/graficos/grafico3.php'/>");
 										</script>
 	
 										

@@ -51,6 +51,12 @@ body {
 	padding: 4px 20px 2px;
 	margin-left:22px;
 	margin-top:10px;
+	width: 270px;
+	
+}
+
+#id_de_boton{
+text-align: center;
 }
 
 
@@ -76,25 +82,20 @@ body {
 }
 
 #contenedor1 {
-	margin-left: 25%;
-	margin-top: 170px;
+	margin-left: 10%;
 	height: 280px;
 }
 
 .contenedor2 {
 	background-color: #fff;
-	/*Ini - jasobrile - 26/06/2014*/
-	/*border: 1px solid #dedede;*/
-	border: 5px solid #dedede;
-	/*width: 60%;*/
-	width: 630px;
-	height: 340px;
-	/*Fin - jasobrile - 26/06/2014*/
+	border: 5px solid #dedede;	
+	width: 1080px;
+	height: 550px;
 	border-radius: 4px;
 	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
 	color: #888;
 	display: block;
-	margin: 8px 22px 8px 22px;
+	margin-top: 50px;
 	overflow: hidden;
 	vertical-align: center;
 }
@@ -116,8 +117,8 @@ body {
 	overflow: hidden;
 	border: 2px solid #4d82bc;
 	border-radius: 10px;
-	width: 95%;
-	height: 80%;
+	width: 97%;
+	height: 88%;
 }
 
  #interior_2{
@@ -125,8 +126,8 @@ body {
     margin: 0;
     padding: 5px 20px;
 	border-radius: 10px;
-	height: 93%;
-	text-align:center;
+	height: 96%;
+	position:relative;
 }
 
 #contenido{

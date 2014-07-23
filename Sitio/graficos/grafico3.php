@@ -1,44 +1,65 @@
 <?php // content="text/plain; charset=utf-8"
-require_once ('/jpgraph/src/jpgraph.php');
-require_once ('/jpgraph/src/jpgraph_line.php');
+require_once ('jpgraph/src/jpgraph.php');
+require_once ('jpgraph/src/jpgraph_pie.php');
+require_once ('jpgraph/src/jpgraph_pie3d.php');
 
-$datay = array(0,25,12,47,27,27,0);
 
-// Setup the graph
-$graph = new Graph(350,200);
-$graph->SetScale("intlin",0,$aYMax=50);
+$fecha_desde = $_POST['fecha_desde'];
+$fecha_hasta = $_POST['fecha_hasta'];
+$cdestino = $_POST['cdestino'];
+$codigo = $_POST['codigo'];
 
-$theme_class= new UniversalTheme;
+$mysqli= new mysqli("localhost","root", "", "aerolinea");
+
+if($mysqli->connect_errno){
+}
+$resultado=$mysqli->query ("select av.total_pasajes, count(p.cod_reserva) 
+							from pasaje as p 
+							join vuelo as v on p.cod_vuelo=v.codigo 
+							join aeropuerto ao on v.origen = ao.codigo_OACI 
+							join ciudad co on ao.ciudad = co.codigo 
+							join aeropuerto ad on v.destino = ad.codigo_OACI 
+							join ciudad cd on ad.ciudad = cd.codigo 
+							join avion av on v.cod_avion=av.codigo 
+							where cd.descripcion = '$cdestino' 
+							and p.fecha_vuelo BETWEEN '$fecha_desde' AND '$fecha_hasta' 
+							and av.codigo=$codigo");
+
+ 
+while($row=$resultado->fetch_assoc()){
+   $cant_pasaje=$row['count(p.cod_reserva)'];
+   $total_pasajes=$row['total_pasajes'];
+}
+
+ /*echo "<br>cant de pasaje";
+ echo var_dump($cant_pasaje);
+  echo "<br>total de avion";
+  var_dump($total_pasajes);*/
+
+// Some data
+$data = array($total_pasajes,$cant_pasaje);
+
+// Create the Pie Graph. 
+$graph = new PieGraph(650,380);
+
+$theme_class= new VividTheme;
 $graph->SetTheme($theme_class);
 
-$graph->SetMargin(40,40,50,40);
+// Set A title for the plot
+$graph->title->Set("Ocupación por avión y destino");
+$leyenda = array("Total asientos","Ocupación");
 
-$graph->title->Set('Inverted Y-axis');
-$graph->SetBox(false);
-$graph->yaxis->HideLine(false);
-$graph->yaxis->HideTicks(false,false);
-
-// For background to be gradient, setfill is needed first.
-$graph->ygrid->SetFill(true,'#FFFFFF@0.5','#FFFFFF@0.5');
-$graph->SetBackgroundGradient('#FFFFFF', '#00FF7F', GRAD_HOR, BGRAD_PLOT);
-
-$graph->xaxis->SetTickLabels(array('G','F','E','D','C','B','A'));
-$graph->xaxis->SetLabelMargin(20);
-$graph->yaxis->SetLabelMargin(20);
-
-$graph->SetAxisStyle(AXSTYLE_BOXOUT);
-$graph->img->SetAngle(180); 
-
-// Create the line
-$p1 = new LinePlot($datay);
+// Create
+$p1 = new PiePlot3D($data);
 $graph->Add($p1);
+$p1->SetLegends($leyenda);
+$graph->legend->SetPos(0.5, 0.9,'center','top');
 
-$p1->SetFillGradient('#FFFFFF','#F0F8FF');
-$p1->SetColor('#aadddd');
-
-// Output line
+$p1->ShowBorder();
+$p1->SetColor('black');
+$p1->ExplodeSlice(1);
 $graph->Stroke();
 
-?>
 
+?>
 
