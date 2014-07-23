@@ -288,6 +288,12 @@ INSERT INTO `aerolinea`.`pago` (`codigo`, `cod_reserva`, `cod_forma_pago`, `nro_
 INSERT INTO `aerolinea`.`pago` (`codigo`, `cod_reserva`, `cod_forma_pago`, `nro_tarjeta`, `importe`) VALUES (NULL, '67', '2', '4102065454419226', '1836');
 INSERT INTO `aerolinea`.`pago` (`codigo`, `cod_reserva`, `cod_forma_pago`, `nro_tarjeta`, `importe`) VALUES (NULL, '68', '2', '4102065454466126', '1836');
 INSERT INTO `aerolinea`.`pago` (`codigo`, `cod_reserva`, `cod_forma_pago`, `nro_tarjeta`, `importe`) VALUES (NULL, '69', '2', '4102065451119226', '1836');
+INSERT INTO `aerolinea`.`pago` (`codigo`, `cod_reserva`, `cod_forma_pago`, `nro_tarjeta`, `importe`) VALUES (NULL, '70', '2', '5102061154419226', '1836');
+INSERT INTO `aerolinea`.`pago` (`codigo`, `cod_reserva`, `cod_forma_pago`, `nro_tarjeta`, `importe`) VALUES (NULL, '71', '2', '5102065454419226', '1836');
+INSERT INTO `aerolinea`.`pago` (`codigo`, `cod_reserva`, `cod_forma_pago`, `nro_tarjeta`, `importe`) VALUES (NULL, '72', '2', '4102065854419226', '1836');
+INSERT INTO `aerolinea`.`pago` (`codigo`, `cod_reserva`, `cod_forma_pago`, `nro_tarjeta`, `importe`) VALUES (NULL, '73', '2', '4102065459417226', '1836');
+INSERT INTO `aerolinea`.`pago` (`codigo`, `cod_reserva`, `cod_forma_pago`, `nro_tarjeta`, `importe`) VALUES (NULL, '74', '2', '4102065454919226', '1836');
+INSERT INTO `aerolinea`.`pago` (`codigo`, `cod_reserva`, `cod_forma_pago`, `nro_tarjeta`, `importe`) VALUES (NULL, '75', '2', '4102065454459226', '1836');
 
 
 /*================================================================ pagos de pasaje clase p =====================================================================*/

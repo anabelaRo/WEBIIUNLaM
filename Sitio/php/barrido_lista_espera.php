@@ -23,6 +23,7 @@
 															'		on p.cod_vuelo = v.codigo '.
 															'where p.cod_vuelo = '.$cod_vuelo. ' '.
 															'  and p.fecha_vuelo = "'.$fecha_vuelo. '" '.
+															'  and p.cod_reserva not in (select cod_reserva from pago) '.
 															'  and p.flag_check_in IS NULL '.
 															'  and p.flag_lista_espera IS NULL '.
 															'	and p.clase_pasaje = "E" ' .
@@ -52,6 +53,7 @@
 															'		on p.cod_usuario = u.codigo ' .
 															'where p.cod_vuelo = '.$cod_vuelo. ' '.
 															'  and p.fecha_vuelo = "'.$fecha_vuelo. '" '.
+															'  and p.cod_reserva not in (select cod_reserva from pago) '.
 															'  and p.flag_check_in IS NULL '.
 															'  and p.flag_lista_espera IS NULL '.
 															'	and p.clase_pasaje = "E" ;'
@@ -74,6 +76,7 @@
 														'												join vuelo v ' .
 														'													on p.cod_vuelo = v.codigo ' .
 														'											where  p.cod_vuelo = '.$cod_vuelo. ' '.
+														'											 and p.cod_reserva not in (select cod_reserva from pago) '.
 														'  											and p.fecha_vuelo = "'.$fecha_vuelo. '" '.
 														'  											and p.flag_check_in IS NULL '.
 														'  											and p.flag_lista_espera IS NULL '.
@@ -159,6 +162,7 @@
 															'		on p.cod_vuelo = v.codigo '.
 															'where p.cod_vuelo = '.$cod_vuelo. ' '.
 															'  and p.fecha_vuelo = "'.$fecha_vuelo. '" '.
+															'  and p.cod_reserva not in (select cod_reserva from pago) '.
 															'  and p.flag_check_in IS NULL '.
 															'  and p.flag_lista_espera IS NULL '.
 															'	and p.clase_pasaje = "P" ' .
@@ -186,6 +190,7 @@
 															'		on p.cod_usuario = u.codigo ' .
 															'where p.cod_vuelo = '.$cod_vuelo. ' '.
 															'  and p.fecha_vuelo = "'.$fecha_vuelo. '" '.
+															'  and p.cod_reserva not in (select cod_reserva from pago) '.
 															'  and p.flag_check_in IS NULL '.
 															'  and p.flag_lista_espera IS NULL '.
 															'	and p.clase_pasaje = "P" ;'
@@ -209,6 +214,7 @@
 														'											where  p.cod_vuelo = '.$cod_vuelo. ' '.
 														'  											and p.fecha_vuelo = "'.$fecha_vuelo. '" '.
 														'  											and p.flag_check_in IS NULL '.
+														' 											and p.cod_reserva not in (select cod_reserva from pago) '.
 														'  											and p.flag_lista_espera IS NULL '.
 														'												and p.clase_pasaje = "P" ' .
 														'											ORDER BY p.FECHA_RESERVA ASC ' .
