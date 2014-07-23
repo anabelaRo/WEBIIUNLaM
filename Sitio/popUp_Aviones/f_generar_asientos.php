@@ -1,7 +1,7 @@
 ﻿<?php
 	require_once  $_SERVER{'DOCUMENT_ROOT'} . '/Sitio/bbdd/Clases/Connection_BBDD_Objeto.php';
 	
-	function f_generar_asientos($modelo, $cod_vuelo, $fec_vuelo, $hora_vuelo, $clase)
+	function f_generar_asientos($modelo, $cod_vuelo, $fec_vuelo, $hora_vuelo, $clase, $vCodReserva)
 	{
 		if ($clase == 'Economy')
 		{
@@ -119,7 +119,7 @@
 												
 												if ($existe == 'N')
 												{
-													echo '<td id="'.$fila.'-'.$j.'" title="Asiento: '.$fila.'-'.$j.'" onClick="changeBgcolor(this)"></td>';
+													echo '<td id="'.$fila.'-'.$j.'" title="Asiento: '.$fila.'-'.$j.'" onClick="changeBgcolor(this, '.$vCodReserva.')"></td>';
 												}
 												
 												$db -> disconnect();
@@ -203,7 +203,7 @@
 												
 												if ($existe == 'N')
 												{
-													echo '<td id="'.$fila.'-'.$j.'" title="Asiento: '.$fila.'-'.$j.'" onClick="changeBgcolor(this)"></td>';
+													echo '<td id="'.$fila.'-'.$j.'" title="Asiento: '.$fila.'-'.$j.'" onClick="changeBgcolor(this, '.$vCodReserva.')"></td>';
 												}
 												
 												$db -> disconnect();

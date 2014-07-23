@@ -1,5 +1,5 @@
 ﻿<?php
-	function f_popUp_aviones($modelo_avion, $cod_vuelo, $fec_vuelo, $hora_vuelo, $clase)
+	function f_popUp_aviones($modelo_avion, $cod_vuelo, $fec_vuelo, $hora_vuelo, $clase, $vCodReserva)
 	{
 		echo '<div id="div_asiento">
 					<a href="#openModal" onclick="resize_popUp()">
@@ -15,7 +15,7 @@
 
 						require_once $_SERVER{'DOCUMENT_ROOT'} . '\Sitio\popUp_Aviones\f_generar_asientos.php';
 
-						f_generar_asientos($modelo_avion, $cod_vuelo, $fec_vuelo, $hora_vuelo, $clase);
+						f_generar_asientos($modelo_avion, $cod_vuelo, $fec_vuelo, $hora_vuelo, $clase, $vCodReserva);
 
 			echo '	<div id="div_aceptar">
 							<a href="#close" onclick="aceptar()">

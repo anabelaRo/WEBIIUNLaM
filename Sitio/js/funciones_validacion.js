@@ -170,30 +170,181 @@ function valida_codigo_reserva(var_div)
 	}
 
 	else 
-	
 	{
 		var cod_reserv_C = document.getElementById("text_cod_reserv_C");
-		div_contenedor = "div_recargar_check_in"; //Nombre del DIV en donde se va a cargar el Archivo enviado
+		var div_contenedor = ""; //Nombre del DIV en donde se va a cargar el Archivo enviado
 		
 		if (validaVacio(cod_reserv_C.value) === false)
 		{
 			cod_reserv_C.style.backgroundColor = '#FC9C9C';
 			cod_reserv_C.focus();
 			
+			div_contenedor = "div_recargar_check_in"; //Nombre del DIV en donde se va a cargar el Archivo enviado
+			
 			msj_error = 'Debe ingresar el Código de Reserva';
-		  //msj_error = 'Debe ingresar el Código de Reserva';
 			ruta_archivo = "php/div_msj_error.php"; //Ruta del Archivo a cargar en el DIV
 			nom_var_hidden = ["msj_error"]; //Se carga el vector con el/los nombres de las variables hidden, si es que las hay
 			valor_var_hidden = [msj_error]; //Se carga el vector con el/los valores que tienen que tomar las variables definidas en "nom_var_hidden"
+			
+			loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
 		}
 		else
 		{
-		    query = 'SELECT * FROM pasaje WHERE cod_reserva = ' + cod_reserv_C.value;
-			//query = 'SELECT * FROM pasaje WHERE cod_pasaje = ' + cod_reserv_C.value;
+			query = 'SELECT cod_reserva FROM pasaje WHERE cod_reserva = ' + cod_reserv_C.value;
+			campos_consulta = "cod_reserva";
 			tipo_query = 'S';
 			ruta_archivo = "bbdd/f_ejecutar_query.php"; //Ruta del Archivo a cargar en el DIV
 			nom_var_hidden = ["query", "tipo_query"]; //Se carga el vector con el/los nombres de las variables hidden, si es que las hay
 			valor_var_hidden = [query, tipo_query]; //Se carga el vector con el/los valores que tienen que tomar las variables definidas en "nom_var_hidden"
+		
+			var retorno =  loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+			var cod_reserva = retorno[0];
+			
+			query = 'SELECT codigo FROM pago WHERE cod_reserva = ' + cod_reserv_C.value;
+			campos_consulta = "codigo";
+			tipo_query = 'S';
+			ruta_archivo = "bbdd/f_ejecutar_query.php"; //Ruta del Archivo a cargar en el DIV
+			nom_var_hidden = ["query", "tipo_query"]; //Se carga el vector con el/los nombres de las variables hidden, si es que las hay
+			valor_var_hidden = [query, tipo_query]; //Se carga el vector con el/los valores que tienen que tomar las variables definidas en "nom_var_hidden"
+			
+			var retornoP =  loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+			var cod_pago = retornoP[0];			
+
+			query = '	SELECT IF(TIMESTAMPDIFF(HOUR, SYSDATE(), t.fecha_completa) BETWEEN 2 AND 48,1,0) AS en_rango_check ' +
+					'	FROM ( ' +
+					'			SELECT STR_TO_DATE(CONCAT(STR_TO_DATE(p.fecha_vuelo, "%Y-%m-%d "), " ", v.hora_vuelo), "%Y-%m-%d %H:%i") as fecha_completa ' +
+					'			FROM 		pasaje p ' +
+					'				JOIN 	vuelo v ' +
+					'					ON 	p.cod_vuelo = v.codigo ' +
+					'			WHERE p.cod_reserva = ' + cod_reserv_C.value + ' ' +
+					'		  )t';
+			
+			campos_consulta = "en_rango_check";
+			tipo_query = 'S';
+			ruta_archivo = "bbdd/f_ejecutar_query.php"; //Ruta del Archivo a cargar en el DIV
+			nom_var_hidden = ["query", "tipo_query"]; //Se carga el vector con el/los nombres de las variables hidden, si es que las hay
+			valor_var_hidden = [query, tipo_query]; //Se carga el vector con el/los valores que tienen que tomar las variables definidas en "nom_var_hidden"
+
+			var retornoR =  loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+			var vEnRangoCheck = retornoR[0];			
+			
+			if (validaVacio(cod_reserva) === false)
+			{
+				cod_reserv_C.style.backgroundColor = '#FC9C9C';
+				cod_reserv_C.focus();
+				
+				div_contenedor = "div_recargar_check_in"; //Nombre del DIV en donde se va a cargar el Archivo enviado
+				
+				msj_error = 'No existe el código de reserva ingresado.';
+				ruta_archivo = "php/div_msj_error.php"; //Ruta del Archivo a cargar en el DIV
+				nom_var_hidden = ["msj_error"]; //Se carga el vector con el/los nombres de las variables hidden, si es que las hay
+				valor_var_hidden = [msj_error]; //Se carga el vector con el/los valores que tienen que tomar las variables definidas en "nom_var_hidden"
+				
+				campos_consulta = "";
+				loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+			}
+			else if (validaVacio(cod_pago) === false)
+			{
+				cod_reserv_C.style.backgroundColor = '#FC9C9C';
+				cod_reserv_C.focus();
+				
+				div_contenedor = "div_recargar_check_in";
+				
+				msj_error = 'El código de reserva no se encuentra pago.';
+				ruta_archivo = "php/div_msj_error.php";
+				nom_var_hidden = ["msj_error"];
+				valor_var_hidden = [msj_error];
+				
+				campos_consulta = "";
+				loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+			}
+			else if (vEnRangoCheck == 0)
+			{
+				cod_reserv_C.style.backgroundColor = '#FC9C9C';
+				cod_reserv_C.focus();
+				
+				div_contenedor = "div_recargar_check_in";
+				
+				msj_error = 'El Check In debe realizarse entre 2 y 48 horas antes del vuelo.';
+				ruta_archivo = "php/div_msj_error.php";
+				nom_var_hidden = ["msj_error"];
+				valor_var_hidden = [msj_error];
+				
+				campos_consulta = "";
+				loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+			}
+			else
+			{
+				var query = 'select	u.nombre_apellido as nombre, ' +
+							'		u.dni as dni, ' +
+							'		v.codigo as codvuelo,  ' +
+							'		v.origen as origen, ' +
+							'		co.descripcion as corigen, ' +
+							'		v.destino as destino, ' +
+							'		cd.descripcion as cdestino, ' +
+							'		px.fecha_vuelo as fechavuelo, ' +
+							'		v.hora_vuelo as horavuelo, ' +
+							'		a.modelo as codavion, ' +
+							'		px.clase_pasaje as clase, ' +
+							'		pg.importe as precio, ' +
+							'		px.cod_reserva as codreserva ' +
+							'from		pasaje px ' +
+							'	join	vuelo v ' +
+							'		on	px.cod_vuelo = v.codigo ' +
+							'	join	aeropuerto ao ' +
+							'		on	v.origen = ao.codigo_OACI ' +
+							'	join	ciudad co ' +
+							'		on	ao.ciudad = co.codigo ' +
+							'	join	aeropuerto ad ' +
+							'		on	v.destino = ad.codigo_OACI ' +
+							'	join	ciudad cd ' +
+							'		on	ad.ciudad = cd.codigo ' +
+							'	join	avion a ' +
+							'		on	v.cod_avion = a.codigo ' +
+							'	join	usuario u ' +
+							'		on	px.cod_usuario = u.codigo ' +
+							'	join	pago pg ' +
+							'		on	px.cod_reserva = pg.cod_reserva ' +
+							'where	px.cod_reserva = ' + cod_reserv_C.value + ' ';
+				
+				div_contenedor = "box_checkIn";
+				tipo_query = 'S';
+				ruta_archivo = "bbdd/f_ejecutar_query.php"; //Ruta del Archivo a cargar en el DIV
+				nom_var_hidden = ["query", "tipo_query"]; //Se carga el vector con el/los nombres de las variables hidden, si es que las hay
+				valor_var_hidden = [query, tipo_query]; //Se carga el vector con el/los valores que tienen que tomar las variables definidas en "nom_var_hidden"
+				campos_consulta = "nombre|dni|codvuelo|origen|corigen|destino|cdestino|fechavuelo|horavuelo|codavion|clase|precio|codreserva";
+				
+				var retorno2  = loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+				
+				var vNombre		= retorno2[0];
+				var vDni		= retorno2[1];
+				var vCodVuelo	= retorno2[2];
+				var vOrigen		= retorno2[3];
+				var vCOrigen	= retorno2[4];
+				var vDestino	= retorno2[5];
+				var vCDestino	= retorno2[6];
+				var vFechaVuelo	= retorno2[7];
+				var vHoraVuelo	= retorno2[8];
+				var vCodAvion	= retorno2[9];
+				var vClase		= retorno2[10];
+				var vPrecio		= retorno2[11];
+				var vCodReserva	= retorno2[12];
+				
+				if (vClase == 'e')
+				{
+					vClase = 'Economy';
+				}
+				else
+				{
+					vClase = 'Primera';
+				}
+				
+				ruta_archivo = "php/datos_CheckIn.php";
+				nom_var_hidden = ["vNombre", "vDni", "vCodVuelo", "vOrigen", "vCOrigen", "vDestino", "vCDestino", "vFechaVuelo", "vHoraVuelo", "vCodAvion", "vClase", "vPrecio", "vCodReserva"];
+				valor_var_hidden = [vNombre, vDni, vCodVuelo, vOrigen, vCOrigen, vDestino, vCDestino, vFechaVuelo, vHoraVuelo, vCodAvion, vClase, vPrecio, vCodReserva];
+				campos_consulta = "";
+				loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+			}
 		}
 	}
 	

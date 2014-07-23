@@ -38,8 +38,9 @@
 		
 var asiento_ant = "";
 var asiento_selec = "";
+var codReserva = "";
 
-function changeBgcolor(asiento)
+function changeBgcolor(asiento, cod_reserva)
 {
 	if (asiento_ant == "")
 	{
@@ -62,16 +63,19 @@ function changeBgcolor(asiento)
 	asiento_ant = asiento;
 	
 	asiento_selec = asiento.id;
+	codReserva = cod_reserva;
 }
 
 function aceptar()
 {
-	var div_contenedor = "div_asiento_selecc";
-	var ruta_archivo = "popUp_Aviones/var_asiento_selecc.php";
+	var query = 'UPDATE pasaje SET flag_check_in = 1, cod_asiento = "' + asiento_selec + '" WHERE cod_reserva = ' + codReserva;
 
-	var nom_var_hidden = ["asiento_selecc"];
-	var valor_var_hidden = [asiento_selec];
+	var tipo_query = 'I';
+	var ruta_archivo = "bbdd/f_ejecutar_query.php";
+	var nom_var_hidden = ["query", "tipo_query"];
+	var valor_var_hidden = [query, tipo_query];
+	var div_contenedor = "";
 	var campos_consulta = "";
-	
-	loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
+
+	retorno = loadXMLDoc(div_contenedor, ruta_archivo, nom_var_hidden, valor_var_hidden, campos_consulta);
 }
